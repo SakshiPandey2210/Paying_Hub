@@ -1,0 +1,119 @@
+﻿
+@{
+    ViewData["Title"] = "view_fund_transfer";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row merged20 mb-4">
+	<div class="col-lg-12 mb-3">
+		<div class="d-widget">
+			<div class="d-widget-title">
+				<h4>View Fund Transfer</h4>
+			</div>
+
+
+			<form class="row">
+
+				<div class="form-group col-md-6">
+					<div class="row align-items-center">
+						<label class="col-md-4 form-label">Topup Id</label>
+						<div class="col-md-8">
+							<input type="text" class="form-control " placeholder="Enter Topup Id" id="txtlogin" name="txtlogin">
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="form-group col-md-6">
+					<div class="row align-items-center">
+						<label class="col-md-4 form-label">Wallet Type</label>
+						<div class="col-md-8">
+							<select class="form-control opt" name="wal_type" id="wal_type">
+								<option value="">Select Wallet </option>
+								<option value="1">Main Wallet</option>
+								<option value="2">Topup Wallet</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group col-md-6">
+					<div class="row align-items-center">
+						<label class="col-md-4 form-label">Transaction Type</label>
+						<div class="col-md-8 ">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="rbgender" id="rbgender1" value="1">
+								<label class="form-check-label" for="inlineRadio1">Credit</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="rbgender" id="rbgender2" value="0">
+								<label class="form-check-label" for="inlineRadio2">Debit</label>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group col-md-6">
+					<div class="row align-items-center">
+						<label class="col-md-4 form-label">Name</label>
+						<div class="col-md-8">
+							<input type="text" class="form-control empty" id="txtname" name="txtname" readonly="">
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group col-md-6">
+					<div class="row align-items-center">
+						<label class="col-md-4 form-label">Wallet Amount</label>
+						<div class="col-md-8">
+							<input type="text" class="form-control" id="txtwallet" name="txtwallet" readonly="">
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group col-md-6">
+					<div class="row align-items-center">
+						<label class="col-md-4 form-label">Amount</label>
+						<div class="col-md-8">
+							<input type="text" class="form-control " id="txtamt" name="txtamt">
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group col-md-6">
+					<div class="row align-items-center">
+						<label class="col-md-4 form-label">Remark</label>
+						<div class="col-md-8">
+							<input type="text" class="form-control" id="txtmsg" name="txtmsg">
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-8 offset-2">
+
+
+
+					<button type="button" class="button primary ">Submit</button>
+
+				</div>
+
+
+
+
+
+
+
+
+
+			</form>
+
+
+		</div>
+	</div>
+
+</div>
+

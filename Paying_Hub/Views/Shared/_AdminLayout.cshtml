@@ -1,0 +1,193 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title - PayRing Dashboard</title>
+
+    <link rel="icon" href="~/admin_assets/images/fav.html" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="~/admin_assets/css/main.min.css" />
+    <link rel="stylesheet" href="~/admin_assets/css/style.css" />
+    <link rel="stylesheet" href="~/admin_assets/css/color.css" />
+    <link rel="stylesheet" href="~/admin_assets/css/responsive.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@@icon/icofont@1.0.1-alpha.1/icofont.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+
+<body>
+
+    <!-- Loader -->
+    <div class="page-loader" id="page-loader">
+        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+        <span>PayRing Loading...</span>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="theme-layout">
+
+        <!-- Responsive Header -->
+        <div class="responsive-header">
+            <div class="res-logo"><img src="~/admin_assets/images/logo.png" alt="Logo"></div>
+            <div class="right-compact">
+                <div class="menu-area">
+                    <div id="nav-icon3">
+                        <i class="icofont-navigation-menu"></i>
+                    </div>
+                    <ul class="drop-menu">
+                        <li><a href="#"><i class="icofont-user-alt-1"></i>Your Profile</a></li>
+                        <li><a asp-controller="Account" asp-action="Logout" class="logout"><i class="icofont-logout"></i>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header>
+            <div class="topbar stick">
+                <div class="logo"><img src="~/admin_assets/images/logo.png" alt="Logo"><span>PayRing</span></div>
+                <ul class="web-elements">
+                    <li>
+                        <a href="#">
+                            <i  class="icofont-grid">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" 
+	 class="feather feather-grid"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14"
+	width="7" height="7"></rect><rect x="3"y="14" width="7" height="7"></rect></svg>
+                            </i>
+                        </a>
+                        <ul class="dropdown">
+                            <li><a href="#"><i class="icofont-user-alt-3"></i> Your Profile</a></li>
+                            <li class="logout"><a asp-controller="Account" asp-action="Logout"><i class="icofont-power"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+
+        <!-- top sub bar -->	
+	<div class="top-sub-bar">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div class="menu-btn">
+						<i class="">
+<svg id="menu-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></i>
+					</div>
+					<div class="page-title">
+						<h4>Admin Credential</h4>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<ul class="breadcrumb">
+						<li><a href="index.html" >Home</a></li>
+						<li><a href="#" >Master	Panel</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<!-- top sub bar -->
+
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <ul class="menu-slide">
+
+                <li class="@(ViewContext.RouteData.Values["action"]?.ToString() == "Dashboard" ? "active" : "")">
+                    <a asp-controller="Home" asp-action="Dashboard"><i class="icofont-dashboard-web"></i>Dashboard</a>
+                </li>
+
+                <li class="menu-item-has-children">
+                    <a href="#"><i class="icofont-users-alt-5"></i>Member</a>
+                    <ul class="submenu">
+                        <li><a asp-controller="Member" asp-action="Registration">Registration</a></li>
+                        <li><a asp-controller="Member" asp-action="AllUser">All Member</a></li>
+                        <li><a asp-controller="Member" asp-action="BankDetails">Bank Details</a></li>
+                        <li><a asp-controller="Member" asp-action="ApproveKYC">Approve KYC</a></li>
+                        <li><a asp-controller="Member" asp-action="ManageWithdralStatus">Manage Withdrawal Status</a></li>
+                        <li><a asp-controller="Member" asp-action="WithdrawalStatusReport">Withdrawal Status Report</a></li>
+                        <li><a asp-controller="Member" asp-action="Password">Password</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item-has-children">
+                    <a href="#"><i class="icofont-thunder-light"></i>Master</a>
+                    <ul class="submenu">
+                        <li><a asp-controller="Member" asp-action="AdminLogin">Admin Login</a></li>
+                        <li><a asp-controller="Member" asp-action="ManageCity">Manage City</a></li>
+                        <li><a asp-controller ="Member" asp-action="ManageNews">Manage News</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item-has-children">
+                    <a href="#"><i class="icofont-money-bag"></i>Fund</a>
+                    <ul class="submenu">
+                        <li><a asp-controller="Member" asp-action="view_fund_request_report">View Fund Request Report</a></li>
+                        <li><a asp-controller="Member" asp-action="view_fund_transfer">Fund Transfer</a></li>
+                        <li><a asp-controller="Member" asp-action="view_fund_transfer_report">View Fund Transfer Report</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item-has-children">
+                    <a href="#"><i class="icofont-redo"></i>Topup</a>
+                    <ul class="submenu">
+                        <li><a asp-controller="Member" asp-action="member_topup">Member Topup</a></li>
+                        <li><a asp-controller="Member" asp-action="ViewTopupReport">View Topup Report</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item-has-children">
+                    <a href="#"><i class="icofont-users-social"></i>Recent Partners</a>
+                    <ul class="submenu">
+                        <li><a asp-controller="Member" asp-action="view_direct_referral">Direct Referral</a></li>
+                        <li><a asp-controller="Member" asp-action="ViewUserDownLine">Downline</a></li>
+                        <li><a href="#">View Tree Level</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item-has-children">
+                    <a href="#"><i class="icofont-files-stack"></i>Report</a>
+                    <ul class="submenu">
+                        <li><a asp-controller="Member" asp-action="DirectIncome">Direct Income</a></li>
+                        <li><a href="#">Level Income</a></li>
+                        <li><a href="#">Cashback Income</a></li>
+                        <li><a href="#">Weekly Salary Income</a></li>
+                        <li><a href="#">Monthly Salary Income</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item-has-children">
+                    <a asp-controller="Member" asp-action="view_withdrawal_report"><i class="icofont-database-remove"></i>Withdrawal</a>
+                    <ul class="submenu">
+                        <li><a asp-controller="Member" asp-action="WithdrawalReport">Withdrawal Report</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a asp-controller="Member" asp-action="QueryBox"><i class="icofont-inbox"></i>Query Box</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Page Content -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 panel-content">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="~/admin_assets/js/main.min.js"></script>
+    <script src="~/admin_assets/js/vivus.min.js"></script>
+    <script src="~/admin_assets/js/script.js"></script>
+
+</body>
+</html>

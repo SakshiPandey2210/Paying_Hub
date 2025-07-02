@@ -1,0 +1,60 @@
+﻿@model List<Paying_Hub.Models.TopUPReportModel>
+@{
+    ViewData["Title"] = "ViewTopupReport";
+	Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+
+
+<div class="row merged20 mb-4">
+    <div class="col-lg-10 mb-3">
+        <div class="d-widget">
+            <div class="d-widget-title">
+                <h4>View Topup Report</h4>
+            </div>
+
+            <table class="table table-default table-responsive">
+                <thead>
+                    <tr>
+                        <th>Sn</th>
+                        <th>UserId</th>
+                        <th>Name</th>
+                        <th>Package Name</th>
+                        <th>Topup Amount</th>
+                        <th>Topup Date</th>
+                    </tr>
+                </thead>
+                @{
+                    int sn = 1;
+                }
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                       
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@(sn++)</td>
+                                <td>@item.UserID</td>
+                                <td>@item.UserName</td>
+                                <td>@item.PackageName</td>
+                                <td>@item.Amount</td>
+                                <td>@item.PackageDate.ToString("dd-MM-yyyy hh:mm tt")</td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="6" class="text-center">No records found</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+

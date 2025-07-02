@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewData["Title"] = "member_topup";
+	Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="row merged20 mb-4">
+	<div class="col-lg-8 mb-3">
+		<div class="d-widget">
+			<div class="d-widget-title">
+				<h4>Member Topup</h4>
+			</div>
+
+			<form class="row">
+
+				<div class="form-group col-md-12">
+					<div class="row align-items-center">
+						<label class="col-md-4 form-label">Topup Id</label>
+						<div class="col-md-8">
+							<input type="text" class="form-control " placeholder="Enter Topup Id" id="txtlogin" name="txtlogin">
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="form-group col-md-12">
+					<div class="row align-items-center">
+						<label class="col-md-4 form-label">Package</label>
+						<div class="col-md-8">
+							<select class="form-control opt" name="ddpackid" id="ddpackid">
+								<option value="">Select Package </option>
+
+								<option value="1">Package-600</option>
+
+								<option value="2">Package-1500</option>
+
+								<option value="3">Package-3500</option>
+
+								<option value="4">Package-7500</option>
+
+								<option value="5">Package-10500</option>
+
+								<option value="6">Package-20000</option>
+
+								<option value="7">Package-30000</option>
+
+								<option value="8">Package-50000</option>
+
+								<option value="9">Package-120000</option>
+
+							</select>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="col-md-8 offset-4">
+
+
+
+					<button type="button" class="button primary ">Submit</button>
+
+				</div>
+
+
+
+
+
+
+
+
+
+			</form>
+		</div>
+	</div>
+
+</div>

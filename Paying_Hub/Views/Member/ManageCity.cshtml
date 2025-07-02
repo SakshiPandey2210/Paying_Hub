@@ -1,0 +1,6876 @@
+﻿
+@{
+    ViewData["Title"] = "ManageCity";
+	Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row merged20 mb-4">
+	<div class="col-lg-5">
+		<div class="d-widget">
+			<div class="d-widget-title">
+				<h4>Manage City</h4>
+			</div>
+
+			<form class="row">
+
+				<div class="form-group col-md-12">
+					<div class="row align-items-center">
+						<label class="col-md-4 form-label">State</label>
+						<div class="col-md-8">
+							<select class="form-control opt" name="ddstate" id="ddstate">
+								<option value="">Select State</option>
+								<option value="2">ANDAMAN AND NICOBAR ISLANDS</option>
+								<option value="3">ANDHRA PRADESH</option>
+								<option value="4">ARUNACHAL PRADESH</option>
+								<option value="5">ASSAM</option>
+								<option value="6">BIHAR</option>
+								<option value="7">CHANDIGARH</option>
+								<option value="8">CHHATTISGARH</option>
+								<option value="9">DADRA AND NAGAR HAVELI</option>
+								<option value="10">DAMAN AND DIU</option>
+								<option value="11">DELHI</option>
+								<option value="12">GOA</option>
+								<option value="13">GUJARAT</option>
+								<option value="14">HARYANA</option>
+								<option value="15">HIMACHAL PRADESH</option>
+								<option value="16">JAMMU AND KASHMIR</option>
+								<option value="17">JHARKHAND</option>
+								<option value="18">KARNATAKA</option>
+								<option value="19">KERALA</option>
+								<option value="20">LAKSHADWEEP</option>
+								<option value="21">MADHYA PRADESH</option>
+								<option value="22">MAHARASHTRA</option>
+								<option value="23">MANIPUR</option>
+								<option value="24">MEGHALAYA</option>
+								<option value="25">MIZORAM</option>
+								<option value="26">NAGALAND</option>
+								<option value="27">ORISSA</option>
+								<option value="28">PUDUCHERRY</option>
+								<option value="29">PUNJAB</option>
+								<option value="30">RAJASTHAN</option>
+								<option value="31">SIKKIM</option>
+								<option value="32">TAMIL NADU</option>
+								<option value="33">TRIPURA</option>
+								<option value="34">UTTAR PRADESH</option>
+								<option value="35">UTTARAKHAND</option>
+								<option value="36">WEST BENGAL</option>
+								<option value="296">TELANGANA</option>
+							</select>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group col-md-12">
+					<div class="row align-items-center">
+						<label class="col-md-4 form-label">City</label>
+						<div class="col-md-8">
+							<input type="text" class="form-control " id="txtcity" name="txtcity" placeholder="Enter City">
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-8 offset-4">
+					<button type="submit" class="button primary small">Submit</button>
+					<button type="Reset" class="button danger small">Reset</button>
+				</div>
+
+
+
+
+
+
+
+
+			</form>
+
+		</div>
+	</div>
+	<div class="col-lg-7">
+		<div class="d-widget mb-4">
+			<div class="d-widget-title">
+				<h4>View All City</h4>
+			</div>
+			<div class="d-widget-content h-350">
+				<table class="table table-default  table-responsive">
+					<thead>
+						<tr>
+							<th>SN</th>
+							<th>State</th>
+							<th>City</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>ANDAMAN AND NICOBAR ISLANDS</td>
+							<td>NANCOWRY</td>
+							<td>
+								<a href="129">
+									<i class="icofont-pen-alt-1"></i>
+								</a>
+								/
+								<a href="#!129/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>ANDAMAN AND NICOBAR ISLANDS</td>
+							<td>CAR NICOBAR</td>
+							<td>
+								<a href="127"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!127/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>ANDAMAN AND NICOBAR ISLANDS</td>
+							<td>GREAT NICOBAR ISLAND</td>
+							<td>
+								<a href="128"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!128/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>ANDHRA PRADESH</td>
+							<td>CHITTOOR</td>
+							<td>
+								<a href="131"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!131/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>ANDHRA PRADESH</td>
+							<td>NELLORE</td>
+							<td>
+								<a href="136"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!136/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>ANDHRA PRADESH</td>
+							<td>WEST GODAVARI</td>
+							<td>
+								<a href="141"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!141/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>ANDHRA PRADESH</td>
+							<td>KRISHNA</td>
+							<td>
+								<a href="134"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!134/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>ANDHRA PRADESH</td>
+							<td>VISAKHAPATNAM</td>
+							<td>
+								<a href="139"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!139/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td>ANDHRA PRADESH</td>
+							<td>EAST GODAVARI</td>
+							<td>
+								<a href="132"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!132/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>ANDHRA PRADESH</td>
+							<td>GUNTUR</td>
+							<td>
+								<a href="104"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!104/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>ANDHRA PRADESH</td>
+							<td>PRAKASAM</td>
+							<td>
+								<a href="137"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!137/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>ANDHRA PRADESH</td>
+							<td>ANANTAPUR</td>
+							<td>
+								<a href="130"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!130/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>13</td>
+							<td>ANDHRA PRADESH</td>
+							<td>KURNOOL</td>
+							<td>
+								<a href="135"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!135/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>14</td>
+							<td>ANDHRA PRADESH</td>
+							<td>VIZIANAGARAM</td>
+							<td>
+								<a href="140"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!140/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>15</td>
+							<td>ANDHRA PRADESH</td>
+							<td>KADAPA</td>
+							<td>
+								<a href="133"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!133/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>16</td>
+							<td>ANDHRA PRADESH</td>
+							<td>SRIKAKULAM</td>
+							<td>
+								<a href="138"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!138/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>17</td>
+							<td>ARUNACHAL PRADESH</td>
+							<td>ZIRO</td>
+							<td>
+								<a href="148"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!148/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>18</td>
+							<td>ARUNACHAL PRADESH</td>
+							<td>YINGKIONG</td>
+							<td>
+								<a href="153"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!153/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>19</td>
+							<td>ARUNACHAL PRADESH</td>
+							<td>KOLORIANG</td>
+							<td>
+								<a href="158"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!158/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>20</td>
+							<td>ARUNACHAL PRADESH</td>
+							<td>TEZU</td>
+							<td>
+								<a href="146"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!146/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>21</td>
+							<td>ARUNACHAL PRADESH</td>
+							<td>KHONSA</td>
+							<td>
+								<a href="151"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!151/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>22</td>
+							<td>ARUNACHAL PRADESH</td>
+							<td>ALONG</td>
+							<td>
+								<a href="156"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!156/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>23</td>
+							<td>ARUNACHAL PRADESH</td>
+							<td>SEPPA</td>
+							<td>
+								<a href="144"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!144/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>24</td>
+							<td>ARUNACHAL PRADESH</td>
+							<td>YUPIA</td>
+							<td>
+								<a href="149"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!149/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>ARUNACHAL PRADESH</td>
+							<td>DAPORIJO</td>
+							<td>
+								<a href="154"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!154/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>26</td>
+							<td>ARUNACHAL PRADESH</td>
+							<td>HAWAI</td>
+							<td>
+								<a href="142"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!142/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>27</td>
+							<td>ARUNACHAL PRADESH</td>
+							<td>LONGDING</td>
+							<td>
+								<a href="147"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!147/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>28</td>
+							<td>ARUNACHAL PRADESH</td>
+							<td>ROING</td>
+							<td>
+								<a href="152"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!152/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>29</td>
+							<td>ARUNACHAL PRADESH</td>
+							<td>ANINI</td>
+							<td>
+								<a href="157"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!157/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>30</td>
+							<td>ARUNACHAL PRADESH</td>
+							<td>PASIGHAT</td>
+							<td>
+								<a href="145"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!145/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>31</td>
+							<td>ARUNACHAL PRADESH</td>
+							<td>TAWANG TOWN</td>
+							<td>
+								<a href="150"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!150/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>32</td>
+							<td>ARUNACHAL PRADESH</td>
+							<td>BOMDILA</td>
+							<td>
+								<a href="155"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!155/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>33</td>
+							<td>ARUNACHAL PRADESH</td>
+							<td>CHANGLANG</td>
+							<td>
+								<a href="143"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!143/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>34</td>
+							<td>ASSAM</td>
+							<td>KALAIGAON</td>
+							<td>
+								<a href="180"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!180/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>35</td>
+							<td>ASSAM</td>
+							<td>DHEMAJI</td>
+							<td>
+								<a href="163"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!163/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>36</td>
+							<td>ASSAM</td>
+							<td>LAKHIMPUR</td>
+							<td>
+								<a href="102"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!102/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>37</td>
+							<td>ASSAM</td>
+							<td>HAILAKANDI</td>
+							<td>
+								<a href="168"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!168/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>38</td>
+							<td>ASSAM</td>
+							<td>SIVASAGAR</td>
+							<td>
+								<a href="173"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!173/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>39</td>
+							<td>ASSAM</td>
+							<td>MUSHALPUR</td>
+							<td>
+								<a href="178"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!178/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>40</td>
+							<td>ASSAM</td>
+							<td>SONARI</td>
+							<td>
+								<a href="183"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!183/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>41</td>
+							<td>ASSAM</td>
+							<td>SILCHAR</td>
+							<td>
+								<a href="161"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!161/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>42</td>
+							<td>ASSAM</td>
+							<td>KOKRAJHAR</td>
+							<td>
+								<a href="100"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!100/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>43</td>
+							<td>ASSAM</td>
+							<td>GOALPARA</td>
+							<td>
+								<a href="166"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!166/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>44</td>
+							<td>ASSAM</td>
+							<td>NALBARI</td>
+							<td>
+								<a href="171"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!171/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>45</td>
+							<td>ASSAM</td>
+							<td>AMINGAON</td>
+							<td>
+								<a href="176"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!176/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>46</td>
+							<td>ASSAM</td>
+							<td>BISHWANATH CHARIALI</td>
+							<td>
+								<a href="181"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!181/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>47</td>
+							<td>ASSAM</td>
+							<td>KARIMGANJ</td>
+							<td>
+								<a href="49"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!49/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>48</td>
+							<td>ASSAM</td>
+							<td>BARPETA</td>
+							<td>
+								<a href="159"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!159/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>49</td>
+							<td>ASSAM</td>
+							<td>DHUBRI</td>
+							<td>
+								<a href="164"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!164/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>50</td>
+							<td>ASSAM</td>
+							<td>MORIGAON</td>
+							<td>
+								<a href="169"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!169/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>51</td>
+							<td>ASSAM</td>
+							<td>TEZPUR</td>
+							<td>
+								<a href="174"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!174/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>52</td>
+							<td>ASSAM</td>
+							<td>UDALGURI</td>
+							<td>
+								<a href="179"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!179/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>53</td>
+							<td>ASSAM</td>
+							<td>HATSINGIMARI</td>
+							<td>
+								<a href="184"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!184/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>54</td>
+							<td>ASSAM</td>
+							<td>MANGALDAI</td>
+							<td>
+								<a href="162"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!162/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>55</td>
+							<td>ASSAM</td>
+							<td>DIPHU</td>
+							<td>
+								<a href="101"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!101/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>56</td>
+							<td>ASSAM</td>
+							<td>GOLAGHAT</td>
+							<td>
+								<a href="167"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!167/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>57</td>
+							<td>ASSAM</td>
+							<td>HAFLONG</td>
+							<td>
+								<a href="172"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!172/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>58</td>
+							<td>ASSAM</td>
+							<td>GUWAHATI</td>
+							<td>
+								<a href="177"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!177/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>59</td>
+							<td>ASSAM</td>
+							<td>HOJAI</td>
+							<td>
+								<a href="182"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!182/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>60</td>
+							<td>ASSAM</td>
+							<td>BONGAIGAON</td>
+							<td>
+								<a href="160"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!160/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>61</td>
+							<td>ASSAM</td>
+							<td>DIBRUGARH</td>
+							<td>
+								<a href="165"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!165/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>62</td>
+							<td>ASSAM</td>
+							<td>NAGAON</td>
+							<td>
+								<a href="170"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!170/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>63</td>
+							<td>ASSAM</td>
+							<td>JORHAT</td>
+							<td>
+								<a href="37"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!37/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>64</td>
+							<td>ASSAM</td>
+							<td>TINSUKIA</td>
+							<td>
+								<a href="175"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!175/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>65</td>
+							<td>BIHAR</td>
+							<td>LAKHISARAI</td>
+							<td>
+								<a href="80"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!80/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>66</td>
+							<td>BIHAR</td>
+							<td>NAWADA</td>
+							<td>
+								<a href="85"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!85/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>67</td>
+							<td>BIHAR</td>
+							<td>BANKA</td>
+							<td>
+								<a href="185"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!185/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>68</td>
+							<td>BIHAR</td>
+							<td>SASARAM</td>
+							<td>
+								<a href="90"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!90/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>69</td>
+							<td>BIHAR</td>
+							<td>ARARIA</td>
+							<td>
+								<a href="63"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!63/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>70</td>
+							<td>BIHAR</td>
+							<td>BUXAR</td>
+							<td>
+								<a href="68"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!68/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>71</td>
+							<td>BIHAR</td>
+							<td>GOPALGANJ</td>
+							<td>
+								<a href="73"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!73/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>72</td>
+							<td>BIHAR</td>
+							<td>KATIHAR</td>
+							<td>
+								<a href="78"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!78/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>73</td>
+							<td>BIHAR</td>
+							<td>MOTIHARI</td>
+							<td>
+								<a href="83"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!83/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>74</td>
+							<td>BIHAR</td>
+							<td>DARBHANGA</td>
+							<td>
+								<a href="51"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!51/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>75</td>
+							<td>BIHAR</td>
+							<td>SAHARSA</td>
+							<td>
+								<a href="88"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!88/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>76</td>
+							<td>BIHAR</td>
+							<td>BEGUSARAI</td>
+							<td>
+								<a href="66"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!66/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>77</td>
+							<td>BIHAR</td>
+							<td>DINAPURNIZAMAT</td>
+							<td>
+								<a href="71"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!71/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>78</td>
+							<td>BIHAR</td>
+							<td>JAMUI</td>
+							<td>
+								<a href="76"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!76/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>79</td>
+							<td>BIHAR</td>
+							<td>MADHUBANI</td>
+							<td>
+								<a href="81"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!81/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>80</td>
+							<td>BIHAR</td>
+							<td>PHULWARISHARIF</td>
+							<td>
+								<a href="86"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!86/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>81</td>
+							<td>BIHAR</td>
+							<td>SITAMARHI</td>
+							<td>
+								<a href="91"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!91/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>82</td>
+							<td>BIHAR</td>
+							<td>ARRAH</td>
+							<td>
+								<a href="64"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!64/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>83</td>
+							<td>BIHAR</td>
+							<td>SIWAN</td>
+							<td>
+								<a href="717"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!717/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>84</td>
+							<td>BIHAR</td>
+							<td>CHAPRA</td>
+							<td>
+								<a href="69"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!69/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>85</td>
+							<td>BIHAR</td>
+							<td>HAJIPUR</td>
+							<td>
+								<a href="74"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!74/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>86</td>
+							<td>BIHAR</td>
+							<td>MUZAFFARPUR</td>
+							<td>
+								<a href="47"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!47/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>87</td>
+							<td>BIHAR</td>
+							<td>KISHANGANJ</td>
+							<td>
+								<a href="79"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!79/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>88</td>
+							<td>BIHAR</td>
+							<td>MUNGER</td>
+							<td>
+								<a href="84"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!84/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>89</td>
+							<td>BIHAR</td>
+							<td>SAMASTIPUR</td>
+							<td>
+								<a href="89"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!89/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>90</td>
+							<td>BIHAR</td>
+							<td>BHAGALPUR</td>
+							<td>
+								<a href="57"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!57/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>91</td>
+							<td>BIHAR</td>
+							<td>BETTIAH</td>
+							<td>
+								<a href="67"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!67/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>92</td>
+							<td>BIHAR</td>
+							<td>GAYA</td>
+							<td>
+								<a href="72"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!72/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>93</td>
+							<td>BIHAR</td>
+							<td>PATNA</td>
+							<td>
+								<a href="45"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!45/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>94</td>
+							<td>BIHAR</td>
+							<td>JEHANABAD</td>
+							<td>
+								<a href="77"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!77/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>95</td>
+							<td>BIHAR</td>
+							<td>MOKAMA</td>
+							<td>
+								<a href="82"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!82/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>96</td>
+							<td>BIHAR</td>
+							<td>PURNIA</td>
+							<td>
+								<a href="87"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!87/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>97</td>
+							<td>BIHAR</td>
+							<td>SUPAUL</td>
+							<td>
+								<a href="92"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!92/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>98</td>
+							<td>BIHAR</td>
+							<td>BAGAHA</td>
+							<td>
+								<a href="65"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!65/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>99</td>
+							<td>BIHAR</td>
+							<td>DEHRIONSONE</td>
+							<td>
+								<a href="70"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!70/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>100</td>
+							<td>BIHAR</td>
+							<td>JAMALPUR</td>
+							<td>
+								<a href="75"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!75/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>101</td>
+							<td>CHANDIGARH</td>
+							<td>CHANDIGARH</td>
+							<td>
+								<a href="705"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!705/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>102</td>
+							<td>CHHATTISGARH</td>
+							<td>AMBIKAPUR</td>
+							<td>
+								<a href="212"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!212/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>103</td>
+							<td>CHHATTISGARH</td>
+							<td>BEMETARA</td>
+							<td>
+								<a href="190"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!190/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>104</td>
+							<td>CHHATTISGARH</td>
+							<td>DURG</td>
+							<td>
+								<a href="195"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!195/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>105</td>
+							<td>CHHATTISGARH</td>
+							<td>KANKER</td>
+							<td>
+								<a href="200"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!200/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>106</td>
+							<td>CHHATTISGARH</td>
+							<td>MUNGELI</td>
+							<td>
+								<a href="205"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!205/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>107</td>
+							<td>CHHATTISGARH</td>
+							<td>SUKMA</td>
+							<td>
+								<a href="210"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!210/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>108</td>
+							<td>CHHATTISGARH</td>
+							<td>BALRAMPUR</td>
+							<td>
+								<a href="188"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!188/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>109</td>
+							<td>CHHATTISGARH</td>
+							<td>DANTEWADA</td>
+							<td>
+								<a href="193"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!193/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>110</td>
+							<td>CHHATTISGARH</td>
+							<td>JASHPUR</td>
+							<td>
+								<a href="198"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!198/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>111</td>
+							<td>CHHATTISGARH</td>
+							<td>BAIKUNTHPUR</td>
+							<td>
+								<a href="203"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!203/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>112</td>
+							<td>CHHATTISGARH</td>
+							<td>RAIPUR</td>
+							<td>
+								<a href="208"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!208/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>113</td>
+							<td>CHHATTISGARH</td>
+							<td>BALOD</td>
+							<td>
+								<a href="186"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!186/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>114</td>
+							<td>CHHATTISGARH</td>
+							<td>BIJAPUR</td>
+							<td>
+								<a href="191"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!191/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>115</td>
+							<td>CHHATTISGARH</td>
+							<td>GARIABAND</td>
+							<td>
+								<a href="196"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!196/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>116</td>
+							<td>CHHATTISGARH</td>
+							<td>KONDAGAON</td>
+							<td>
+								<a href="201"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!201/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>117</td>
+							<td>CHHATTISGARH</td>
+							<td>NARAYANPUR</td>
+							<td>
+								<a href="206"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!206/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>118</td>
+							<td>CHHATTISGARH</td>
+							<td>SURAJPUR</td>
+							<td>
+								<a href="211"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!211/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>119</td>
+							<td>CHHATTISGARH</td>
+							<td>JAGDALPUR</td>
+							<td>
+								<a href="189"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!189/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>120</td>
+							<td>CHHATTISGARH</td>
+							<td>DHAMTARI</td>
+							<td>
+								<a href="194"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!194/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>121</td>
+							<td>CHHATTISGARH</td>
+							<td>KAWARDHA</td>
+							<td>
+								<a href="199"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!199/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>122</td>
+							<td>CHHATTISGARH</td>
+							<td>MAHASAMUND</td>
+							<td>
+								<a href="204"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!204/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>123</td>
+							<td>CHHATTISGARH</td>
+							<td>RAJNANDGAON</td>
+							<td>
+								<a href="209"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!209/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>124</td>
+							<td>CHHATTISGARH</td>
+							<td>BALODA BAZAR</td>
+							<td>
+								<a href="187"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!187/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>125</td>
+							<td>CHHATTISGARH</td>
+							<td>BILASPUR</td>
+							<td>
+								<a href="192"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!192/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>126</td>
+							<td>CHHATTISGARH</td>
+							<td>NAILA JANJGIR</td>
+							<td>
+								<a href="197"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!197/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>127</td>
+							<td>CHHATTISGARH</td>
+							<td>KORBA</td>
+							<td>
+								<a href="202"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!202/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>128</td>
+							<td>CHHATTISGARH</td>
+							<td>RAIGARH</td>
+							<td>
+								<a href="207"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!207/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>129</td>
+							<td>DADRA AND NAGAR HAVELI</td>
+							<td>DADRA AND NAGAR HAVELI</td>
+							<td>
+								<a href="706"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!706/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>130</td>
+							<td>DAMAN AND DIU</td>
+							<td>DAMAN AND DIU</td>
+							<td>
+								<a href="707"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!707/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>131</td>
+							<td>DELHI</td>
+							<td>NEW DELHI</td>
+							<td>
+								<a href="93"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!93/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>132</td>
+							<td>GOA</td>
+							<td>VASCO</td>
+							<td>
+								<a href="217"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!217/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>133</td>
+							<td>GOA</td>
+							<td>MARGOA</td>
+							<td>
+								<a href="215"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!215/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>134</td>
+							<td>GOA</td>
+							<td>MAPUSA</td>
+							<td>
+								<a href="213"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!213/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>135</td>
+							<td>GOA</td>
+							<td>PONDA</td>
+							<td>
+								<a href="216"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!216/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>136</td>
+							<td>GOA</td>
+							<td>PANAJI</td>
+							<td>
+								<a href="214"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!214/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>137</td>
+							<td>GUJARAT</td>
+							<td>RAJKOT</td>
+							<td>
+								<a href="244"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!244/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>138</td>
+							<td>GUJARAT</td>
+							<td>VADODARA</td>
+							<td>
+								<a href="249"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!249/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>139</td>
+							<td>GUJARAT</td>
+							<td>PALANPUR</td>
+							<td>
+								<a href="222"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!222/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>140</td>
+							<td>GUJARAT</td>
+							<td>DAHOD</td>
+							<td>
+								<a href="227"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!227/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>141</td>
+							<td>GUJARAT</td>
+							<td>JAMNAGAR</td>
+							<td>
+								<a href="232"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!232/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>142</td>
+							<td>GUJARAT</td>
+							<td>MEHSANA</td>
+							<td>
+								<a href="237"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!237/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>143</td>
+							<td>GUJARAT</td>
+							<td>PATAN</td>
+							<td>
+								<a href="242"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!242/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>144</td>
+							<td>GUJARAT</td>
+							<td>SURENDRANAGAR</td>
+							<td>
+								<a href="247"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!247/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>145</td>
+							<td>GUJARAT</td>
+							<td>ANAND</td>
+							<td>
+								<a href="220"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!220/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>146</td>
+							<td>GUJARAT</td>
+							<td>BOTAD</td>
+							<td>
+								<a href="225"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!225/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>147</td>
+							<td>GUJARAT</td>
+							<td>GANDHINAGAR</td>
+							<td>
+								<a href="230"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!230/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>148</td>
+							<td>GUJARAT</td>
+							<td>NADIAD</td>
+							<td>
+								<a href="235"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!235/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>149</td>
+							<td>GUJARAT</td>
+							<td>NAVSARI</td>
+							<td>
+								<a href="240"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!240/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>150</td>
+							<td>GUJARAT</td>
+							<td>HIMMATNAGAR</td>
+							<td>
+								<a href="245"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!245/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>151</td>
+							<td>GUJARAT</td>
+							<td>AHMEDABAD</td>
+							<td>
+								<a href="218"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!218/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>152</td>
+							<td>GUJARAT</td>
+							<td>VALSAD</td>
+							<td>
+								<a href="250"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!250/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>153</td>
+							<td>GUJARAT</td>
+							<td>BHARUCH</td>
+							<td>
+								<a href="223"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!223/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>154</td>
+							<td>GUJARAT</td>
+							<td>AHWA</td>
+							<td>
+								<a href="228"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!228/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>155</td>
+							<td>GUJARAT</td>
+							<td>JUNAGADH</td>
+							<td>
+								<a href="233"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!233/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>156</td>
+							<td>GUJARAT</td>
+							<td>MORBI</td>
+							<td>
+								<a href="238"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!238/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>157</td>
+							<td>GUJARAT</td>
+							<td>PORBANDAR</td>
+							<td>
+								<a href="243"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!243/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>158</td>
+							<td>GUJARAT</td>
+							<td>TAPI</td>
+							<td>
+								<a href="248"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!248/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>159</td>
+							<td>GUJARAT</td>
+							<td>MODASA</td>
+							<td>
+								<a href="221"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!221/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>160</td>
+							<td>GUJARAT</td>
+							<td>CHHOTA UDAIPUR</td>
+							<td>
+								<a href="226"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!226/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>161</td>
+							<td>GUJARAT</td>
+							<td>VERAVAL</td>
+							<td>
+								<a href="231"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!231/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>162</td>
+							<td>GUJARAT</td>
+							<td>LUNAVADA</td>
+							<td>
+								<a href="236"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!236/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>163</td>
+							<td>GUJARAT</td>
+							<td>GODHRA</td>
+							<td>
+								<a href="241"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!241/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>164</td>
+							<td>GUJARAT</td>
+							<td>SURAT</td>
+							<td>
+								<a href="246"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!246/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>165</td>
+							<td>GUJARAT</td>
+							<td>AMRELI</td>
+							<td>
+								<a href="219"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!219/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>166</td>
+							<td>GUJARAT</td>
+							<td>BHAVNAGAR</td>
+							<td>
+								<a href="224"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!224/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>167</td>
+							<td>GUJARAT</td>
+							<td>KHAMBHALIA</td>
+							<td>
+								<a href="229"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!229/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>168</td>
+							<td>GUJARAT</td>
+							<td>BHUJ</td>
+							<td>
+								<a href="234"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!234/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>169</td>
+							<td>GUJARAT</td>
+							<td>RAJPIPLA</td>
+							<td>
+								<a href="239"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!239/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>170</td>
+							<td>HARYANA</td>
+							<td>FATEHABAD</td>
+							<td>
+								<a href="254"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!254/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>171</td>
+							<td>HARYANA</td>
+							<td>KAITHAL</td>
+							<td>
+								<a href="259"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!259/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>172</td>
+							<td>HARYANA</td>
+							<td>PALWAL</td>
+							<td>
+								<a href="264"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!264/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>173</td>
+							<td>HARYANA</td>
+							<td>SIRSA</td>
+							<td>
+								<a href="269"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!269/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>174</td>
+							<td>HARYANA</td>
+							<td>BHIWANI</td>
+							<td>
+								<a href="252"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!252/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>175</td>
+							<td>HARYANA</td>
+							<td>JHAJJAR</td>
+							<td>
+								<a href="257"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!257/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>176</td>
+							<td>HARYANA</td>
+							<td>MAHENDRAGARH</td>
+							<td>
+								<a href="262"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!262/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>177</td>
+							<td>HARYANA</td>
+							<td>REWARI</td>
+							<td>
+								<a href="267"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!267/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>178</td>
+							<td>HARYANA</td>
+							<td>GURGAON</td>
+							<td>
+								<a href="255"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!255/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>179</td>
+							<td>HARYANA</td>
+							<td>KARNAL</td>
+							<td>
+								<a href="260"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!260/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>180</td>
+							<td>HARYANA</td>
+							<td>PANCHKULA</td>
+							<td>
+								<a href="265"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!265/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>181</td>
+							<td>HARYANA</td>
+							<td>SONIPAT</td>
+							<td>
+								<a href="270"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!270/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>182</td>
+							<td>HARYANA</td>
+							<td>FARIDABAD</td>
+							<td>
+								<a href="253"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!253/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>183</td>
+							<td>HARYANA</td>
+							<td>JIND</td>
+							<td>
+								<a href="258"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!258/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>184</td>
+							<td>HARYANA</td>
+							<td>NUH</td>
+							<td>
+								<a href="263"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!263/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>185</td>
+							<td>HARYANA</td>
+							<td>ROHTAK</td>
+							<td>
+								<a href="268"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!268/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>186</td>
+							<td>HARYANA</td>
+							<td>AMBALA</td>
+							<td>
+								<a href="251"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!251/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>187</td>
+							<td>HARYANA</td>
+							<td>HISAR</td>
+							<td>
+								<a href="256"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!256/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>188</td>
+							<td>HARYANA</td>
+							<td>KURUKSHETRA</td>
+							<td>
+								<a href="261"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!261/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>189</td>
+							<td>HARYANA</td>
+							<td>PANIPAT</td>
+							<td>
+								<a href="266"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!266/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>190</td>
+							<td>HARYANA</td>
+							<td>YAMUNANAGAR</td>
+							<td>
+								<a href="271"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!271/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>191</td>
+							<td>HIMACHAL PRADESH</td>
+							<td>KINNAUR</td>
+							<td>
+								<a href="276"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!276/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>192</td>
+							<td>HIMACHAL PRADESH</td>
+							<td>SIRMAUR</td>
+							<td>
+								<a href="281"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!281/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>193</td>
+							<td>HIMACHAL PRADESH</td>
+							<td>HAMIRPUR</td>
+							<td>
+								<a href="274"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!274/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>194</td>
+							<td>HIMACHAL PRADESH</td>
+							<td>MANDI</td>
+							<td>
+								<a href="279"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!279/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>195</td>
+							<td>HIMACHAL PRADESH</td>
+							<td>BILASPUR</td>
+							<td>
+								<a href="272"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!272/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>196</td>
+							<td>HIMACHAL PRADESH</td>
+							<td>KULLU</td>
+							<td>
+								<a href="277"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!277/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>197</td>
+							<td>HIMACHAL PRADESH</td>
+							<td>SOLAN</td>
+							<td>
+								<a href="282"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!282/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>198</td>
+							<td>HIMACHAL PRADESH</td>
+							<td>KANGRA</td>
+							<td>
+								<a href="275"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!275/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>199</td>
+							<td>HIMACHAL PRADESH</td>
+							<td>SHIMLA</td>
+							<td>
+								<a href="280"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!280/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>200</td>
+							<td>HIMACHAL PRADESH</td>
+							<td>CHAMBA</td>
+							<td>
+								<a href="273"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!273/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>201</td>
+							<td>HIMACHAL PRADESH</td>
+							<td>LAHAUL AND SPITI</td>
+							<td>
+								<a href="278"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!278/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>202</td>
+							<td>HIMACHAL PRADESH</td>
+							<td>UNA</td>
+							<td>
+								<a href="283"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!283/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>203</td>
+							<td>JAMMU AND KASHMIR</td>
+							<td>KISHTWAR</td>
+							<td>
+								<a href="286"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!286/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>204</td>
+							<td>JAMMU AND KASHMIR</td>
+							<td>KATHUA</td>
+							<td>
+								<a href="291"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!291/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>205</td>
+							<td>JAMMU AND KASHMIR</td>
+							<td>KULGAM</td>
+							<td>
+								<a href="297"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!297/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>206</td>
+							<td>JAMMU AND KASHMIR</td>
+							<td>BANDIPORA</td>
+							<td>
+								<a href="302"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!302/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>207</td>
+							<td>JAMMU AND KASHMIR</td>
+							<td>JAMMU</td>
+							<td>
+								<a href="284"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!284/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>208</td>
+							<td>JAMMU AND KASHMIR</td>
+							<td>UDHAMPUR</td>
+							<td>
+								<a href="289"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!289/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>209</td>
+							<td>JAMMU AND KASHMIR</td>
+							<td>SRINAGAR</td>
+							<td>
+								<a href="294"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!294/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>210</td>
+							<td>JAMMU AND KASHMIR</td>
+							<td>BUDGAM</td>
+							<td>
+								<a href="300"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!300/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>211</td>
+							<td>JAMMU AND KASHMIR</td>
+							<td>KARGIL</td>
+							<td>
+								<a href="305"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!305/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>212</td>
+							<td>JAMMU AND KASHMIR</td>
+							<td>RAJOURI</td>
+							<td>
+								<a href="287"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!287/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>213</td>
+							<td>JAMMU AND KASHMIR</td>
+							<td>SAMBA</td>
+							<td>
+								<a href="292"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!292/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>214</td>
+							<td>JAMMU AND KASHMIR</td>
+							<td>PULWAMA</td>
+							<td>
+								<a href="298"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!298/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>215</td>
+							<td>JAMMU AND KASHMIR</td>
+							<td>BARAMULLA</td>
+							<td>
+								<a href="303"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!303/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>216</td>
+							<td>JAMMU AND KASHMIR</td>
+							<td>DODA</td>
+							<td>
+								<a href="285"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!285/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>217</td>
+							<td>JAMMU AND KASHMIR</td>
+							<td>RAMBAN</td>
+							<td>
+								<a href="290"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!290/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>218</td>
+							<td>JAMMU AND KASHMIR</td>
+							<td>ANANTNAG</td>
+							<td>
+								<a href="295"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!295/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>219</td>
+							<td>JAMMU AND KASHMIR</td>
+							<td>GANDERBAL</td>
+							<td>
+								<a href="301"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!301/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>220</td>
+							<td>JAMMU AND KASHMIR</td>
+							<td>LEH</td>
+							<td>
+								<a href="306"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!306/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>221</td>
+							<td>JAMMU AND KASHMIR</td>
+							<td>REASI</td>
+							<td>
+								<a href="288"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!288/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>222</td>
+							<td>JAMMU AND KASHMIR</td>
+							<td>POONCH</td>
+							<td>
+								<a href="293"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!293/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>223</td>
+							<td>JAMMU AND KASHMIR</td>
+							<td>SHOPIAN</td>
+							<td>
+								<a href="299"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!299/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>224</td>
+							<td>JAMMU AND KASHMIR</td>
+							<td>KUPWARA</td>
+							<td>
+								<a href="304"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!304/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>225</td>
+							<td>JAMSHEDPUR</td>
+							<td>GOLMURI</td>
+							<td>
+								<a href="94"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!94/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>226</td>
+							<td>JHARKHAND</td>
+							<td>SIMDEGA</td>
+							<td>
+								<a href="309"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!309/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>227</td>
+							<td>JHARKHAND</td>
+							<td>HAZARIBAGH</td>
+							<td>
+								<a href="314"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!314/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>228</td>
+							<td>JHARKHAND</td>
+							<td>LOHARDAGA</td>
+							<td>
+								<a href="319"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!319/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>229</td>
+							<td>JHARKHAND</td>
+							<td>SARAIKELA KHARSAWAN</td>
+							<td>
+								<a href="324"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!324/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>230</td>
+							<td>JHARKHAND</td>
+							<td>SAHEBGANJ</td>
+							<td>
+								<a href="329"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!329/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>231</td>
+							<td>JHARKHAND</td>
+							<td>GARHWA</td>
+							<td>
+								<a href="307"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!307/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>232</td>
+							<td>JHARKHAND</td>
+							<td>DEOGHAR</td>
+							<td>
+								<a href="46"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!46/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>233</td>
+							<td>JHARKHAND</td>
+							<td>LATEHAR</td>
+							<td>
+								<a href="312"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!312/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>234</td>
+							<td>JHARKHAND</td>
+							<td>BOKARO</td>
+							<td>
+								<a href="317"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!317/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>235</td>
+							<td>JHARKHAND</td>
+							<td>KHUNTI</td>
+							<td>
+								<a href="322"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!322/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>236</td>
+							<td>JHARKHAND</td>
+							<td>PAKUR</td>
+							<td>
+								<a href="327"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!327/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>237</td>
+							<td>JHARKHAND</td>
+							<td>JAMTARA</td>
+							<td>
+								<a href="310"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!310/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>238</td>
+							<td>JHARKHAND</td>
+							<td>KODERMA</td>
+							<td>
+								<a href="315"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!315/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>239</td>
+							<td>JHARKHAND</td>
+							<td>GUMLA</td>
+							<td>
+								<a href="320"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!320/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>240</td>
+							<td>JHARKHAND</td>
+							<td>EAST SINGHBHUM</td>
+							<td>
+								<a href="325"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!325/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>241</td>
+							<td>JHARKHAND</td>
+							<td>GIRIDIH</td>
+							<td>
+								<a href="308"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!308/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>242</td>
+							<td>JHARKHAND</td>
+							<td>CHATRA</td>
+							<td>
+								<a href="313"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!313/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>243</td>
+							<td>JHARKHAND</td>
+							<td>JAMSHEDPUR</td>
+							<td>
+								<a href="52"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!52/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>244</td>
+							<td>JHARKHAND</td>
+							<td>DHANBAD</td>
+							<td>
+								<a href="318"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!318/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>245</td>
+							<td>JHARKHAND</td>
+							<td>MANDYA</td>
+							<td>
+								<a href="350"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!350/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>246</td>
+							<td>JHARKHAND</td>
+							<td>WEST SINGHBHUM</td>
+							<td>
+								<a href="323"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!323/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>247</td>
+							<td>JHARKHAND</td>
+							<td>GODDA</td>
+							<td>
+								<a href="328"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!328/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>248</td>
+							<td>JHARKHAND</td>
+							<td>PALAMU</td>
+							<td>
+								<a href="311"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!311/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>249</td>
+							<td>JHARKHAND</td>
+							<td>RAMGARH</td>
+							<td>
+								<a href="316"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!316/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>250</td>
+							<td>JHARKHAND</td>
+							<td>RANCHI</td>
+							<td>
+								<a href="321"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!321/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>251</td>
+							<td>JHARKHAND</td>
+							<td>DUMKA</td>
+							<td>
+								<a href="326"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!326/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>252</td>
+							<td>JORHAT</td>
+							<td>NIZAMGARH</td>
+							<td>
+								<a href="39"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!39/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>253</td>
+							<td>JORHAT</td>
+							<td>CIVIL LINES</td>
+							<td>
+								<a href="40"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!40/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>254</td>
+							<td>KARNATAKA</td>
+							<td>DAVANAGERE</td>
+							<td>
+								<a href="341"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!341/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>255</td>
+							<td>KARNATAKA</td>
+							<td>HAVERI</td>
+							<td>
+								<a href="346"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!346/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>256</td>
+							<td>KARNATAKA</td>
+							<td>MYSURU</td>
+							<td>
+								<a href="351"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!351/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>257</td>
+							<td>KARNATAKA</td>
+							<td>UDUPI</td>
+							<td>
+								<a href="356"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!356/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>258</td>
+							<td>KARNATAKA</td>
+							<td>BIDAR</td>
+							<td>
+								<a href="334"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!334/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>259</td>
+							<td>KARNATAKA</td>
+							<td>CHITRADURGA</td>
+							<td>
+								<a href="339"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!339/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>260</td>
+							<td>KARNATAKA</td>
+							<td>KALABURAGI</td>
+							<td>
+								<a href="344"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!344/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>261</td>
+							<td>KARNATAKA</td>
+							<td>KOPPAL</td>
+							<td>
+								<a href="349"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!349/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>262</td>
+							<td>KARNATAKA</td>
+							<td>SHIVAMOGGA</td>
+							<td>
+								<a href="354"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!354/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>263</td>
+							<td>KARNATAKA</td>
+							<td>BELAGAVI</td>
+							<td>
+								<a href="332"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!332/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>264</td>
+							<td>KARNATAKA</td>
+							<td>CHIKBALLAPUR</td>
+							<td>
+								<a href="337"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!337/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>265</td>
+							<td>KARNATAKA</td>
+							<td>DHARWAD</td>
+							<td>
+								<a href="342"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!342/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>266</td>
+							<td>KARNATAKA</td>
+							<td>MADIKERI</td>
+							<td>
+								<a href="347"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!347/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>267</td>
+							<td>KARNATAKA</td>
+							<td>RAICHUR</td>
+							<td>
+								<a href="352"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!352/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>268</td>
+							<td>KARNATAKA</td>
+							<td>KARWAR</td>
+							<td>
+								<a href="357"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!357/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>269</td>
+							<td>KARNATAKA</td>
+							<td>BAGALKOT</td>
+							<td>
+								<a href="330"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!330/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>270</td>
+							<td>KARNATAKA</td>
+							<td>VIJAYAPURA</td>
+							<td>
+								<a href="335"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!335/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>271</td>
+							<td>KARNATAKA</td>
+							<td>MANGALURU</td>
+							<td>
+								<a href="340"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!340/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>272</td>
+							<td>KARNATAKA</td>
+							<td>HASSAN</td>
+							<td>
+								<a href="345"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!345/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>273</td>
+							<td>KARNATAKA</td>
+							<td>TUMAKURU</td>
+							<td>
+								<a href="355"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!355/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>274</td>
+							<td>KARNATAKA</td>
+							<td>BALLARI</td>
+							<td>
+								<a href="333"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!333/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>275</td>
+							<td>KARNATAKA</td>
+							<td>CHIKKAMAGALURU</td>
+							<td>
+								<a href="338"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!338/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>276</td>
+							<td>KARNATAKA</td>
+							<td>GADAG</td>
+							<td>
+								<a href="343"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!343/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>277</td>
+							<td>KARNATAKA</td>
+							<td>KOLAR</td>
+							<td>
+								<a href="348"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!348/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>278</td>
+							<td>KARNATAKA</td>
+							<td>RAMANAGARA</td>
+							<td>
+								<a href="353"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!353/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>279</td>
+							<td>KARNATAKA</td>
+							<td>YADGIR</td>
+							<td>
+								<a href="358"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!358/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>280</td>
+							<td>KARNATAKA</td>
+							<td>BENGALURU</td>
+							<td>
+								<a href="331"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!331/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>281</td>
+							<td>KARNATAKA</td>
+							<td>CHAMARAJANAGAR</td>
+							<td>
+								<a href="336"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!336/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>282</td>
+							<td>KERALA</td>
+							<td>PAINAVU</td>
+							<td>
+								<a href="361"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!361/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>283</td>
+							<td>KERALA</td>
+							<td>KOZHIKODE</td>
+							<td>
+								<a href="366"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!366/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>284</td>
+							<td>KERALA</td>
+							<td>THRISSUR</td>
+							<td>
+								<a href="371"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!371/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>285</td>
+							<td>KERALA</td>
+							<td>ALAPPUZHA</td>
+							<td>
+								<a href="359"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!359/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>286</td>
+							<td>KERALA</td>
+							<td>KOLLAM</td>
+							<td>
+								<a href="364"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!364/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>287</td>
+							<td>KERALA</td>
+							<td>PATHANAMTHITTA</td>
+							<td>
+								<a href="369"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!369/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>288</td>
+							<td>KERALA</td>
+							<td>KANNUR</td>
+							<td>
+								<a href="362"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!362/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>289</td>
+							<td>KERALA</td>
+							<td>MALAPPURAM</td>
+							<td>
+								<a href="367"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!367/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>290</td>
+							<td>KERALA</td>
+							<td>KALPETTA</td>
+							<td>
+								<a href="372"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!372/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>291</td>
+							<td>KERALA</td>
+							<td>KAKKANAD</td>
+							<td>
+								<a href="360"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!360/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>292</td>
+							<td>KERALA</td>
+							<td>KOTTAYAM</td>
+							<td>
+								<a href="365"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!365/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>293</td>
+							<td>KERALA</td>
+							<td>THIRUVANANTHAPURAM</td>
+							<td>
+								<a href="370"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!370/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>294</td>
+							<td>KERALA</td>
+							<td>KASARAGOD</td>
+							<td>
+								<a href="363"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!363/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>295</td>
+							<td>KERALA</td>
+							<td>PALAKKAD</td>
+							<td>
+								<a href="368"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!368/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>296</td>
+							<td>LUCKNOW</td>
+							<td>CHARBAGH</td>
+							<td>
+								<a href="98"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!98/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>297</td>
+							<td>LUCKNOW</td>
+							<td>INDIRANAGAR</td>
+							<td>
+								<a href="42"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!42/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>298</td>
+							<td>MADHYA PRADESH</td>
+							<td>AGARMALWA</td>
+							<td>
+								<a href="373"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!373/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>299</td>
+							<td>MADHYA PRADESH</td>
+							<td>RAJGARH</td>
+							<td>
+								<a href="405"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!405/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>300</td>
+							<td>MADHYA PRADESH</td>
+							<td>BARWANI</td>
+							<td>
+								<a href="378"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!378/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>301</td>
+							<td>MADHYA PRADESH</td>
+							<td>SEHORE</td>
+							<td>
+								<a href="410"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!410/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>302</td>
+							<td>MADHYA PRADESH</td>
+							<td>CHHINDWARA</td>
+							<td>
+								<a href="383"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!383/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>303</td>
+							<td>MADHYA PRADESH</td>
+							<td>SHEOPUR</td>
+							<td>
+								<a href="415"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!415/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>304</td>
+							<td>MADHYA PRADESH</td>
+							<td>DINDORI</td>
+							<td>
+								<a href="388"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!388/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>305</td>
+							<td>MADHYA PRADESH</td>
+							<td>UMARIA</td>
+							<td>
+								<a href="420"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!420/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>306</td>
+							<td>MADHYA PRADESH</td>
+							<td>INDORE</td>
+							<td>
+								<a href="393"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!393/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>307</td>
+							<td>MADHYA PRADESH</td>
+							<td>KHARGONE</td>
+							<td>
+								<a href="398"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!398/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>308</td>
+							<td>MADHYA PRADESH</td>
+							<td>NEEMUCH</td>
+							<td>
+								<a href="403"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!403/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>309</td>
+							<td>MADHYA PRADESH</td>
+							<td>ASHOKNAGAR</td>
+							<td>
+								<a href="376"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!376/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>310</td>
+							<td>MADHYA PRADESH</td>
+							<td>SAGAR</td>
+							<td>
+								<a href="408"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!408/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>311</td>
+							<td>MADHYA PRADESH</td>
+							<td>BURHANPUR</td>
+							<td>
+								<a href="381"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!381/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>312</td>
+							<td>MADHYA PRADESH</td>
+							<td>SHAHDOL</td>
+							<td>
+								<a href="413"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!413/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>313</td>
+							<td>MADHYA PRADESH</td>
+							<td>DEWAS</td>
+							<td>
+								<a href="386"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!386/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>314</td>
+							<td>MADHYA PRADESH</td>
+							<td>TIKAMGARH</td>
+							<td>
+								<a href="418"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!418/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>315</td>
+							<td>MADHYA PRADESH</td>
+							<td>HARDA</td>
+							<td>
+								<a href="391"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!391/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>316</td>
+							<td>MADHYA PRADESH</td>
+							<td>BHOPAL</td>
+							<td>
+								<a href="106"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!106/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>317</td>
+							<td>MADHYA PRADESH</td>
+							<td>KATNI</td>
+							<td>
+								<a href="396"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!396/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>318</td>
+							<td>MADHYA PRADESH</td>
+							<td>MORENA</td>
+							<td>
+								<a href="401"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!401/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>319</td>
+							<td>MADHYA PRADESH</td>
+							<td>ALIRAJPUR</td>
+							<td>
+								<a href="374"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!374/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>320</td>
+							<td>MADHYA PRADESH</td>
+							<td>RATLAM</td>
+							<td>
+								<a href="406"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!406/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>321</td>
+							<td>MADHYA PRADESH</td>
+							<td>BETUL</td>
+							<td>
+								<a href="379"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!379/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>322</td>
+							<td>MADHYA PRADESH</td>
+							<td>SEONI</td>
+							<td>
+								<a href="411"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!411/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>323</td>
+							<td>MADHYA PRADESH</td>
+							<td>DAMOH</td>
+							<td>
+								<a href="384"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!384/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>324</td>
+							<td>MADHYA PRADESH</td>
+							<td>SHIVPURI</td>
+							<td>
+								<a href="416"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!416/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>325</td>
+							<td>MADHYA PRADESH</td>
+							<td>GUNA</td>
+							<td>
+								<a href="389"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!389/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>326</td>
+							<td>MADHYA PRADESH</td>
+							<td>VIDISHA</td>
+							<td>
+								<a href="421"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!421/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>327</td>
+							<td>MADHYA PRADESH</td>
+							<td>JABALPUR</td>
+							<td>
+								<a href="394"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!394/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>328</td>
+							<td>MADHYA PRADESH</td>
+							<td>MANDLA</td>
+							<td>
+								<a href="399"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!399/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>329</td>
+							<td>MADHYA PRADESH</td>
+							<td>PANNA</td>
+							<td>
+								<a href="404"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!404/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>330</td>
+							<td>MADHYA PRADESH</td>
+							<td>BALAGHAT</td>
+							<td>
+								<a href="377"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!377/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>331</td>
+							<td>MADHYA PRADESH</td>
+							<td>SATNA</td>
+							<td>
+								<a href="409"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!409/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>332</td>
+							<td>MADHYA PRADESH</td>
+							<td>CHHATARPUR</td>
+							<td>
+								<a href="382"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!382/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>333</td>
+							<td>MADHYA PRADESH</td>
+							<td>SHAJAPUR</td>
+							<td>
+								<a href="414"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!414/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>334</td>
+							<td>MADHYA PRADESH</td>
+							<td>DHAR</td>
+							<td>
+								<a href="387"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!387/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>335</td>
+							<td>MADHYA PRADESH</td>
+							<td>UJJAIN</td>
+							<td>
+								<a href="419"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!419/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>336</td>
+							<td>MADHYA PRADESH</td>
+							<td>HOSHANGABAD</td>
+							<td>
+								<a href="392"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!392/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>337</td>
+							<td>MADHYA PRADESH</td>
+							<td>KHANDWA</td>
+							<td>
+								<a href="397"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!397/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>338</td>
+							<td>MADHYA PRADESH</td>
+							<td>NARSINGHPUR</td>
+							<td>
+								<a href="402"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!402/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>339</td>
+							<td>MADHYA PRADESH</td>
+							<td>ANUPPUR</td>
+							<td>
+								<a href="375"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!375/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>340</td>
+							<td>MADHYA PRADESH</td>
+							<td>REWA</td>
+							<td>
+								<a href="407"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!407/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>341</td>
+							<td>MADHYA PRADESH</td>
+							<td>BHIND</td>
+							<td>
+								<a href="380"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!380/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>342</td>
+							<td>MADHYA PRADESH</td>
+							<td>SINGRAULI</td>
+							<td>
+								<a href="412"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!412/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>343</td>
+							<td>MADHYA PRADESH</td>
+							<td>DATIA</td>
+							<td>
+								<a href="385"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!385/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>344</td>
+							<td>MADHYA PRADESH</td>
+							<td>SIDHI</td>
+							<td>
+								<a href="417"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!417/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>345</td>
+							<td>MADHYA PRADESH</td>
+							<td>GWALIOR</td>
+							<td>
+								<a href="390"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!390/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>346</td>
+							<td>MADHYA PRADESH</td>
+							<td>JHABUA</td>
+							<td>
+								<a href="395"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!395/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>347</td>
+							<td>MADHYA PRADESH</td>
+							<td>MANDSAUR</td>
+							<td>
+								<a href="400"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!400/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>348</td>
+							<td>MAHARASHTRA</td>
+							<td>LATUR</td>
+							<td>
+								<a href="437"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!437/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>349</td>
+							<td>MAHARASHTRA</td>
+							<td>NANDURBAR</td>
+							<td>
+								<a href="442"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!442/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>350</td>
+							<td>MAHARASHTRA</td>
+							<td>ALIBAG</td>
+							<td>
+								<a href="447"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!447/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>351</td>
+							<td>MAHARASHTRA</td>
+							<td>SOLAPUR</td>
+							<td>
+								<a href="452"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!452/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>352</td>
+							<td>MAHARASHTRA</td>
+							<td>AURANGABAD</td>
+							<td>
+								<a href="425"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!425/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>353</td>
+							<td>MAHARASHTRA</td>
+							<td>DHULE</td>
+							<td>
+								<a href="430"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!430/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>354</td>
+							<td>MAHARASHTRA</td>
+							<td>JALNA</td>
+							<td>
+								<a href="435"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!435/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>355</td>
+							<td>MAHARASHTRA</td>
+							<td>NAGPUR</td>
+							<td>
+								<a href="440"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!440/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>356</td>
+							<td>MAHARASHTRA</td>
+							<td>PARBHANI</td>
+							<td>
+								<a href="445"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!445/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>357</td>
+							<td>MAHARASHTRA</td>
+							<td>SATARA</td>
+							<td>
+								<a href="450"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!450/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>358</td>
+							<td>MAHARASHTRA</td>
+							<td>AKOLA</td>
+							<td>
+								<a href="423"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!423/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>359</td>
+							<td>MAHARASHTRA</td>
+							<td>YAVATMAL</td>
+							<td>
+								<a href="455"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!455/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>360</td>
+							<td>MAHARASHTRA</td>
+							<td>BULDHANA</td>
+							<td>
+								<a href="428"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!428/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>361</td>
+							<td>MAHARASHTRA</td>
+							<td>HINGOLI</td>
+							<td>
+								<a href="433"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!433/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>362</td>
+							<td>MAHARASHTRA</td>
+							<td>MUMBAI</td>
+							<td>
+								<a href="438"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!438/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>363</td>
+							<td>MAHARASHTRA</td>
+							<td>NASHIK</td>
+							<td>
+								<a href="443"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!443/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>364</td>
+							<td>MAHARASHTRA</td>
+							<td>RATNAGIRI</td>
+							<td>
+								<a href="448"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!448/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>365</td>
+							<td>MAHARASHTRA</td>
+							<td>WARDHA</td>
+							<td>
+								<a href="453"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!453/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>366</td>
+							<td>MAHARASHTRA</td>
+							<td>BEED</td>
+							<td>
+								<a href="426"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!426/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>367</td>
+							<td>MAHARASHTRA</td>
+							<td>GADCHIROLI</td>
+							<td>
+								<a href="431"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!431/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>368</td>
+							<td>MAHARASHTRA</td>
+							<td>KOLHAPUR</td>
+							<td>
+								<a href="436"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!436/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>369</td>
+							<td>MAHARASHTRA</td>
+							<td>NANDED</td>
+							<td>
+								<a href="441"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!441/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>370</td>
+							<td>MAHARASHTRA</td>
+							<td>PUNE</td>
+							<td>
+								<a href="446"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!446/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>371</td>
+							<td>MAHARASHTRA</td>
+							<td>OROS</td>
+							<td>
+								<a href="451"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!451/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>372</td>
+							<td>MAHARASHTRA</td>
+							<td>AMRAVATI</td>
+							<td>
+								<a href="424"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!424/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>373</td>
+							<td>MAHARASHTRA</td>
+							<td>PALGHAR</td>
+							<td>
+								<a href="456"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!456/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>374</td>
+							<td>MAHARASHTRA</td>
+							<td>CHANDRAPUR</td>
+							<td>
+								<a href="429"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!429/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>375</td>
+							<td>MAHARASHTRA</td>
+							<td>THANE</td>
+							<td>
+								<a href="434"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!434/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>376</td>
+							<td>MAHARASHTRA</td>
+							<td>BANDRA</td>
+							<td>
+								<a href="439"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!439/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>377</td>
+							<td>MAHARASHTRA</td>
+							<td>OSMANABAD</td>
+							<td>
+								<a href="444"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!444/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>378</td>
+							<td>MAHARASHTRA</td>
+							<td>SANGLI</td>
+							<td>
+								<a href="449"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!449/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>379</td>
+							<td>MAHARASHTRA</td>
+							<td>AHMEDNAGAR</td>
+							<td>
+								<a href="422"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!422/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>380</td>
+							<td>MAHARASHTRA</td>
+							<td>WASHIM</td>
+							<td>
+								<a href="454"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!454/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>381</td>
+							<td>MAHARASHTRA</td>
+							<td>BHANDARA</td>
+							<td>
+								<a href="427"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!427/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>382</td>
+							<td>MAHARASHTRA</td>
+							<td>GONDIA</td>
+							<td>
+								<a href="432"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!432/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>383</td>
+							<td>MANIPUR</td>
+							<td>BISHNUPUR</td>
+							<td>
+								<a href="457"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!457/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>384</td>
+							<td>MANIPUR</td>
+							<td>TAMENGLONG</td>
+							<td>
+								<a href="462"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!462/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>385</td>
+							<td>MANIPUR</td>
+							<td>POROMPAT</td>
+							<td>
+								<a href="460"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!460/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>386</td>
+							<td>MANIPUR</td>
+							<td>LAMPHELPAT</td>
+							<td>
+								<a href="465"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!465/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>387</td>
+							<td>MANIPUR</td>
+							<td>CHURACHANDPUR</td>
+							<td>
+								<a href="458"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!458/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>388</td>
+							<td>MANIPUR</td>
+							<td>THOUBAL</td>
+							<td>
+								<a href="463"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!463/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>389</td>
+							<td>MANIPUR</td>
+							<td>SENAPATI</td>
+							<td>
+								<a href="461"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!461/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>390</td>
+							<td>MANIPUR</td>
+							<td>CHANDEL</td>
+							<td>
+								<a href="459"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!459/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>391</td>
+							<td>MANIPUR</td>
+							<td>UKHRUL</td>
+							<td>
+								<a href="464"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!464/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>392</td>
+							<td>MEGHALAYA</td>
+							<td>NONGPOH</td>
+							<td>
+								<a href="469"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!469/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>393</td>
+							<td>MEGHALAYA</td>
+							<td>SHILLONG</td>
+							<td>
+								<a href="467"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!467/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>394</td>
+							<td>MEGHALAYA</td>
+							<td>NONGSTOIN</td>
+							<td>
+								<a href="472"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!472/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>395</td>
+							<td>MEGHALAYA</td>
+							<td>BAGHMARA</td>
+							<td>
+								<a href="470"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!470/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>396</td>
+							<td>MEGHALAYA</td>
+							<td>JOWAI</td>
+							<td>
+								<a href="468"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!468/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>397</td>
+							<td>MEGHALAYA</td>
+							<td>WILLIAMNAGAR</td>
+							<td>
+								<a href="466"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!466/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>398</td>
+							<td>MEGHALAYA</td>
+							<td>TURA</td>
+							<td>
+								<a href="471"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!471/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>399</td>
+							<td>MIZORAM</td>
+							<td>KOLASIB</td>
+							<td>
+								<a href="474"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!474/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>400</td>
+							<td>MIZORAM</td>
+							<td>SERCHHIP</td>
+							<td>
+								<a href="479"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!479/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>401</td>
+							<td>MIZORAM</td>
+							<td>MAMIT</td>
+							<td>
+								<a href="477"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!477/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>402</td>
+							<td>MIZORAM</td>
+							<td>LUNGLEI</td>
+							<td>
+								<a href="475"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!475/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>403</td>
+							<td>MIZORAM</td>
+							<td>CHAMPHAI</td>
+							<td>
+								<a href="480"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!480/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>404</td>
+							<td>MIZORAM</td>
+							<td>AIZAWL</td>
+							<td>
+								<a href="473"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!473/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>405</td>
+							<td>MIZORAM</td>
+							<td>SIAHA</td>
+							<td>
+								<a href="478"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!478/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>406</td>
+							<td>MIZORAM</td>
+							<td>LAWNGTLAI</td>
+							<td>
+								<a href="476"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!476/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>407</td>
+							<td>NAGALAND</td>
+							<td>LONGLENG</td>
+							<td>
+								<a href="484"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!484/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>408</td>
+							<td>NAGALAND</td>
+							<td>TUENSANG</td>
+							<td>
+								<a href="489"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!489/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>409</td>
+							<td>NAGALAND</td>
+							<td>KIPHIRE</td>
+							<td>
+								<a href="482"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!482/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>410</td>
+							<td>NAGALAND</td>
+							<td>PEREN</td>
+							<td>
+								<a href="487"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!487/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>411</td>
+							<td>NAGALAND</td>
+							<td>MOKOKCHUNG</td>
+							<td>
+								<a href="485"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!485/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>412</td>
+							<td>NAGALAND</td>
+							<td>WOKHA</td>
+							<td>
+								<a href="490"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!490/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>413</td>
+							<td>NAGALAND</td>
+							<td>KOHIMA</td>
+							<td>
+								<a href="483"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!483/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>414</td>
+							<td>NAGALAND</td>
+							<td>PHEK</td>
+							<td>
+								<a href="488"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!488/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>415</td>
+							<td>NAGALAND</td>
+							<td>DIMAPUR</td>
+							<td>
+								<a href="481"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!481/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>416</td>
+							<td>NAGALAND</td>
+							<td>MON</td>
+							<td>
+								<a href="486"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!486/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>417</td>
+							<td>NAGALAND</td>
+							<td>ZUNHEBOTO</td>
+							<td>
+								<a href="491"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!491/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>418</td>
+							<td>ORISSA</td>
+							<td>CHHATRAPUR</td>
+							<td>
+								<a href="501"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!501/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>419</td>
+							<td>ORISSA</td>
+							<td>KHORDHA</td>
+							<td>
+								<a href="506"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!506/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>420</td>
+							<td>ORISSA</td>
+							<td>KENDRAPARA</td>
+							<td>
+								<a href="511"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!511/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>421</td>
+							<td>ORISSA</td>
+							<td>NAYAGARH</td>
+							<td>
+								<a href="516"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!516/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>422</td>
+							<td>ORISSA</td>
+							<td>SUNDARGARH</td>
+							<td>
+								<a href="521"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!521/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>423</td>
+							<td>ORISSA</td>
+							<td>BHADRAK</td>
+							<td>
+								<a href="494"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!494/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>424</td>
+							<td>ORISSA</td>
+							<td>DEBAGARH</td>
+							<td>
+								<a href="499"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!499/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>425</td>
+							<td>ORISSA</td>
+							<td>JAJPUR</td>
+							<td>
+								<a href="504"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!504/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>426</td>
+							<td>ORISSA</td>
+							<td>PHULBANI</td>
+							<td>
+								<a href="509"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!509/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>427</td>
+							<td>ORISSA</td>
+							<td>NABARANGAPUR</td>
+							<td>
+								<a href="514"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!514/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>428</td>
+							<td>ORISSA</td>
+							<td>SAMBALPUR</td>
+							<td>
+								<a href="519"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!519/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>429</td>
+							<td>ORISSA</td>
+							<td>ANUGUL</td>
+							<td>
+								<a href="492"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!492/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>430</td>
+							<td>ORISSA</td>
+							<td>BALASORE</td>
+							<td>
+								<a href="497"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!497/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>431</td>
+							<td>ORISSA</td>
+							<td>PARALAKHEMUNDI</td>
+							<td>
+								<a href="502"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!502/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>432</td>
+							<td>ORISSA</td>
+							<td>KENDUJHAR</td>
+							<td>
+								<a href="507"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!507/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>433</td>
+							<td>ORISSA</td>
+							<td>MALKANGIRI</td>
+							<td>
+								<a href="512"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!512/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>434</td>
+							<td>ORISSA</td>
+							<td>PURI</td>
+							<td>
+								<a href="517"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!517/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>435</td>
+							<td>ORISSA</td>
+							<td>BHUBANESWAR</td>
+							<td>
+								<a href="522"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!522/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>436</td>
+							<td>ORISSA</td>
+							<td>BALANGIR</td>
+							<td>
+								<a href="495"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!495/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>437</td>
+							<td>ORISSA</td>
+							<td>DHENKANAL</td>
+							<td>
+								<a href="500"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!500/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>438</td>
+							<td>ORISSA</td>
+							<td>JAGATSINGHAPUR</td>
+							<td>
+								<a href="505"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!505/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>439</td>
+							<td>ORISSA</td>
+							<td>KORAPUT</td>
+							<td>
+								<a href="510"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!510/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>440</td>
+							<td>ORISSA</td>
+							<td>NUAPADA</td>
+							<td>
+								<a href="515"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!515/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>441</td>
+							<td>ORISSA</td>
+							<td>SUBARNAPUR</td>
+							<td>
+								<a href="520"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!520/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>442</td>
+							<td>ORISSA</td>
+							<td>BOUDH</td>
+							<td>
+								<a href="493"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!493/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>443</td>
+							<td>ORISSA</td>
+							<td>CUTTACK</td>
+							<td>
+								<a href="498"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!498/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>444</td>
+							<td>ORISSA</td>
+							<td>JHARSUGUDA</td>
+							<td>
+								<a href="503"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!503/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>445</td>
+							<td>ORISSA</td>
+							<td>BHAWANIPATNA</td>
+							<td>
+								<a href="508"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!508/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>446</td>
+							<td>ORISSA</td>
+							<td>BARIPADA</td>
+							<td>
+								<a href="513"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!513/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>447</td>
+							<td>ORISSA</td>
+							<td>RAURKELA</td>
+							<td>
+								<a href="709"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!709/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>448</td>
+							<td>ORISSA</td>
+							<td>RAYAGADA</td>
+							<td>
+								<a href="518"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!518/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>449</td>
+							<td>ORISSA</td>
+							<td>BARGARH</td>
+							<td>
+								<a href="496"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!496/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>450</td>
+							<td>PUDUCHERRY</td>
+							<td>MAHE</td>
+							<td>
+								<a href="524"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!524/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>451</td>
+							<td>PUDUCHERRY</td>
+							<td>YANAM</td>
+							<td>
+								<a href="525"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!525/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>452</td>
+							<td>PUDUCHERRY</td>
+							<td>KARAIKAL</td>
+							<td>
+								<a href="523"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!523/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>453</td>
+							<td>PUNJAB</td>
+							<td>FAZILKA</td>
+							<td>
+								<a href="533"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!533/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>454</td>
+							<td>PUNJAB</td>
+							<td>MANSA</td>
+							<td>
+								<a href="538"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!538/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>455</td>
+							<td>PUNJAB</td>
+							<td>NAWAN SHAHR</td>
+							<td>
+								<a href="543"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!543/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>456</td>
+							<td>PUNJAB</td>
+							<td>HOSHIARPUR</td>
+							<td>
+								<a href="526"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!526/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>457</td>
+							<td>PUNJAB</td>
+							<td>FARIDKOT</td>
+							<td>
+								<a href="531"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!531/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>458</td>
+							<td>PUNJAB</td>
+							<td>LUDHIANA</td>
+							<td>
+								<a href="536"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!536/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>459</td>
+							<td>PUNJAB</td>
+							<td>ROPAR</td>
+							<td>
+								<a href="541"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!541/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>460</td>
+							<td>PUNJAB</td>
+							<td>PATHANKOT</td>
+							<td>
+								<a href="546"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!546/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>461</td>
+							<td>PUNJAB</td>
+							<td>BARNALA</td>
+							<td>
+								<a href="529"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!529/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>462</td>
+							<td>PUNJAB</td>
+							<td>FIROZPUR</td>
+							<td>
+								<a href="534"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!534/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>463</td>
+							<td>PUNJAB</td>
+							<td>MOGA</td>
+							<td>
+								<a href="539"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!539/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>464</td>
+							<td>PUNJAB</td>
+							<td>SANGRUR</td>
+							<td>
+								<a href="544"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!544/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>465</td>
+							<td>PUNJAB</td>
+							<td>JALANDHAR</td>
+							<td>
+								<a href="527"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!527/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>466</td>
+							<td>PUNJAB</td>
+							<td>FATEHGARH SAHIB</td>
+							<td>
+								<a href="532"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!532/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>467</td>
+							<td>PUNJAB</td>
+							<td>KAPURTHALA</td>
+							<td>
+								<a href="537"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!537/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>468</td>
+							<td>PUNJAB</td>
+							<td>SRI MUKTSAR SAHIB</td>
+							<td>
+								<a href="542"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!542/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>469</td>
+							<td>PUNJAB</td>
+							<td>TARN TARAN</td>
+							<td>
+								<a href="547"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!547/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>470</td>
+							<td>PUNJAB</td>
+							<td>BATHINDA</td>
+							<td>
+								<a href="530"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!530/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>471</td>
+							<td>PUNJAB</td>
+							<td>GURDASPUR</td>
+							<td>
+								<a href="535"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!535/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>472</td>
+							<td>PUNJAB</td>
+							<td>MOHALI</td>
+							<td>
+								<a href="540"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!540/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>473</td>
+							<td>PUNJAB</td>
+							<td>PATIALA</td>
+							<td>
+								<a href="545"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!545/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>474</td>
+							<td>PUNJAB</td>
+							<td>AMRITSAR</td>
+							<td>
+								<a href="528"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!528/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>475</td>
+							<td>RAJASTHAN</td>
+							<td>JALORE</td>
+							<td>
+								<a href="565"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!565/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>476</td>
+							<td>RAJASTHAN</td>
+							<td>KOTA</td>
+							<td>
+								<a href="570"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!570/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>477</td>
+							<td>RAJASTHAN</td>
+							<td>SAWAI MADHOPUR</td>
+							<td>
+								<a href="575"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!575/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>478</td>
+							<td>RAJASTHAN</td>
+							<td>AJMER</td>
+							<td>
+								<a href="548"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!548/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>479</td>
+							<td>RAJASTHAN</td>
+							<td>UDAIPUR</td>
+							<td>
+								<a href="580"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!580/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>480</td>
+							<td>RAJASTHAN</td>
+							<td>BHARATPUR</td>
+							<td>
+								<a href="553"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!553/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>481</td>
+							<td>RAJASTHAN</td>
+							<td>CHURU</td>
+							<td>
+								<a href="558"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!558/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>482</td>
+							<td>RAJASTHAN</td>
+							<td>JAIPUR</td>
+							<td>
+								<a href="563"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!563/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>483</td>
+							<td>RAJASTHAN</td>
+							<td>JODHPUR</td>
+							<td>
+								<a href="568"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!568/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>484</td>
+							<td>RAJASTHAN</td>
+							<td>PRATAPGARH</td>
+							<td>
+								<a href="573"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!573/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>485</td>
+							<td>RAJASTHAN</td>
+							<td>SRI GANGANAGAR</td>
+							<td>
+								<a href="578"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!578/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>486</td>
+							<td>RAJASTHAN</td>
+							<td>BARAN</td>
+							<td>
+								<a href="551"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!551/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>487</td>
+							<td>RAJASTHAN</td>
+							<td>BUNDI</td>
+							<td>
+								<a href="556"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!556/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>488</td>
+							<td>RAJASTHAN</td>
+							<td>DUNGARPUR</td>
+							<td>
+								<a href="561"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!561/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>489</td>
+							<td>RAJASTHAN</td>
+							<td>JHALAWAR</td>
+							<td>
+								<a href="566"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!566/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>490</td>
+							<td>RAJASTHAN</td>
+							<td>NAGAUR</td>
+							<td>
+								<a href="571"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!571/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>491</td>
+							<td>RAJASTHAN</td>
+							<td>SIKAR</td>
+							<td>
+								<a href="576"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!576/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>492</td>
+							<td>RAJASTHAN</td>
+							<td>ALWAR</td>
+							<td>
+								<a href="549"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!549/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>493</td>
+							<td>RAJASTHAN</td>
+							<td>BHILWARA</td>
+							<td>
+								<a href="554"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!554/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>494</td>
+							<td>RAJASTHAN</td>
+							<td>DAUSA</td>
+							<td>
+								<a href="559"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!559/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>495</td>
+							<td>RAJASTHAN</td>
+							<td>JAISALMER</td>
+							<td>
+								<a href="564"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!564/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>496</td>
+							<td>RAJASTHAN</td>
+							<td>KARAULI</td>
+							<td>
+								<a href="569"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!569/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>497</td>
+							<td>RAJASTHAN</td>
+							<td>RAJSAMAND</td>
+							<td>
+								<a href="574"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!574/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>498</td>
+							<td>RAJASTHAN</td>
+							<td>TONK</td>
+							<td>
+								<a href="579"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!579/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>499</td>
+							<td>RAJASTHAN</td>
+							<td>BARMER</td>
+							<td>
+								<a href="552"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!552/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>500</td>
+							<td>RAJASTHAN</td>
+							<td>CHITTORGARH</td>
+							<td>
+								<a href="557"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!557/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>501</td>
+							<td>RAJASTHAN</td>
+							<td>HANUMANGARH</td>
+							<td>
+								<a href="562"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!562/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>502</td>
+							<td>RAJASTHAN</td>
+							<td>JHUNJHUNU</td>
+							<td>
+								<a href="567"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!567/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>503</td>
+							<td>RAJASTHAN</td>
+							<td>PALI</td>
+							<td>
+								<a href="572"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!572/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>504</td>
+							<td>RAJASTHAN</td>
+							<td>SIROHI</td>
+							<td>
+								<a href="577"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!577/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>505</td>
+							<td>RAJASTHAN</td>
+							<td>BANSWARA</td>
+							<td>
+								<a href="550"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!550/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>506</td>
+							<td>RAJASTHAN</td>
+							<td>ABU ROAD</td>
+							<td>
+								<a href="105"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!105/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>507</td>
+							<td>RAJASTHAN</td>
+							<td>BIKANER</td>
+							<td>
+								<a href="555"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!555/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>508</td>
+							<td>RAJASTHAN</td>
+							<td>DHOLPUR</td>
+							<td>
+								<a href="560"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!560/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>509</td>
+							<td>SIKKIM</td>
+							<td>NAMCHI</td>
+							<td>
+								<a href="583"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!583/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>510</td>
+							<td>SIKKIM</td>
+							<td>GANGTOK</td>
+							<td>
+								<a href="581"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!581/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>511</td>
+							<td>SIKKIM</td>
+							<td>GEYZING</td>
+							<td>
+								<a href="584"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!584/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>512</td>
+							<td>SIKKIM</td>
+							<td>MANGAN</td>
+							<td>
+								<a href="582"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!582/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>513</td>
+							<td>TAMIL NADU</td>
+							<td>NAGAPATTINAM</td>
+							<td>
+								<a href="597"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!597/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>514</td>
+							<td>TAMIL NADU</td>
+							<td>RAMANATHAPURAM</td>
+							<td>
+								<a href="602"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!602/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>515</td>
+							<td>TAMIL NADU</td>
+							<td>THOOTHUKUDI</td>
+							<td>
+								<a href="607"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!607/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>516</td>
+							<td>TAMIL NADU</td>
+							<td>TIRUVANNAMALAI</td>
+							<td>
+								<a href="612"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!612/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>517</td>
+							<td>TAMIL NADU</td>
+							<td>ARIYALUR</td>
+							<td>
+								<a href="585"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!585/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>518</td>
+							<td>TAMIL NADU</td>
+							<td>DINDIGUL</td>
+							<td>
+								<a href="590"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!590/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>519</td>
+							<td>TAMIL NADU</td>
+							<td>KRISHNAGIRI</td>
+							<td>
+								<a href="595"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!595/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>520</td>
+							<td>TAMIL NADU</td>
+							<td>PERAMBALUR</td>
+							<td>
+								<a href="600"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!600/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>521</td>
+							<td>TAMIL NADU</td>
+							<td>THANJAVUR</td>
+							<td>
+								<a href="605"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!605/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>522</td>
+							<td>TAMIL NADU</td>
+							<td>TIRUPPUR</td>
+							<td>
+								<a href="610"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!610/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>523</td>
+							<td>TAMIL NADU</td>
+							<td>VILUPPURAM</td>
+							<td>
+								<a href="615"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!615/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>524</td>
+							<td>TAMIL NADU</td>
+							<td>CUDDALORE</td>
+							<td>
+								<a href="588"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!588/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>525</td>
+							<td>TAMIL NADU</td>
+							<td>NAGERCOIL</td>
+							<td>
+								<a href="593"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!593/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>526</td>
+							<td>TAMIL NADU</td>
+							<td>NAMAKKAL</td>
+							<td>
+								<a href="598"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!598/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>527</td>
+							<td>TAMIL NADU</td>
+							<td>SALEM</td>
+							<td>
+								<a href="603"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!603/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>528</td>
+							<td>TAMIL NADU</td>
+							<td>TIRUCHIRAPPALLI</td>
+							<td>
+								<a href="608"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!608/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>529</td>
+							<td>TAMIL NADU</td>
+							<td>THIRUVARUR</td>
+							<td>
+								<a href="613"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!613/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>530</td>
+							<td>TAMIL NADU</td>
+							<td>CHENNAI</td>
+							<td>
+								<a href="586"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!586/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>531</td>
+							<td>TAMIL NADU</td>
+							<td>ERODE</td>
+							<td>
+								<a href="591"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!591/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>532</td>
+							<td>TAMIL NADU</td>
+							<td>MADURAI</td>
+							<td>
+								<a href="596"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!596/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>533</td>
+							<td>TAMIL NADU</td>
+							<td>PUDUKOTTAI</td>
+							<td>
+								<a href="601"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!601/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>534</td>
+							<td>TAMIL NADU</td>
+							<td>THENI</td>
+							<td>
+								<a href="606"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!606/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>535</td>
+							<td>TAMIL NADU</td>
+							<td>TIRUVALLUR</td>
+							<td>
+								<a href="611"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!611/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>536</td>
+							<td>TAMIL NADU</td>
+							<td>VIRUDHUNAGAR</td>
+							<td>
+								<a href="616"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!616/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>537</td>
+							<td>TAMIL NADU</td>
+							<td>DHARMAPURI</td>
+							<td>
+								<a href="589"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!589/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>538</td>
+							<td>TAMIL NADU</td>
+							<td>KARUR</td>
+							<td>
+								<a href="594"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!594/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>539</td>
+							<td>TAMIL NADU</td>
+							<td>OOTY</td>
+							<td>
+								<a href="599"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!599/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>540</td>
+							<td>TAMIL NADU</td>
+							<td>SIVAGANGA</td>
+							<td>
+								<a href="604"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!604/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>541</td>
+							<td>TAMIL NADU</td>
+							<td>TIRUNELVELI</td>
+							<td>
+								<a href="609"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!609/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>542</td>
+							<td>TAMIL NADU</td>
+							<td>VELLORE</td>
+							<td>
+								<a href="614"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!614/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>543</td>
+							<td>TAMIL NADU</td>
+							<td>COIMBATORE</td>
+							<td>
+								<a href="587"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!587/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>544</td>
+							<td>TAMIL NADU</td>
+							<td>KANCHIPURAM</td>
+							<td>
+								<a href="592"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!592/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>545</td>
+							<td>TELANGANA</td>
+							<td>MAHBUBNAGAR</td>
+							<td>
+								<a href="629"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!629/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>546</td>
+							<td>TELANGANA</td>
+							<td>WARANGAL</td>
+							<td>
+								<a href="634"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!634/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>547</td>
+							<td>TELANGANA</td>
+							<td>KARIMNAGAR</td>
+							<td>
+								<a href="627"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!627/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>548</td>
+							<td>TELANGANA</td>
+							<td>NIZAMABAD</td>
+							<td>
+								<a href="632"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!632/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>549</td>
+							<td>TELANGANA</td>
+							<td>ADILABAD</td>
+							<td>
+								<a href="625"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!625/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>550</td>
+							<td>TELANGANA</td>
+							<td>SANGAREDDY</td>
+							<td>
+								<a href="630"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!630/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>551</td>
+							<td>TELANGANA</td>
+							<td>KHAMMAM</td>
+							<td>
+								<a href="628"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!628/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>552</td>
+							<td>TELANGANA</td>
+							<td>VIKARABAD</td>
+							<td>
+								<a href="633"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!633/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>553</td>
+							<td>TELANGANA</td>
+							<td>HYDERABAD</td>
+							<td>
+								<a href="626"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!626/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>554</td>
+							<td>TELANGANA</td>
+							<td>NALGONDA</td>
+							<td>
+								<a href="631"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!631/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>555</td>
+							<td>TRIPURA</td>
+							<td>AMBASSA</td>
+							<td>
+								<a href="617"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!617/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>556</td>
+							<td>TRIPURA</td>
+							<td>DHARMANAGAR</td>
+							<td>
+								<a href="622"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!622/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>557</td>
+							<td>TRIPURA</td>
+							<td>UDAIPUR</td>
+							<td>
+								<a href="620"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!620/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>558</td>
+							<td>TRIPURA</td>
+							<td>BISHRAMGANJ</td>
+							<td>
+								<a href="618"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!618/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>559</td>
+							<td>TRIPURA</td>
+							<td>BELONIA</td>
+							<td>
+								<a href="623"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!623/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>560</td>
+							<td>TRIPURA</td>
+							<td>KAILASHAHAR</td>
+							<td>
+								<a href="621"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!621/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>561</td>
+							<td>TRIPURA</td>
+							<td>KHOWAI</td>
+							<td>
+								<a href="619"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!619/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>562</td>
+							<td>TRIPURA</td>
+							<td>AGARTALA</td>
+							<td>
+								<a href="624"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!624/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>563</td>
+							<td>UTTAR PRADESH</td>
+							<td>AURAIYA</td>
+							<td>
+								<a href="663"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!663/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>564</td>
+							<td>UTTAR PRADESH</td>
+							<td>MORADABAD</td>
+							<td>
+								<a href="48"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!48/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>565</td>
+							<td>UTTAR PRADESH</td>
+							<td>SHAMLI</td>
+							<td>
+								<a href="695"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!695/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>566</td>
+							<td>UTTAR PRADESH</td>
+							<td>BANDA</td>
+							<td>
+								<a href="668"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!668/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>567</td>
+							<td>UTTAR PRADESH</td>
+							<td>BAREILLY</td>
+							<td>
+								<a href="53"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!53/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>568</td>
+							<td>UTTAR PRADESH</td>
+							<td>SULTANPUR</td>
+							<td>
+								<a href="700"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!700/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>569</td>
+							<td>UTTAR PRADESH</td>
+							<td>NOIDA</td>
+							<td>
+								<a href="673"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!673/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>570</td>
+							<td>UTTAR PRADESH</td>
+							<td>VARANASI</td>
+							<td>
+								<a href="58"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!58/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>571</td>
+							<td>UTTAR PRADESH</td>
+							<td>KUSHINAGER</td>
+							<td>
+								<a href="95"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!95/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>572</td>
+							<td>UTTAR PRADESH</td>
+							<td>HATHRAS</td>
+							<td>
+								<a href="678"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!678/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>573</td>
+							<td>UTTAR PRADESH</td>
+							<td>SOMBHADRA</td>
+							<td>
+								<a href="716"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!716/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>574</td>
+							<td>UTTAR PRADESH</td>
+							<td>KASGANJ</td>
+							<td>
+								<a href="683"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!683/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>575</td>
+							<td>UTTAR PRADESH</td>
+							<td>PRAYAGRAJ</td>
+							<td>
+								<a href="721"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!721/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>576</td>
+							<td>UTTAR PRADESH</td>
+							<td>BHADOHI</td>
+							<td>
+								<a href="726"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!726/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>577</td>
+							<td>UTTAR PRADESH</td>
+							<td>BARABANKI</td>
+							<td>
+								<a href="108"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!108/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>578</td>
+							<td>UTTAR PRADESH</td>
+							<td>LUCKNOW</td>
+							<td>
+								<a href="41"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!41/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>579</td>
+							<td>UTTAR PRADESH</td>
+							<td>MAHOBA</td>
+							<td>
+								<a href="688"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!688/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>580</td>
+							<td>UTTAR PRADESH</td>
+							<td>JHANSI</td>
+							<td>
+								<a href="660"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!660/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>581</td>
+							<td>UTTAR PRADESH</td>
+							<td>SITAPUR</td>
+							<td>
+								<a href="693"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!693/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>582</td>
+							<td>UTTAR PRADESH</td>
+							<td>BIJNOR</td>
+							<td>
+								<a href="666"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!666/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>583</td>
+							<td>UTTAR PRADESH</td>
+							<td>ROBERTSGANJ</td>
+							<td>
+								<a href="698"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!698/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>584</td>
+							<td>UTTAR PRADESH</td>
+							<td>FARRUKHABAD</td>
+							<td>
+								<a href="671"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!671/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>585</td>
+							<td>UTTAR PRADESH</td>
+							<td>ETAWA</td>
+							<td>
+								<a href="56"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!56/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>586</td>
+							<td>UTTAR PRADESH</td>
+							<td>KHALILABAD</td>
+							<td>
+								<a href="703"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!703/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>587</td>
+							<td>UTTAR PRADESH</td>
+							<td>HAMIRPUR</td>
+							<td>
+								<a href="676"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!676/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>588</td>
+							<td>UTTAR PRADESH</td>
+							<td>GONDA</td>
+							<td>
+								<a href="61"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!61/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>589</td>
+							<td>UTTAR PRADESH</td>
+							<td>BALRAMPUR</td>
+							<td>
+								<a href="710"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!710/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>590</td>
+							<td>UTTAR PRADESH</td>
+							<td>AKBARPUR</td>
+							<td>
+								<a href="681"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!681/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>591</td>
+							<td>UTTAR PRADESH</td>
+							<td>AYODHAYA</td>
+							<td>
+								<a href="719"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!719/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>592</td>
+							<td>UTTAR PRADESH</td>
+							<td>BUDAUN</td>
+							<td>
+								<a href="724"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!724/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>593</td>
+							<td>UTTAR PRADESH</td>
+							<td>LAKHIMPUR KHERI</td>
+							<td>
+								<a href="686"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!686/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>594</td>
+							<td>UTTAR PRADESH</td>
+							<td>CHANDAULI</td>
+							<td>
+								<a href="112"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!112/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>595</td>
+							<td>UTTAR PRADESH</td>
+							<td>CHITRAKOOT</td>
+							<td>
+								<a href="657"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!657/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>596</td>
+							<td>UTTAR PRADESH</td>
+							<td>AGRA</td>
+							<td>
+								<a href="44"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!44/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>597</td>
+							<td>UTTAR PRADESH</td>
+							<td>PILIBHIT</td>
+							<td>
+								<a href="691"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!691/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>598</td>
+							<td>UTTAR PRADESH</td>
+							<td>BADAUN</td>
+							<td>
+								<a href="664"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!664/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>599</td>
+							<td>UTTAR PRADESH</td>
+							<td>SAMBHAL</td>
+							<td>
+								<a href="696"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!696/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>600</td>
+							<td>UTTAR PRADESH</td>
+							<td>AZAMGARH</td>
+							<td>
+								<a href="635"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!635/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>601</td>
+							<td>UTTAR PRADESH</td>
+							<td>BULANDSHAHR</td>
+							<td>
+								<a href="669"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!669/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>602</td>
+							<td>UTTAR PRADESH</td>
+							<td>BASTI</td>
+							<td>
+								<a href="54"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!54/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>603</td>
+							<td>UTTAR PRADESH</td>
+							<td>SHRAVASTI</td>
+							<td>
+								<a href="701"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!701/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>604</td>
+							<td>UTTAR PRADESH</td>
+							<td>GHAZIABAD</td>
+							<td>
+								<a href="674"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!674/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>605</td>
+							<td>UTTAR PRADESH</td>
+							<td>ALLAHABAD</td>
+							<td>
+								<a href="59"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!59/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>606</td>
+							<td>UTTAR PRADESH</td>
+							<td>MANJHANPUR</td>
+							<td>
+								<a href="684"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!684/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>607</td>
+							<td>UTTAR PRADESH</td>
+							<td>BAGPAT</td>
+							<td>
+								<a href="722"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!722/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>608</td>
+							<td>UTTAR PRADESH</td>
+							<td>GORAKHPUR</td>
+							<td>
+								<a href="109"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!109/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>609</td>
+							<td>UTTAR PRADESH</td>
+							<td>MATHURA</td>
+							<td>
+								<a href="689"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!689/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>610</td>
+							<td>UTTAR PRADESH</td>
+							<td>MIRZAPUR</td>
+							<td>
+								<a href="661"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!661/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>611</td>
+							<td>UTTAR PRADESH</td>
+							<td>SHAHJAHANPUR</td>
+							<td>
+								<a href="694"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!694/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>612</td>
+							<td>UTTAR PRADESH</td>
+							<td>BALLIA</td>
+							<td>
+								<a href="667"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!667/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>613</td>
+							<td>UTTAR PRADESH</td>
+							<td>GYANPUR</td>
+							<td>
+								<a href="699"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!699/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>614</td>
+							<td>UTTAR PRADESH</td>
+							<td>FATEHPUR</td>
+							<td>
+								<a href="672"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!672/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>615</td>
+							<td>UTTAR PRADESH</td>
+							<td>HARDOI</td>
+							<td>
+								<a href="677"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!677/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>616</td>
+							<td>UTTAR PRADESH</td>
+							<td>GAZIPUR</td>
+							<td>
+								<a href="62"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!62/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>617</td>
+							<td>UTTAR PRADESH</td>
+							<td>MAINPURI</td>
+							<td>
+								<a href="715"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!715/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>618</td>
+							<td>UTTAR PRADESH</td>
+							<td>KANNAUJ</td>
+							<td>
+								<a href="682"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!682/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>619</td>
+							<td>UTTAR PRADESH</td>
+							<td>ETAWAH</td>
+							<td>
+								<a href="720"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!720/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>620</td>
+							<td>UTTAR PRADESH</td>
+							<td>MAHRAJGANJ</td>
+							<td>
+								<a href="725"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!725/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>621</td>
+							<td>UTTAR PRADESH</td>
+							<td>AMBEDKAR NAGAR</td>
+							<td>
+								<a href="107"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!107/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>622</td>
+							<td>UTTAR PRADESH</td>
+							<td>MAHARAJGANJ</td>
+							<td>
+								<a href="687"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!687/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>623</td>
+							<td>UTTAR PRADESH</td>
+							<td>MAU</td>
+							<td>
+								<a href="113"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!113/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>624</td>
+							<td>UTTAR PRADESH</td>
+							<td>RAMPUR</td>
+							<td>
+								<a href="659"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!659/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>625</td>
+							<td>UTTAR PRADESH</td>
+							<td>RAE BARELI</td>
+							<td>
+								<a href="692"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!692/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>626</td>
+							<td>UTTAR PRADESH</td>
+							<td>BAHRAICH</td>
+							<td>
+								<a href="665"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!665/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>627</td>
+							<td>UTTAR PRADESH</td>
+							<td>SHAHARANPUR</td>
+							<td>
+								<a href="50"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!50/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>628</td>
+							<td>UTTAR PRADESH</td>
+							<td>NAVGARH</td>
+							<td>
+								<a href="697"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!697/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>629</td>
+							<td>UTTAR PRADESH</td>
+							<td>MEERUT</td>
+							<td>
+								<a href="636"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!636/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>630</td>
+							<td>UTTAR PRADESH</td>
+							<td>FIROZABAD</td>
+							<td>
+								<a href="670"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!670/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>631</td>
+							<td>UTTAR PRADESH</td>
+							<td>ETAH</td>
+							<td>
+								<a href="55"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!55/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>632</td>
+							<td>UTTAR PRADESH</td>
+							<td>UNNAO</td>
+							<td>
+								<a href="702"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!702/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>633</td>
+							<td>UTTAR PRADESH</td>
+							<td>HAPUR</td>
+							<td>
+								<a href="675"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!675/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>634</td>
+							<td>UTTAR PRADESH</td>
+							<td>FAIZABAD</td>
+							<td>
+								<a href="60"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!60/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>635</td>
+							<td>UTTAR PRADESH</td>
+							<td>KANPUR</td>
+							<td>
+								<a href="99"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!99/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>636</td>
+							<td>UTTAR PRADESH</td>
+							<td>JAUNPUR</td>
+							<td>
+								<a href="680"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!680/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>637</td>
+							<td>UTTAR PRADESH</td>
+							<td>Amroha</td>
+							<td>
+								<a href="718"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!718/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>638</td>
+							<td>UTTAR PRADESH</td>
+							<td>LALITPUR</td>
+							<td>
+								<a href="685"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!685/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>639</td>
+							<td>UTTAR PRADESH</td>
+							<td>BIJNAUR</td>
+							<td>
+								<a href="723"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!723/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>640</td>
+							<td>UTTAR PRADESH</td>
+							<td>DEORIA</td>
+							<td>
+								<a href="110"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!110/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>641</td>
+							<td>UTTAR PRADESH</td>
+							<td>ALIGARH</td>
+							<td>
+								<a href="43"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!43/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>642</td>
+							<td>UTTAR PRADESH</td>
+							<td>MUZAFFARNAGAR</td>
+							<td>
+								<a href="690"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!690/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>643</td>
+							<td>UTTARAKHAND</td>
+							<td>CHAMOLI</td>
+							<td>
+								<a href="116"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!116/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>644</td>
+							<td>UTTARAKHAND</td>
+							<td>PAURI GARHWAL</td>
+							<td>
+								<a href="121"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!121/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>645</td>
+							<td>UTTARAKHAND</td>
+							<td>UTTARKASHI</td>
+							<td>
+								<a href="126"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!126/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>646</td>
+							<td>UTTARAKHAND</td>
+							<td>ALMORA</td>
+							<td>
+								<a href="114"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!114/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>647</td>
+							<td>UTTARAKHAND</td>
+							<td>HARIDWAR</td>
+							<td>
+								<a href="119"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!119/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>648</td>
+							<td>UTTARAKHAND</td>
+							<td>TEHRI GARHWAL</td>
+							<td>
+								<a href="124"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!124/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>649</td>
+							<td>UTTARAKHAND</td>
+							<td>CHAMPAWAT</td>
+							<td>
+								<a href="117"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!117/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>650</td>
+							<td>UTTARAKHAND</td>
+							<td>PITHORAGARH</td>
+							<td>
+								<a href="122"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!122/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>651</td>
+							<td>UTTARAKHAND</td>
+							<td>AMROHA</td>
+							<td>
+								<a href="679"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!679/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>652</td>
+							<td>UTTARAKHAND</td>
+							<td>BAGESHWAR</td>
+							<td>
+								<a href="115"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!115/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>653</td>
+							<td>UTTARAKHAND</td>
+							<td>NAINITAL</td>
+							<td>
+								<a href="120"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!120/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>654</td>
+							<td>UTTARAKHAND</td>
+							<td>UDHAM SINGH NAGAR</td>
+							<td>
+								<a href="125"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!125/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>655</td>
+							<td>UTTARAKHAND</td>
+							<td>DEHRADUN</td>
+							<td>
+								<a href="118"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!118/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>656</td>
+							<td>UTTARAKHAND</td>
+							<td>RUDRAPRAYAG</td>
+							<td>
+								<a href="123"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!123/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>657</td>
+							<td>WEST BENGAL</td>
+							<td>BARDHAMAN</td>
+							<td>
+								<a href="639"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!639/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>658</td>
+							<td>WEST BENGAL</td>
+							<td>HOOGHLY</td>
+							<td>
+								<a href="644"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!644/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>659</td>
+							<td>WEST BENGAL</td>
+							<td>BAHARAMPUR</td>
+							<td>
+								<a href="649"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!649/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>660</td>
+							<td>WEST BENGAL</td>
+							<td>ALIPORE</td>
+							<td>
+								<a href="654"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!654/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>661</td>
+							<td>WEST BENGAL</td>
+							<td>ALIPURDUAR</td>
+							<td>
+								<a href="637"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!637/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>662</td>
+							<td>WEST BENGAL</td>
+							<td>DARJEELING</td>
+							<td>
+								<a href="642"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!642/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>663</td>
+							<td>WEST BENGAL</td>
+							<td>KOLKATA</td>
+							<td>
+								<a href="647"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!647/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>664</td>
+							<td>WEST BENGAL</td>
+							<td>RAIGANJ</td>
+							<td>
+								<a href="652"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!652/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>665</td>
+							<td>WEST BENGAL</td>
+							<td>BIRBHUM</td>
+							<td>
+								<a href="640"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!640/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>666</td>
+							<td>WEST BENGAL</td>
+							<td>HOWRAH</td>
+							<td>
+								<a href="645"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!645/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>667</td>
+							<td>WEST BENGAL</td>
+							<td>KRISHNANAGAR</td>
+							<td>
+								<a href="650"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!650/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>668</td>
+							<td>WEST BENGAL</td>
+							<td>BALURGHAT</td>
+							<td>
+								<a href="655"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!655/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>669</td>
+							<td>WEST BENGAL</td>
+							<td>BANKURA</td>
+							<td>
+								<a href="638"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!638/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>670</td>
+							<td>WEST BENGAL</td>
+							<td>TAMLUK</td>
+							<td>
+								<a href="643"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!643/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>671</td>
+							<td>WEST BENGAL</td>
+							<td>MALDA</td>
+							<td>
+								<a href="648"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!648/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>672</td>
+							<td>WEST BENGAL</td>
+							<td>PURULIA</td>
+							<td>
+								<a href="653"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!653/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>673</td>
+							<td>WEST BENGAL</td>
+							<td>COOCH BEHAR</td>
+							<td>
+								<a href="641"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!641/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>674</td>
+							<td>WEST BENGAL</td>
+							<td>JALPAIGURI</td>
+							<td>
+								<a href="646"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!646/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>675</td>
+							<td>WEST BENGAL</td>
+							<td>BARASAT</td>
+							<td>
+								<a href="651"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!651/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+						<tr>
+							<td>676</td>
+							<td>WEST BENGAL</td>
+							<td>MEDINIPUR</td>
+							<td>
+								<a href="#!"><i class="icofont-pen-alt-1"></i></a>
+								/
+								<a href="#!656/0"><i class="icofont-ui-delete"></i></a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
