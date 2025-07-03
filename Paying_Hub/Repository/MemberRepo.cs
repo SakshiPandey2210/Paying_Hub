@@ -479,7 +479,17 @@ namespace Paying_Hub.Repository
 
 
 
+        public List<MemberROIPackageLedger> GetMemberROIPackageLedger()
+        {
+            using (var conn = Connection)
+            {
+                string procedureName = "sp_GetMemberROIPackageLedgerDetails";
+                var RoiList = conn.Query<MemberROIPackageLedger>(procedureName, commandType: CommandType.StoredProcedure).ToList();
+                return RoiList;
+            }
+        }
 
-	}
+
+    }
 
 }

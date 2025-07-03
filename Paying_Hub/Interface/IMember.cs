@@ -21,6 +21,7 @@ namespace Paying_Hub.Interface
 
 		MemberTreeViewModel GetMemberTree(string referralCode);
 
+        List<MemberROIPackageLedger> GetMemberROIPackageLedger();
 
-	}
+    }
 }

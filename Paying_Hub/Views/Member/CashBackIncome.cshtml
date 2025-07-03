@@ -1,0 +1,107 @@
+﻿@model List<Paying_Hub.Models.MemberROIPackageLedger>
+@using System.Linq
+@{
+    ViewData["Title"] = "CashBackIncome";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="row merged20 mb-3">
+    <div class="col-lg-12">
+        <div class="d-widget">
+            <div class="d-widget-title">
+                <h4>All Member</h4>
+            </div>
+
+            <form asp-action="CashBackIncome" asp-controller="Member" method="post" class="row">
+
+
+                <div class="form-group col-md-6">
+                    <div class="row align-items-center">
+                        <label class="col-md-4 form-label" for="from_date">From Date</label>
+                        <div class="col-md-8">
+                            <input type="date" class="form-control" id="from_date" name="fromDate">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group col-md-6">
+                    <div class="row align-items-center">
+                        <label class="col-md-4 form-label" for="to_date">To Date</label>
+                        <div class="col-md-8">
+                            <input type="date" class="form-control" id="to_date" name="toDate">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group col-md-6">
+                    <div class="row align-items-center">
+                        <label class="col-md-4 form-label">Login Id</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" name="loginId" id="txtintroducer_id" onblur="get_intro_detail()" value="">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-8 offset-2">
+
+                    <button type="submit" class="button primary ">Search</button>
+                    <button type="Reset" class="button danger">Reset</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="row merged20 mb-3">
+    <div class="col-lg-12">
+        <div class="d-widget">
+            <div class="d-widget-title">
+                <h4>View Cash Back Ledger Member</h4>
+            </div>
+            <table class="table table-default table-responsive">
+                <thead>
+                    <tr>
+                        <th>Sr No</th>
+                        <th>User ID</th>
+                        <th>Credit Amount</th>
+                        <th>Debit Amount</th>
+                        <th>ROI Date</th>
+                        <th>Description</th>
+                        <th>From MID</th>
+                        <th>PackageName</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        int sn = 1;
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@sn</td>
+                                <td>@item.UserID</td>
+                                <td>@item.CrAmount</td>
+                                <td>@item.DrAmount</td>
+                                <td>@(item.ROIDate.HasValue ? item.ROIDate.Value.ToString("dd-MM-yyyy") : "")</td>
+                                <td>@item.Description</td>
+                                <td>@item.FromMid</td>
+                                <td>@item.PackageName</td>
+                            </tr>
+                            sn++;
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="11" class="text-center text-danger">No members found.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
