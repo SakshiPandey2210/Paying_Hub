@@ -19,5 +19,7 @@ namespace Paying_Hub.Interface
 
         List<DirectIncomeLedgerModel> GetDirectIncomeLedgerReport();
 
+        List<LevelIncomeLedgerModel> GetLevelIncomeLedgerReport();
+
 	}
 }

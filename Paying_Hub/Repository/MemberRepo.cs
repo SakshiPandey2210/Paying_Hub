@@ -265,6 +265,36 @@ namespace Paying_Hub.Repository
 		}
 
 
+		public List<LevelIncomeLedgerModel> GetLevelIncomeLedgerReport()
+		{
+			var list = new List<LevelIncomeLedgerModel>();
+
+			using (var conn = new SqlConnection(_connectionString))
+			using (var cmd = new SqlCommand("sp_GetLevelIncomeLedgerReport", conn))
+			{
+				cmd.CommandType = CommandType.StoredProcedure;
+				conn.Open();
+
+				using (var reader = cmd.ExecuteReader())
+				{
+					while (reader.Read())
+					{
+						list.Add(new LevelIncomeLedgerModel
+						{
+							SrNo = Convert.ToInt32(reader["SrNo"]),
+							UserID = reader["UserID"].ToString(),
+							UserName = reader["UserName"].ToString(),
+							TransactionID = reader["TransactionID"].ToString(),
+							Description = reader["Description"].ToString(),
+							Amount = Convert.ToDecimal(reader["Amount"]),
+							Date = Convert.ToDateTime(reader["Date"])
+						});
+					}
+				}
+			}
+
+			return list;
+		}
 
 
 

@@ -82,6 +82,16 @@ namespace Paying_Hub.Models
 		public decimal Amount { get; set; }
 		public DateTime Date { get; set; }
 	}
+	public class LevelIncomeLedgerModel
+	{
+		public int SrNo { get; set; }
+		public string UserID { get; set; }
+		public string UserName { get; set; }
+		public string TransactionID { get; set; }
+		public string Description { get; set; }
+		public decimal Amount { get; set; }
+		public DateTime Date { get; set; }
+	}
 
 
 }

@@ -199,13 +199,58 @@ namespace Paying_Hub.Controllers
             return View();
         }
 
-        public async Task<IActionResult> ViewTopupReport()
-        {
+		public async Task<IActionResult> ViewTopupReport(DateTime? fromDate, DateTime? toDate, string userName, string packageName)
+		{
+			try
+			{
+				var allTopups = _Member.GetTopupReport(); // Step 1: Get all data
 
-			var data =  _Member.GetTopupReport();
-			return View(data);
-        }
-        public async Task<IActionResult> view_direct_referral()
+				// Step 2: Apply filters like AllUserSearch
+				if (fromDate.HasValue && toDate.HasValue)
+				{
+					allTopups = allTopups.Where(x =>
+						x.PackageDate.Date >= fromDate.Value.Date &&
+						x.PackageDate.Date <= toDate.Value.Date
+					).ToList();
+				}
+				else if (fromDate.HasValue)
+				{
+					allTopups = allTopups.Where(x =>
+						x.PackageDate.Date >= fromDate.Value.Date
+					).ToList();
+				}
+				else if (toDate.HasValue)
+				{
+					allTopups = allTopups.Where(x =>
+						x.PackageDate.Date <= toDate.Value.Date
+					).ToList();
+				}
+
+				if (!string.IsNullOrWhiteSpace(userName))
+				{
+					allTopups = allTopups
+						.Where(x => !string.IsNullOrEmpty(x.UserName) && x.UserName.ToLower().Contains(userName.ToLower()))
+						.ToList();
+				}
+
+				if (!string.IsNullOrWhiteSpace(packageName))
+				{
+					allTopups = allTopups
+						.Where(x => !string.IsNullOrEmpty(x.PackageName) && x.PackageName.ToLower().Contains(packageName.ToLower()))
+						.ToList();
+				}
+
+				return View(allTopups);
+			}
+			catch (Exception)
+			{
+				// Optional: log error here
+				ViewBag.ErrorMessage = "Something went wrong.";
+				return View(new List<TopUPReportModel>()); // Return empty list on error
+			}
+		}
+
+		public async Task<IActionResult> view_direct_referral()
         {
             return View();
         }
@@ -225,7 +270,17 @@ namespace Paying_Hub.Controllers
 
 			return View(lsdirectIncomedetails);
         }
-        public async Task<IActionResult> WithdrawalReport()
+
+		public async Task<IActionResult> LevelIncome()
+		{
+			var lsleveldetails = _Member.GetLevelIncomeLedgerReport();
+
+			return View(lsleveldetails);
+		}
+
+
+
+		public async Task<IActionResult> WithdrawalReport()
         {
             return View();
         }
