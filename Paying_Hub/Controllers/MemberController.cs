@@ -184,7 +184,7 @@ namespace Paying_Hub.Controllers
                 var member = _Member.GetAllMembers().FirstOrDefault(m => m.ReferralCode == memId);
                 if (member != null)
                 {
-                    int IsActive = member.IsActive == 1 ? 0 : 1;
+                    int IsActive = member.IsActive =1;
                     _Member.UpdateStatus(member);
                     TempData["Success"] = "Member Activated successfully!";
                 }
