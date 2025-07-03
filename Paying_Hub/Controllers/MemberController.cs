@@ -419,5 +419,11 @@ namespace Paying_Hub.Controllers
 			return View(lsleveldetails);
 		}
 
-	}
+        public async Task<IActionResult> CashBackIncome()
+        {
+            //sakshi pandey
+            return View();
+        }
+
+    }
 }
