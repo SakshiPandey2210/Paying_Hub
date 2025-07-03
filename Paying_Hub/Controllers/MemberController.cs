@@ -422,6 +422,7 @@ namespace Paying_Hub.Controllers
         public async Task<IActionResult> CashBackIncome()
         {
             //sakshi pandey
+			//Paying ring
             return View();
         }
 
