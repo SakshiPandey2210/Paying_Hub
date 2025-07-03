@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Paying_Hub.Interface;
 using Paying_Hub.Models;
+using Paying_Hub.Repository;
 using System.Security.Claims;
 
 namespace Paying_Hub.Controllers
@@ -20,7 +22,7 @@ namespace Paying_Hub.Controllers
 
 
         [HttpPost]
-       
+
         public async Task<IActionResult> AdminLogin(AdminLoginModel model)
         {
             if (ModelState.IsValid)
@@ -59,5 +61,32 @@ namespace Paying_Hub.Controllers
             return View();
         }
 
+
+
+        [HttpPost]
+        public async Task<IActionResult> UserLogin(UserLogin model)
+        {
+
+
+			if (!ModelState.IsValid)
+				return View(model);
+
+			var user = await _Login.ValidateUserLogin(model.LoginId, model.Password);
+
+			if (user != null)
+			{
+				// Set session variables
+				HttpContext.Session.SetString("MemberId", user.MemberId);
+				HttpContext.Session.SetString("ReferralCode", user.ReferralCode ?? "");
+				HttpContext.Session.SetString("UserName", user.Name ?? "");
+
+				return RedirectToAction("UserDashBoard", "Home");
+			}
+			else
+			{
+				ViewBag.Message = "Invalid Login ID or Password.";
+				return View(model);
+			}
+		}
     }
 }

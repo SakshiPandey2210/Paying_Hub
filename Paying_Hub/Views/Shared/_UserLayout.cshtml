@@ -1,0 +1,166 @@
+﻿
+@{
+    ViewData["Title"] = "_UserLayout";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>@ViewData["Title"] - PayRing Dashboard</title>
+    <link rel="icon" href="~/admin_assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="~/admin_assets/css/main.min.css">
+    <link rel="stylesheet" href="~/admin_assets/css/style.css">
+    <link rel="stylesheet" href="~/admin_assets/css/color.css">
+    <link rel="stylesheet" href="~/admin_assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@@icon/icofont@1.0.1-alpha.1/icofont.min.css">
+</head>
+<body>
+
+    <!-- page loader -->
+    <div class="page-loader" id="page-loader">
+        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+        <span>PayRing Loading...</span>
+    </div>
+    <!-- page loader -->
+    <!-- theme-layout start -->
+    <div class="theme-layout">
+
+        <!-- responsive header -->
+        <div class="responsive-header">
+            <div class="res-logo"><img src="~/admin_assets/images/logo.png" alt=""></div>
+            <div class="right-compact">
+                <div class="menu-area">
+                    <div id="nav-icon3">
+                        <i>
+                            <svg class="feather feather-grid" stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none" viewBox="0 0 24 24" height="18" width="18" xmlns="http://www.w3.org/2000/svg"><rect height="7" width="7" y="3" x="3" /><rect height="7" width="7" y="3" x="14" /><rect height="7" width="7" y="14" x="14" /><rect height="7" width="7" y="14" x="3" /></svg>
+                        </i>
+                    </div>
+                    <ul class="drop-menu">
+                        <li><a title="#!" href="#!"><i class="icofont-user-alt-1"></i>Your Profile</a></li>
+                        <li><a href="#!" class="logout"><i class="icofont-logout"></i>Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- responsive header -->
+        <!-- header -->
+        <header class="">
+            <div class="topbar stick">
+                <div class="logo"><img alt="" src="~/admin_assets/images/logo.png"><span>PayRing</span></div>
+                <ul class="web-elements">
+                    <li>
+                        <a href="#">
+                            <i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                            </i>
+                        </a>
+                        <ul class="dropdown">
+                            <li><a href="#!"><i class="icofont-user-alt-3"></i> Your Profile</a></li>
+                            <li class="logout"><a href="sign-in.html"><i class="icofont-power"></i> Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- header -->
+        <!-- top sub bar -->
+        <div class="top-sub-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="menu-btn">
+                            <i>
+                                <svg id="menu-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                            </i>
+                        </div>
+                        <div class="page-title">
+                            <h4>DashBoard</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <ul class="breadcrumb">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#!">User Panel</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- top sub bar -->
+        <!-- sidebar -->
+        <nav class="sidebar">
+            <ul class="menu-slide">
+                <li class="active"><a href="index.html"><i class="icofont-dashboard-web"></i>Dashboard</a></li>
+                <li class="menu-item-has-children">
+                    <a href="#!"><i class="icofont-users-alt-5"></i>Member</a>
+                    <ul class="submenu">
+                        <li><a asp-controller="User" asp-action="user_join_member">Registration</a></li>
+                        <li><a asp-controller="User" asp-action="edit_user">Member Edit</a></li>
+                        <li><a asp-controller="User" asp-action="bank_detail_list">Bank Details</a></li>
+                        <li><a asp-controller="User" asp-action="approve_kyc">User KYC</a></li>
+                        <li><a asp-controller="User" asp-action="ViewUserProfile">View Profile</a></li>
+                        <li><a asp-controller="User" asp-action="bank_detail_list">Change Password</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="#!"><i class="icofont-money-bag"></i>Fund</a>
+                    <ul class="submenu">
+                        <li><a href="view_fund_request_report_upi.html">View Fund Request Gateway</a></li>
+                        <li><a href="view_fund_transfer.html">Fund Transfer</a></li>
+                        <li><a href="view_fund_transfer_report.html">View Fund Transfer Report</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="#!"><i class="icofont-redo"></i>Topup</a>
+                    <ul class="submenu">
+                        <li><a href="member_topup.html">Member Topup</a></li>
+                        <li><a href="self_topup_report.html">Self Topup Report</a></li>
+                        <li><a href="view_topup_report.html">View Topup Report</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="#!"><i class="icofont-users-social"></i>Recent Partners</a>
+                    <ul class="submenu">
+                        <li><a href="view_direct_referral.html">Direct Referral</a></li>
+                        <li><a href="view_user_downline.html">Downline</a></li>
+                        <li><a href="view_user_tree.html">View Tree Level</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="#!"><i class="icofont-files-stack"></i>Report</a>
+                    <ul class="submenu">
+                        <li><a href="view_ledger_report_admin.html">Direct Income</a></li>
+                        <li><a href="#!">Level Income</a></li>
+                        <li><a href="#!">Cashback Income</a></li>
+                        <li><a href="#!">Weekly Salary Income</a></li>
+                        <li><a href="#!">Monthly Salary Income</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="#!"><i class="icofont-database-remove"></i>Withdrawal</a>
+                    <ul class="submenu">
+                        <li><a href="view_withdrawal_report.html">Withdrawal Report</a></li>
+                    </ul>
+                </li>
+                <li><a href="view_query.html"><i class="icofont-inbox"></i>Query Box</a></li>
+            </ul>
+        </nav>
+        <!-- sidebar -->
+        <!-- main content -->
+        <div class="container-fluid">
+            @RenderBody()
+        </div>
+        <!-- main content -->
+
+    </div>
+    <!-- theme-layout end -->
+
+    <script src="~/admin_assets/js/main.min.js"></script>
+    <script src="~/admin_assets/js/vivus.min.js"></script>
+    <script src="~/admin_assets/js/script.js"></script>
+</body>
+</html>

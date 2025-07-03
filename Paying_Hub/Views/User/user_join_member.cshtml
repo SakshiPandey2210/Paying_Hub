@@ -1,0 +1,145 @@
+﻿
+@{
+    ViewData["Title"] = "user_join_member";
+	Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="panel-content">
+			<div class="row merged20 mb-3">
+				<div class="col-lg-12">
+					<div class="d-widget">
+						<div class="d-widget-title">
+							<h3>Registration</h3>
+						</div>
+
+
+						<form id="registerForm">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group mb-2">
+										<label class="form-label">Sponser Id</label>
+										<input type="text" class="form-control" name="txtintroducer_id" id="txtintroducer_id" onblur="get_intro_detail()" value="WLG203949">
+									</div>
+								</div>
+								<div class="col-md-6 ">
+									<div class="form-group mb-2">
+										<label class="form-label">Sponser Name</label>
+										<input type="text" class="form-control" name="txtintroducer_name" id="txtintroducer_name" value="Nileshh Kumar" readonly="">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group mb-2">
+										<label class="form-label">Applicant Name</label>
+										<input type="text" class="form-control" id="txtassociate_name" name="txtassociate_name" placeholder="Enter Name">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group mb-2">
+										<label class="form-label">Mobile no</label>
+										<input type="text" class="form-control" id="txtmobile" name="txtmobile" placeholder="Enter Mobile">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group mb-2">
+										<label class="form-label">Email</label>
+										<input type="text" class="form-control" id="txtemail" name="txtemail" placeholder="Enter Email">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group mb-2">
+										<label class="form-label">State</label>
+										<select class="form-control" id="ddstate" name="ddstate" onchange="get_city()">
+											<option value="1">Select State</option>
+											<option value="2">ANDAMAN AND NICOBAR ISLANDS</option>
+											<option value="3">ANDHRA PRADESH</option>
+											<option value="4">ARUNACHAL PRADESH</option>
+											<option value="5">ASSAM</option>
+											<option value="6">BIHAR</option>
+											<option value="7">CHANDIGARH</option>
+											<option value="8">CHHATTISGARH</option>
+											<option value="9">DADRA AND NAGAR HAVELI</option>
+											<option value="10">DAMAN AND DIU</option>
+											<option value="11">DELHI</option>
+											<option value="12">GOA</option>
+											<option value="13">GUJARAT</option>
+											<option value="14">HARYANA</option>
+											<option value="15">HIMACHAL PRADESH</option>
+											<option value="16">JAMMU AND KASHMIR</option>
+											<option value="17">JHARKHAND</option>
+											<option value="18">KARNATAKA</option>
+											<option value="19">KERALA</option>
+											<option value="20">LAKSHADWEEP</option>
+											<option value="21">MADHYA PRADESH</option>
+											<option value="22">MAHARASHTRA</option>
+											<option value="23">MANIPUR</option>
+											<option value="24">MEGHALAYA</option>
+											<option value="25">MIZORAM</option>
+											<option value="26">NAGALAND</option>
+											<option value="27">ORISSA</option>
+											<option value="28">PUDUCHERRY</option>
+											<option value="29">PUNJAB</option>
+											<option value="30">RAJASTHAN</option>
+											<option value="31">SIKKIM</option>
+											<option value="32">TAMIL NADU</option>
+											<option value="33">TRIPURA</option>
+											<option value="34">UTTAR PRADESH</option>
+											<option value="35">UTTARAKHAND</option>
+											<option value="36">WEST BENGAL</option>
+											<option value="296">TELANGANA</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group mb-2">
+										<label class="form-label">City</label>
+										<select class="form-control" id="ddcity" name="ddcity">
+											<option value="1">Select</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group mb-2">
+										<label class="form-label">Nominee's Name</label>
+										<input type="text" class="form-control" id="nominee_name" name="nominee_name" placeholder="Enter Nominee's Name">
+									</div>
+								</div>
+
+							</div>
+							<div class="row">
+
+
+								<div class="col-md-6">
+									<div class="form-group mb-2">
+										<label class="form-label">Nominee's Age</label>
+										<input type="date" class="form-control" id="nominee_age" name="nominee_age" placeholder="Enter Age">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group mb-2">
+										<label class="form-label">Nominee's Relation</label>
+										<input type="text" class="form-control" id="nominee_relation" name="nominee_relation" placeholder="Enter Relation">
+									</div>
+								</div>
+
+
+							</div>
+
+							<button type="submit" class="button primary mt-3">Create Account</button>
+						</form>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

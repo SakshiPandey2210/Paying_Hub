@@ -59,8 +59,28 @@ namespace Paying_Hub.Repository
                 throw;
             }
         }
+		public async Task<MemberMaster> ValidateUserLogin(string loginId, string password)
+		{
+            try
+            {
+                using (var connection = Connection)
+                {
+                    var parameters = new DynamicParameters();
+                    parameters.Add("@LoginId", loginId);
+                    parameters.Add("@Password", password);
 
+                    var result = await connection.QueryFirstOrDefaultAsync<MemberMaster>(
+                        "sp_User_Login", parameters, commandType: CommandType.StoredProcedure);
 
-    }
+                    return result; 
+                }
+            }
+            catch(Exception ex) {
+
+                return null;
+            }
+		}
+
+	}
 
 }

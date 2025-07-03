@@ -1,113 +1,110 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿
+using Microsoft.AspNetCore.Mvc;
 using Paying_Hub.Interface;
 using Paying_Hub.Models;
 using Paying_Hub.Repository;
 
 namespace Paying_Hub.Controllers
 {
-    public class MemberController : Controller
-    {
-        private readonly IMember _Member;
+	public class MemberController : Controller
+	{
+		private readonly IMember _Member;
 
 
-        public MemberController(IMember Member)
-        {
-            _Member = Member;
-        }
+		public MemberController(IMember Member)
+		{
+			_Member = Member;
+		}
+
+		[HttpGet]
+		public async Task<IActionResult> Registration()
+		{
+			return View();
+		}
+
+		[HttpPost]
+		public async Task<IActionResult> Registration(MemberMaster model)
+		{
+			try
+			{
+
+				if (!string.IsNullOrEmpty(model.SponserId))
+				{
+					bool isSponserValid = _Member.DoesSponserIdExist(model.SponserId);
+					if (!isSponserValid)
+					{
+						ModelState.AddModelError("SponserId", "Sponsor ID does not exist. Please check and try again.");
+						return View(model);
+					}
+				}
+
+				string refcode = GenerateUniqueReferralCode();
+				model.ReferralCode = refcode;
+
+				string result = _Member.AddMember(model);
+
+				if (result.StartsWith("SQL Error"))
+				{
+					TempData["Error"] = result;
+					return View(model);
+				}
+
+				TempData["Success"] = "Member Registered Successfully!";
+				return RedirectToAction("Registration");
+			}
+			catch (Exception ex)
+			{
+				ModelState.AddModelError("", "Something went wrong. Please try again later.");
+				return View(model);
+			}
+		}
+		private string GenerateUniqueReferralCode()
+		{
+			string referralCode;
+			bool isUnique = false;
+
+			do
+			{
+
+				Random rnd = new Random();
+				int randomNumber = rnd.Next(1000, 9999);
 
 
-        [HttpGet]
-        //Admin RegistrationForm
-        public async Task<IActionResult> Registration()
-        {
-            return View();
-        }
+				int totalMembers = _Member.GetTotalMemberCount();
+				int newMemberNumber = totalMembers + 1;
 
 
-        //Admin submission form
-        [HttpPost]
+				string lastTwoDigits = (newMemberNumber % 100).ToString("D2");
 
-        public async Task<IActionResult> Registration(MemberMaster model)
-        {
-            try
-            {
-                //if (!ModelState.IsValid)
-                //{
-                //    return View(model);
-                //}
+				referralCode = "Pay" + randomNumber + lastTwoDigits;
 
-                // Check if Sponsor ID is provided and exists
-                if (!string.IsNullOrEmpty(model.SponserId))
-                {
-                    bool isSponserValid = _Member.DoesSponserIdExist(model.SponserId);
-                    if (!isSponserValid)
-                    {
-                        ModelState.AddModelError("SponserId", "Sponsor ID does not exist. Please check and try again.");
-                        return View(model);
-                    }
-                }
+				isUnique = !_Member.DoesReferralCodeExist(referralCode);
 
-                // Generate unique referral code
-                model.ReferralCode = GenerateUniqueReferralCode(model.Name);
+			} while (!isUnique);
 
-                // Save the member
-                string result = _Member.AddMember(model);
+			return referralCode;
+		}
 
-                if (result.StartsWith("SQL Error"))
-                {
-                    TempData["Error"] = result;
-                    return View(model);
-                }
-
-                TempData["Success"] = "Member Registered Successfully!";
-                return RedirectToAction("Registration");
-            }
-            catch (Exception ex)
-            {
-                ModelState.AddModelError("", "Something went wrong. Please try again later.");
-                return View(model);
-            }
-        }
-
-
-        //  GenerateUniqueReferralCode method
-        private string GenerateUniqueReferralCode(string userName)
-        {
-            string referralCode;
-            bool isUnique = false;
-
-            do
-            {
-                referralCode = userName.Substring(0, 4).ToUpper() + new Random().Next(100, 999);
-                isUnique = !_Member.DoesReferralCodeExist(referralCode);
-            }
-            while (!isUnique);
-
-            return referralCode;
-        }
-
-        [HttpPost]
-        public JsonResult GetSponserName(string sponserId)
-        {
-            string sponserName = _Member.GetSponserNameById(sponserId);
-            return Json(new { sponserName });
-        }
-
-        public async Task<IActionResult> AllUser()
-        {
-            var allMembers = _Member.GetAllMembers();
-            return View(allMembers);
-        }
-
+		[HttpPost]
+		public JsonResult GetSponserName(string sponserId)
+		{
+			string sponserName = _Member.GetSponserNameById(sponserId);
+			return Json(new { sponserName });
+		}
+		public async Task<IActionResult> AllUser()
+		{
+			var allMembers = _Member.GetAllMembers();
+			return View(allMembers);
+		}
 
 		[HttpGet]
 		public IActionResult AllUserSearch(DateTime? fromDate, DateTime? toDate, string loginId, string mobileNumber)
 		{
 			try
 			{
-				var allMembers = _Member.GetAllMembers(); // Replace with your actual data access
+				var allMembers = _Member.GetAllMembers();
 
-				// ✅ Date filter logic
+
 				if (fromDate.HasValue && toDate.HasValue)
 				{
 					allMembers = allMembers.Where(m =>
@@ -131,26 +128,78 @@ namespace Paying_Hub.Controllers
 					).ToList();
 				}
 
-				// ✅ Other filters
+
 				if (!string.IsNullOrEmpty(loginId))
 					allMembers = allMembers.Where(m => m.ReferralCode == loginId).ToList();
 
 				if (!string.IsNullOrEmpty(mobileNumber))
 					allMembers = allMembers.Where(m => m.MobileNumber.Contains(mobileNumber)).ToList();
 
-				// ✅ Return filtered list
+
 				return View("AllUser", allMembers);
 			}
 			catch (Exception ex)
 			{
-				// Optionally log the error (e.g., to a logger or file)
-				// _logger.LogError(ex, "Error filtering AllUser list");
+
 
 				ViewBag.ErrorMessage = "An error occurred while processing your request.";
-				return View("AllUser", new List<Paying_Hub.Models.MemberMaster>()); // Return empty list on error
+				return View("AllUser", new List<Paying_Hub.Models.MemberMaster>());
 			}
 		}
 
+		[HttpPost]
+		public async Task<IActionResult> DeactivateMember(string id)
+		{
+			string memId = id;
+			if (!string.IsNullOrEmpty(memId))
+			{
+
+				var member = _Member.GetAllMembers().FirstOrDefault(m => m.ReferralCode == memId);
+				if (member != null)
+				{
+					int IsActive = member.IsActive = 0;
+					_Member.UpdateStatus(member);
+					TempData["Success"] = "Member deactivated successfully!";
+				}
+				else
+				{
+					TempData["Error"] = "Member not found!";
+				}
+			}
+			else
+			{
+				TempData["Error"] = "Invalid Member ID!";
+			}
+
+			return RedirectToAction("AllUser", "Member");
+		}
+
+		[HttpPost]
+		public async Task<IActionResult> ActivateMember(string id)
+		{
+			string memId = id;
+			if (!string.IsNullOrEmpty(memId))
+			{
+
+				var member = _Member.GetAllMembers().FirstOrDefault(m => m.ReferralCode == memId);
+				if (member != null)
+				{
+					int IsActive = member.IsActive == 1 ? 0 : 1;
+					_Member.UpdateStatus(member);
+					TempData["Success"] = "Member Activated successfully!";
+				}
+				else
+				{
+					TempData["Error"] = "Member not found!";
+				}
+			}
+			else
+			{
+				TempData["Error"] = "Invalid Member ID!";
+			}
+
+			return RedirectToAction("AllUser", "Member");
+		}
 
 		public async Task<IActionResult> BankDetails()
 		{
@@ -160,11 +209,21 @@ namespace Paying_Hub.Controllers
 		{
 			return View();
 		}
+
+		[HttpGet]
+		public async Task<IActionResult> Password()
+
+		{
+			return View();
+		}
+
+		[HttpPost]
 		public async Task<IActionResult> Password(DateTime? fromDate, DateTime? toDate, string loginId, string mobileNumber)
 		{
 			var members = _Member.GetAllMemberPasswords(fromDate, toDate, loginId, mobileNumber);
 			return View(members);
 		}
+
 		public async Task<IActionResult> ManageWithdralStatus()
 		{
 			return View();
@@ -181,31 +240,63 @@ namespace Paying_Hub.Controllers
 		{
 			return View();
 		}
+		public async Task<IActionResult> view_fund_request_report()
+		{
+			return View();
+		}
+		public async Task<IActionResult> view_fund_transfer()
+		{
+			return View();
+		}
+		public async Task<IActionResult> view_fund_transfer_report()
+		{
+			return View();
+		}
+		public async Task<IActionResult> member_topup()
+		{
+			return View();
+		}
 
-        public async Task<IActionResult> view_fund_request_report()
-        {
-            return View();
-        }
-        public async Task<IActionResult> view_fund_transfer()
-        {
-            return View();
-        }
-        public async Task<IActionResult> view_fund_transfer_report()
-        {
-            return View();
-        }
-        public async Task<IActionResult> member_topup()
-        {
-            return View();
-        }
+		[HttpPost]
+		public JsonResult GetPackageByUserId(string UserId)
+		{
+			var resultList = _Member.GetPackageByUserId(UserId);
+			var result = resultList.FirstOrDefault();
+			return Json(result);
+		}
 
+		[HttpPost]
+		public IActionResult member_topup(packageviewModel Data)
+		{
+			try
+			{
+				if (!string.IsNullOrEmpty(Data.UserId))
+				{
+					_Member.PackageRegistration(Data);
+					return Json(new { success = true, message = "Package Registered Successfully!" });
+				}
+				else
+				{
+					return Json(new { success = false, message = "User Id not found!" });
+				}
+			}
+			catch (Exception ex)
+			{
+				return Json(new { success = false, message = "An error occurred!" });
+			}
+		}
+
+		public async Task<IActionResult> ViewTopupReport()
+		{
+			return View();
+		}
+
+		[HttpPost]
 		public async Task<IActionResult> ViewTopupReport(DateTime? fromDate, DateTime? toDate, string userName, string packageName)
 		{
 			try
 			{
-				var allTopups = _Member.GetTopupReport(); // Step 1: Get all data
-
-				// Step 2: Apply filters like AllUserSearch
+				var allTopups = _Member.GetTopupReport();
 				if (fromDate.HasValue && toDate.HasValue)
 				{
 					allTopups = allTopups.Where(x =>
@@ -244,32 +335,82 @@ namespace Paying_Hub.Controllers
 			}
 			catch (Exception)
 			{
-				// Optional: log error here
+
 				ViewBag.ErrorMessage = "Something went wrong.";
-				return View(new List<TopUPReportModel>()); // Return empty list on error
+				return View(new List<TopUPReportModel>());
 			}
 		}
 
 		public async Task<IActionResult> view_direct_referral()
-        {
-            return View();
-        }
+		{
+			return View();
+		}
+		[HttpPost]
+		public async Task<IActionResult> view_direct_referral(string userid)
+		{
+			try
+			{
+				var DirectRefferal = _Member.GetDirectRefferalReport();
+				if (!string.IsNullOrWhiteSpace(userid))
+				{
+					DirectRefferal = DirectRefferal
+						.Where(x => !string.IsNullOrEmpty(x.UserName) && x.UserName.ToLower().Contains(userid.ToLower()))
+						.ToList();
+				}
 
-        public async Task<IActionResult> ViewUserDownLine()
-        {
-            return View();
-        }
-        public async Task<IActionResult> view_withdrawal_report()
-        {
-            return View();
-        }
+				return View(DirectRefferal);
+			}
+			catch (Exception ex)
+			{
 
-        public async Task<IActionResult> DirectIncome()
-        {
+				ViewBag.ErrorMessage = "Something went wrong.";
+				return View(new List<DirectRefferalView>());
+			}
+		}
+		public async Task<IActionResult> ViewUserDownLine()
+		{
+			return View();
+		}
+
+		[HttpPost]
+		public IActionResult ViewUserDownLine(string userId)
+		{
+			if (string.IsNullOrEmpty(userId))
+			{
+				TempData["Error"] = "Please enter a valid User ID.";
+				return View();
+			}
+
+			var tree = _Member.GetMemberTree(userId);
+
+			if (tree == null)
+			{
+				TempData["Error"] = "No user found with this referral code.";
+				return View();
+			}
+
+			return View(tree);
+		}
+
+		public async Task<IActionResult> view_withdrawal_report()
+		{
+			return View();
+		}
+
+		public async Task<IActionResult> DirectIncome()
+		{
 			var lsdirectIncomedetails = _Member.GetDirectIncomeLedgerReport();
 
 			return View(lsdirectIncomedetails);
-        }
+		}
+		public async Task<IActionResult> WithdrawalReport()
+		{
+			return View();
+		}
+		public async Task<IActionResult> QueryBox()
+		{
+			return View();
+		}
 
 		public async Task<IActionResult> LevelIncome()
 		{
@@ -278,16 +419,5 @@ namespace Paying_Hub.Controllers
 			return View(lsleveldetails);
 		}
 
-
-
-		public async Task<IActionResult> WithdrawalReport()
-        {
-            return View();
-        }
-        public async Task<IActionResult> QueryBox()
-        {
-            return View();
-        }
-
-    }
+	}
 }

@@ -18,6 +18,9 @@ namespace Paying_Hub.Controllers
             return View();
         }
 
+
+
+
         public IActionResult Privacy()
         {
             return View();
@@ -27,8 +30,17 @@ namespace Paying_Hub.Controllers
         {
             return View();
         }
+		public IActionResult UserLoginPage()
+		{
+			return View();
+		}
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+		public IActionResult UserDashBoard()
+		{
+			return View();
+		}
+
+		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

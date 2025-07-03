@@ -1,80 +1,118 @@
-﻿
+﻿@model Paying_Hub.Models.packageviewModel;
+
 @{
     ViewData["Title"] = "member_topup";
-	Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 
 <div class="row merged20 mb-4">
-	<div class="col-lg-8 mb-3">
-		<div class="d-widget">
-			<div class="d-widget-title">
-				<h4>Member Topup</h4>
-			</div>
+    <div class="col-lg-12 mb-3">
+        <div class="d-widget">
+            <div class="d-widget-title">
+                <h4>Member Topup</h4>
+            </div>
 
-			<form class="row">
+            <form asp-action="member_topup" asp-controller="Member" method="post" class="row">
+                @Html.AntiForgeryToken()
+                @if (TempData["Success"] != null)
+                {
+                    <div class="alert alert-success">
+                        @TempData["Success"]
+                    </div>
+                }
+                <div class="form-group col-md-12">
+                    <div class="row align-items-center">
+                        <label class="col-md-4 form-label">Topup Id</label>
+                        <div class="col-md-8">
 
-				<div class="form-group col-md-12">
-					<div class="row align-items-center">
-						<label class="col-md-4 form-label">Topup Id</label>
-						<div class="col-md-8">
-							<input type="text" class="form-control " placeholder="Enter Topup Id" id="txtlogin" name="txtlogin">
-						</div>
-					</div>
-				</div>
+                            <input type="text" id="userId" name="userId" class="form-control" placeholder="Enter Topup Id" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Package Id -->
+                <div class="form-group" style="display:none">
+                    <label for="SponserName">Sponsor Name</label>
+                    <input type="text" id="PackageId" asp-for="PackageId" class="form-control" readonly />
+                </div>
+                <div class="form-group col-md-12">
+                    <div class="row align-items-center">
+                        <label class="col-md-4 form-label">Package</label>
+                        <div class="col-md-8">
+                            <input type="text" id="PackageName" asp-for="PackageName" class="form-control" readonly />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 offset-4">
 
-
-
-				<div class="form-group col-md-12">
-					<div class="row align-items-center">
-						<label class="col-md-4 form-label">Package</label>
-						<div class="col-md-8">
-							<select class="form-control opt" name="ddpackid" id="ddpackid">
-								<option value="">Select Package </option>
-
-								<option value="1">Package-600</option>
-
-								<option value="2">Package-1500</option>
-
-								<option value="3">Package-3500</option>
-
-								<option value="4">Package-7500</option>
-
-								<option value="5">Package-10500</option>
-
-								<option value="6">Package-20000</option>
-
-								<option value="7">Package-30000</option>
-
-								<option value="8">Package-50000</option>
-
-								<option value="9">Package-120000</option>
-
-							</select>
-						</div>
-					</div>
-				</div>
+                    <button type="button" class="button primary" id="btnSave">Submit</button>
 
 
+                </div>
 
-				<div class="col-md-8 offset-4">
-
-
-
-					<button type="button" class="button primary ">Submit</button>
-
-				</div>
-
-
-
-
-
-
-
-
-
-			</form>
-		</div>
-	</div>
+            </form>
+        </div>
+    </div>
 
 </div>
+<script>
+    $(document).ready(function () {
+        $('#userId').on('blur', function () {
+            var userId = $(this).val().trim();
+            debugger
+
+            if (userId !== "") {
+                $.ajax({
+                    url: '/Member/GetPackageByUserId',
+                    type: 'POST',
+                   data: { UserId: userId },
+                    success: function (response) {
+                        console.log("Server response:", response);
+                          if (response && response.packageId && response.packageId !== 0) {
+                            $('#PackageId').val(response.packageId);
+                             $('#PackageName').val(response.packageName);
+                            $('#PackagePrice').val(response.packagePrice);
+                            } else {
+                            $('#package, #paidAmount, #SponserId, #SponserName').val('');
+                            alert("No data found for this User ID.");
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("AJAX Error:", status, error);
+                        alert("Failed to fetch data.");
+                    }
+                });
+            }
+        });
+    });
+
+
+</script>
+<script>
+
+    $(document).ready(function () {
+        $('#btnSave').on('click', function () {
+            var formData = {
+                UserId: $('#userId').val(),
+                PackageId: $('#PackageId').val()
+                       };
+
+            $.ajax({
+                url: "/Member/member_topup",
+                type: "POST",
+                data: formData,
+                success: function (response) {
+                    if (response.success) {
+                        alert("Package Registered Successfully!");
+                        window.location.href = "/Member/member_topup";
+                    } else {
+                        alert("Error: " + response.message);
+                    }
+                },
+                error: function () {
+                    alert("Technical error occurred.");
+                }
+            });
+        });
+    });
+</script>
