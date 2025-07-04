@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<ILogin, LoginRepo>();
 builder.Services.AddScoped<IMember, MemberRepo>();
-
+builder.Services.AddScoped<IUser, UserRepo>();
 // ? Register IHttpContextAccessor
 builder.Services.AddHttpContextAccessor();
 
@@ -52,6 +52,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=UserLoginPage}/{id?}");
 
 app.Run();

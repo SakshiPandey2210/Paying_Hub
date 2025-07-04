@@ -70,7 +70,7 @@ namespace Paying_Hub.Models
 		public string TransactionID { get; set; }
 		public string Description { get; set; }
 		public decimal Amount { get; set; }
-		public DateTime Date { get; set; }
+		public DateTime? Date { get; set; }
 	}
 	public class DirectIncomeLedgerModel
 	{
@@ -80,7 +80,7 @@ namespace Paying_Hub.Models
 		public string TransactionID { get; set; }
 		public string Description { get; set; }
 		public decimal Amount { get; set; }
-		public DateTime Date { get; set; }
+		public DateTime? Date { get; set; }
 	}
 	public class DirectRefferalView
 	{

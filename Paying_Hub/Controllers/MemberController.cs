@@ -403,6 +403,55 @@ namespace Paying_Hub.Controllers
 
             return View(lsdirectIncomedetails);
         }
+
+        [HttpPost]
+        public IActionResult DirectIncome(DateTime? fromDate, DateTime? toDate, string loginId)
+        {
+            try
+            {
+                var AllDirectIncome = _Member.GetDirectIncomeLedgerReport();
+
+
+                if (fromDate.HasValue && toDate.HasValue)
+                {
+                    AllDirectIncome = AllDirectIncome.Where(m =>
+                        m.Date.HasValue &&
+                        m.Date.Value.Date >= fromDate.Value.Date &&
+                        m.Date.Value.Date <= toDate.Value.Date
+                    ).ToList();
+                }
+                else if (fromDate.HasValue)
+                {
+                    AllDirectIncome = AllDirectIncome.Where(m =>
+                        m.Date.HasValue &&
+                        m.Date.Value.Date >= fromDate.Value.Date
+                    ).ToList();
+                }
+                else if (toDate.HasValue)
+                {
+                    AllDirectIncome = AllDirectIncome.Where(m =>
+                        m.Date.HasValue &&
+                        m.Date.Value.Date <= toDate.Value.Date
+                    ).ToList();
+                }
+
+
+                if (!string.IsNullOrEmpty(loginId))
+                    AllDirectIncome = AllDirectIncome.Where(m => m.UserID == loginId).ToList();
+
+
+                return View("DirectIncome", AllDirectIncome);
+            }
+            catch (Exception ex)
+            {
+
+
+                ViewBag.ErrorMessage = "An error occurred while processing your request.";
+                return View("DirectIncome", new List<Paying_Hub.Models.DirectIncomeLedgerModel>());
+            }
+        }
+
+
         public async Task<IActionResult> WithdrawalReport()
         {
             return View();
@@ -417,6 +466,53 @@ namespace Paying_Hub.Controllers
             var lsleveldetails = _Member.GetLevelIncomeLedgerReport();
 
             return View(lsleveldetails);
+        }
+
+        [HttpPost]
+        public IActionResult LevelIncome(DateTime? fromDate, DateTime? toDate, string loginId)
+        {
+            try
+            {
+                var AllLevelIncome = _Member.GetLevelIncomeLedgerReport();
+
+
+                if (fromDate.HasValue && toDate.HasValue)
+                {
+                    AllLevelIncome = AllLevelIncome.Where(m =>
+                        m.Date.HasValue &&
+                        m.Date.Value.Date >= fromDate.Value.Date &&
+                        m.Date.Value.Date <= toDate.Value.Date
+                    ).ToList();
+                }
+                else if (fromDate.HasValue)
+                {
+                    AllLevelIncome = AllLevelIncome.Where(m =>
+                        m.Date.HasValue &&
+                        m.Date.Value.Date >= fromDate.Value.Date
+                    ).ToList();
+                }
+                else if (toDate.HasValue)
+                {
+                    AllLevelIncome = AllLevelIncome.Where(m =>
+                        m.Date.HasValue &&
+                        m.Date.Value.Date <= toDate.Value.Date
+                    ).ToList();
+                }
+
+
+                if (!string.IsNullOrEmpty(loginId))
+                    AllLevelIncome = AllLevelIncome.Where(m => m.UserID == loginId).ToList();
+
+
+                return View("LevelIncome", AllLevelIncome);
+            }
+            catch (Exception ex)
+            {
+
+
+                ViewBag.ErrorMessage = "An error occurred while processing your request.";
+                return View("LevelIncome", new List<Paying_Hub.Models.LevelIncomeLedgerModel>());
+            }
         }
 
         public async Task<IActionResult> CashBackIncome()

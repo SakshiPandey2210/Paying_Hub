@@ -68,25 +68,26 @@ namespace Paying_Hub.Controllers
         {
 
 
-			if (!ModelState.IsValid)
-				return View(model);
+            if (!ModelState.IsValid)
+                return View(model);
 
-			var user = await _Login.ValidateUserLogin(model.LoginId, model.Password);
+            var user = await _Login.ValidateUserLogin(model.LoginId, model.Password);
 
-			if (user != null)
-			{
-				// Set session variables
-				HttpContext.Session.SetString("MemberId", user.MemberId);
-				HttpContext.Session.SetString("ReferralCode", user.ReferralCode ?? "");
-				HttpContext.Session.SetString("UserName", user.Name ?? "");
+            if (user != null)
+            {
+                // Set session variables
+                HttpContext.Session.SetString("SponserId", user.SponserId);
+                HttpContext.Session.SetString("ReferralCode", user.ReferralCode ?? "");
+                HttpContext.Session.SetString("UserName", user.Name ?? "");
 
-				return RedirectToAction("UserDashBoard", "Home");
-			}
-			else
-			{
-				ViewBag.Message = "Invalid Login ID or Password.";
-				return View(model);
-			}
-		}
+                return RedirectToAction("UserDashBoard", "Home");
+            }
+            else
+            {
+                ViewBag.Message = "Invalid Login ID or Password.";
+                return RedirectToAction("UserLoginPage", "Home");
+
+            }
+        }
     }
 }

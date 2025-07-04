@@ -1,0 +1,115 @@
+﻿@model List<Paying_Hub.Models.DirectRefferalView>
+@{
+    ViewData["Title"] = "view_direct_referral";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+    string userid = Context.Session.GetString("ReferralCode") ?? "";
+
+
+    var sucessmessage = TempData["Success"] as string;
+    TempData["Success"] = null;
+    var error = TempData["Error"] as string;
+    TempData["Error"] = null;
+}
+
+
+@if (!string.IsNullOrEmpty(sucessmessage))
+{
+    <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+        @sucessmessage
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+@if (!string.IsNullOrEmpty(error))
+{
+    <div class="alert alert-danger alert-dismissible fade show mt-3" role="alert">
+        @error
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel-content">
+            <div class="row merged20 mb-4">
+                <div class="col-lg-12 mb-3">
+                    <div class="d-widget">
+                        <div class="d-widget-title">
+                            <h4>Direct Referral</h4>
+                        </div>
+
+                        <form method="post" class="row" asp-controller="User" asp-action="view_direct_referral">
+
+                            <div class="form-group col-md-12">
+                                <div class="row align-items-center">
+                                    <label class="col-md-4 form-label">User Id</label>
+                                    <div class="col-md-8">
+                                        <input type="text" class="form-control" placeholder="Enter Login Id" id="userid" name="userid" value="@userid" readonly>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-12 mt-2">
+                                <button type="submit" class="btn btn-primary">Search</button>
+                                <a href="@Url.Action("view_direct_referral")" class="btn btn-danger">Reset</a>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="d-widget mb-4">
+                        <div class="d-widget-title">
+                            <h4>View Direct Referral</h4>
+                        </div>
+
+                        <button type="submit" class="button primary my-2">Export To Excel</button>
+
+                        <table class="table table-default  table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>Login Id</th>
+                                    <th>Login Name</th>
+                                    <th>Mobile</th>
+                                    <th>Package</th>
+                                    <th>Joining Date </th>
+
+                                </tr>
+                            </thead>
+                            @{
+                                int sn = 1;
+                            }
+                            <tbody>
+                                @if (Model != null && Model.Any())
+                                {
+
+                                    foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@(sn++)</td>
+                                            <td>@item.UserID</td>
+                                            <td>@item.UserName</td>
+                                            <td>@item.MobileNo</td>
+                                            <td>@item.Package</td>
+                                            <td>@item.Date.ToString("dd-MM-yyyy hh:mm tt")</td>
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td colspan="6" class="text-center">No records found</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

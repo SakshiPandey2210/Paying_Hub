@@ -1,0 +1,100 @@
+﻿@model List<Paying_Hub.Models.TopUPReportModel>
+@{
+    ViewData["Title"] = "ViewTopupReport";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+    string sponsorId = Context.Session.GetString("ReferralCode") ?? "";
+}
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel-content">
+
+            <div class="col-lg-12 mb-3">
+                <div class="d-widget">
+                    <div class="d-widget-title">
+                    </div>
+
+                    <form method="get" class="row" asp-controller="User" asp-action="ViewTopupReport">
+                        <div class="form-group col-md-3">
+                            <label for="fromDate">From Date</label>
+                            <input type="date" class="form-control" id="fromDate" name="fromDate">
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <label for="toDate">To Date</label>
+                            <input type="date" class="form-control" id="toDate" name="toDate">
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <label for="userName">User Name</label>
+                            <input type="text" class="form-control" id="userName" name="userName" value="@sponsorId" readonly>
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <label for="packageName">Package Name</label>
+                            <input type="text" class="form-control" id="packageName" name="packageName">
+                        </div>
+
+                        <div class="col-md-12 mt-2">
+                            <button type="submit" class="btn btn-primary">Search</button>
+                            <a href="@Url.Action("ViewTopupReport")" class="btn btn-danger">Reset</a>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+
+
+            <div class="row merged20 mb-4">
+                <div class="col-lg-10 mb-3">
+                    <div class="d-widget">
+                        <div class="d-widget-title">
+                            <h4>View Topup Report</h4>
+                        </div>
+
+                        <table class="table table-default table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>Sn</th>
+                                    <th>UserId</th>
+                                    <th>Name</th>
+                                    <th>Package Name</th>
+                                    <th>Topup Amount</th>
+                                    <th>Topup Date</th>
+                                </tr>
+                            </thead>
+                            @{
+                                int sn = 1;
+                            }
+                            <tbody>
+                                @if (Model != null && Model.Any())
+                                {
+
+                                    foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@(sn++)</td>
+                                            <td>@item.UserID</td>
+                                            <td>@item.UserName</td>
+                                            <td>@item.PackageName</td>
+                                            <td>@item.Amount</td>
+                                            <td>@item.PackageDate.ToString("dd-MM-yyyy hh:mm tt")</td>
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td colspan="6" class="text-center">No records found</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>

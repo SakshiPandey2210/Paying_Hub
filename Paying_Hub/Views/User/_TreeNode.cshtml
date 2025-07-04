@@ -1,0 +1,37 @@
+﻿@model MemberTreeViewModel
+
+@{
+    string iconPath = "/admin_assets/images/icon0.png";
+
+    if (Model.Amount != null && Model.Amount > 0)
+    {
+        iconPath = "/admin_assets/images/icon.png";
+    }
+}
+
+<ul class="tree-level">
+    <li>
+        <div class="member-node">
+            <img src="@iconPath" width="40" height="40" />
+            <div class="tooltip-content">
+                <strong>@Model.Name</strong><br />
+                ID: @Model.ReferralCode<br />
+                Join Date: @Model.TopupDate?.ToString("dd-MM-yyyy")<br />
+                Package: ₹@Model.Amount<br />
+                Directs: @Model.DirectReferrals?.Count
+            </div>
+            <div style="text-align: center; font-weight: bold;">@Model.ReferralCode</div>
+            <div style="text-align: center; font-size: small;">@Model.Name</div>
+        </div>
+
+        @if (Model.DirectReferrals != null && Model.DirectReferrals.Any())
+        {
+            <ul class="tree-level">
+                @foreach (var child in Model.DirectReferrals)
+                {
+                    <partial name="_TreeNode" model="child" />
+                }
+            </ul>
+        }
+    </li>
+</ul>
