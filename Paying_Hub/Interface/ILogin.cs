@@ -7,7 +7,6 @@ namespace Paying_Hub.Interface
     {
         AdminLoginResponse AdminLogin(AdminLoginModel adminLoginModel);
 
-
         Task<MemberMaster> ValidateUserLogin(string loginId, string password);
 
 	}

@@ -1,0 +1,363 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|c:\\users\\nitro\\downloads\\paying_hub (2)\\github\\paying_hub\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|solutionrelative:paying_hub\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|c:\\users\\nitro\\downloads\\paying_hub (2)\\github\\paying_hub\\views\\home\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|solutionrelative:paying_hub\\views\\home\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|c:\\users\\nitro\\downloads\\paying_hub (2)\\github\\paying_hub\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|solutionrelative:paying_hub\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|c:\\users\\nitro\\downloads\\paying_hub (2)\\github\\paying_hub\\views\\member\\registration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|solutionrelative:paying_hub\\views\\member\\registration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|c:\\users\\nitro\\downloads\\paying_hub (2)\\github\\paying_hub\\repository\\memberrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|solutionrelative:paying_hub\\repository\\memberrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|c:\\users\\nitro\\downloads\\paying_hub (2)\\github\\paying_hub\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|solutionrelative:paying_hub\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|c:\\users\\nitro\\downloads\\paying_hub (2)\\github\\paying_hub\\views\\shared\\_userlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|solutionrelative:paying_hub\\views\\shared\\_userlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|c:\\users\\nitro\\downloads\\paying_hub (2)\\github\\paying_hub\\views\\user\\registration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|solutionrelative:paying_hub\\views\\user\\registration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|c:\\users\\nitro\\downloads\\paying_hub (2)\\github\\paying_hub\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|solutionrelative:paying_hub\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|c:\\users\\nitro\\downloads\\paying_hub (2)\\github\\paying_hub\\repository\\loginrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|solutionrelative:paying_hub\\repository\\loginrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|c:\\users\\nitro\\downloads\\paying_hub (2)\\github\\paying_hub\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|solutionrelative:paying_hub\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|c:\\users\\nitro\\downloads\\paying_hub (2)\\github\\paying_hub\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|solutionrelative:paying_hub\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|c:\\users\\nitro\\downloads\\paying_hub (2)\\github\\paying_hub\\repository\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|solutionrelative:paying_hub\\repository\\userrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|c:\\users\\nitro\\downloads\\paying_hub (2)\\github\\paying_hub\\models\\membermaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|solutionrelative:paying_hub\\models\\membermaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|c:\\users\\nitro\\downloads\\paying_hub (2)\\github\\paying_hub\\models\\states.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|solutionrelative:paying_hub\\models\\states.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|c:\\users\\nitro\\downloads\\paying_hub (2)\\github\\paying_hub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|solutionrelative:paying_hub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|c:\\users\\nitro\\downloads\\paying_hub (2)\\github\\paying_hub\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|solutionrelative:paying_hub\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|c:\\users\\nitro\\downloads\\paying_hub (2)\\github\\paying_hub\\models\\cities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|solutionrelative:paying_hub\\models\\cities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|c:\\users\\nitro\\downloads\\paying_hub (2)\\github\\paying_hub\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|solutionrelative:paying_hub\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|c:\\users\\nitro\\downloads\\paying_hub (2)\\github\\paying_hub\\views\\home\\userloginpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{00F62296-0AD0-48FE-8712-BAF0F655E065}|Paying_Hub\\Paying_Hub.csproj|solutionrelative:paying_hub\\views\\home\\userloginpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginRepo.cs",
+              "DocumentMoniker": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Repository\\LoginRepo.cs",
+              "RelativeDocumentMoniker": "Paying_Hub\\Repository\\LoginRepo.cs",
+              "ToolTip": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Repository\\LoginRepo.cs",
+              "RelativeToolTip": "Paying_Hub\\Repository\\LoginRepo.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAvwEkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T08:12:00.328Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Registration.cshtml",
+              "DocumentMoniker": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Views\\Member\\Registration.cshtml",
+              "RelativeDocumentMoniker": "Paying_Hub\\Views\\Member\\Registration.cshtml",
+              "ToolTip": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Views\\Member\\Registration.cshtml",
+              "RelativeToolTip": "Paying_Hub\\Views\\Member\\Registration.cshtml",
+              "ViewState": "AgIAAOQAAAAAAAAAAAAAAAYBAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-04T19:21:49.384Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Views\\Home\\Login.cshtml",
+              "RelativeDocumentMoniker": "Paying_Hub\\Views\\Home\\Login.cshtml",
+              "ToolTip": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Views\\Home\\Login.cshtml",
+              "RelativeToolTip": "Paying_Hub\\Views\\Home\\Login.cshtml",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAAAKAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-05T05:31:31.259Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Paying_Hub\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Paying_Hub\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAiwCMAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T06:02:09.027Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MemberRepo.cs",
+              "DocumentMoniker": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Repository\\MemberRepo.cs",
+              "RelativeDocumentMoniker": "Paying_Hub\\Repository\\MemberRepo.cs",
+              "ToolTip": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Repository\\MemberRepo.cs",
+              "RelativeToolTip": "Paying_Hub\\Repository\\MemberRepo.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAiwGAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T08:48:36.83Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserRepo.cs",
+              "DocumentMoniker": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Repository\\UserRepo.cs",
+              "RelativeDocumentMoniker": "Paying_Hub\\Repository\\UserRepo.cs",
+              "ToolTip": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Repository\\UserRepo.cs",
+              "RelativeToolTip": "Paying_Hub\\Repository\\UserRepo.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAADwv3UAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T08:57:36.443Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Paying_Hub\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Paying_Hub\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T06:02:28.357Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Paying_Hub\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Paying_Hub\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T05:15:21.265Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Registration.cshtml",
+              "DocumentMoniker": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Views\\User\\Registration.cshtml",
+              "RelativeDocumentMoniker": "Paying_Hub\\Views\\User\\Registration.cshtml",
+              "ToolTip": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Views\\User\\Registration.cshtml",
+              "RelativeToolTip": "Paying_Hub\\Views\\User\\Registration.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-04T19:18:27.72Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MemberController.cs",
+              "DocumentMoniker": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Controllers\\MemberController.cs",
+              "RelativeDocumentMoniker": "Paying_Hub\\Controllers\\MemberController.cs",
+              "ToolTip": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Controllers\\MemberController.cs",
+              "RelativeToolTip": "Paying_Hub\\Controllers\\MemberController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAuwCUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T09:28:26.771Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SignUp.cshtml",
+              "DocumentMoniker": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Views\\Home\\SignUp.cshtml",
+              "RelativeDocumentMoniker": "Paying_Hub\\Views\\Home\\SignUp.cshtml",
+              "ToolTip": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Views\\Home\\SignUp.cshtml",
+              "RelativeToolTip": "Paying_Hub\\Views\\Home\\SignUp.cshtml",
+              "ViewState": "AgIAAOEAAAAAAAAAAAAAAO4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-05T12:12:48.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Cities.cs",
+              "DocumentMoniker": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Models\\Cities.cs",
+              "RelativeDocumentMoniker": "Paying_Hub\\Models\\Cities.cs",
+              "ToolTip": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Models\\Cities.cs",
+              "RelativeToolTip": "Paying_Hub\\Models\\Cities.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T11:31:43.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Program.cs",
+              "RelativeDocumentMoniker": "Paying_Hub\\Program.cs",
+              "ToolTip": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Program.cs",
+              "RelativeToolTip": "Paying_Hub\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAkwCMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T11:26:35.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_UserLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Views\\Shared\\_UserLayout.cshtml",
+              "RelativeDocumentMoniker": "Paying_Hub\\Views\\Shared\\_UserLayout.cshtml",
+              "ToolTip": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Views\\Shared\\_UserLayout.cshtml",
+              "RelativeToolTip": "Paying_Hub\\Views\\Shared\\_UserLayout.cshtml",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAAAKsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-05T09:30:25.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Paying_Hub\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Paying_Hub\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-05T09:32:56.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Paying_Hub\\Models\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "Paying_Hub\\Models\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T11:25:59.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "States.cs",
+              "DocumentMoniker": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Models\\States.cs",
+              "RelativeDocumentMoniker": "Paying_Hub\\Models\\States.cs",
+              "ToolTip": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Models\\States.cs",
+              "RelativeToolTip": "Paying_Hub\\Models\\States.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T10:17:57.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Paying_Hub\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Paying_Hub\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-05T09:30:45.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MemberMaster.cs",
+              "DocumentMoniker": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Models\\MemberMaster.cs",
+              "RelativeDocumentMoniker": "Paying_Hub\\Models\\MemberMaster.cs",
+              "ToolTip": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Models\\MemberMaster.cs",
+              "RelativeToolTip": "Paying_Hub\\Models\\MemberMaster.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwCMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-05T12:19:18.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserLoginPage.cshtml",
+              "DocumentMoniker": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Views\\Home\\UserLoginPage.cshtml",
+              "RelativeDocumentMoniker": "Paying_Hub\\Views\\Home\\UserLoginPage.cshtml",
+              "ToolTip": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\Views\\Home\\UserLoginPage.cshtml",
+              "RelativeToolTip": "Paying_Hub\\Views\\Home\\UserLoginPage.cshtml",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAAAGkAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-05T09:40:39.59Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -33,7 +33,8 @@ namespace Paying_Hub.Models
 
 		[Required(ErrorMessage = "City selection is required.")]
 		public string City { get; set; }
-
+		public string PinCode { get; set; }
+		public string Address { get; set; }
 		public string? NomineeName { get; set; }
 		public DateTime? NomineeAge { get; set; }
 		public string? NomineeRelation { get; set; }

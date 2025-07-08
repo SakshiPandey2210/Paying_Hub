@@ -1,0 +1,257 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Paying_Hub
+build_property.RootNamespace = Paying_Hub
+build_property.ProjectDir = C:\Users\RITIK\Downloads\Paying_Hub_Updated05072025\Github\Paying_Hub\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\RITIK\Downloads\Paying_Hub_Updated05072025\Github\Paying_Hub
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Home/Benefits.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCZW5lZml0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Home/DashBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXNoQm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Home/FAQ.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGQVEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Home/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Home/Market.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNYXJrZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Home/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaWduVXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Home/UserDashBoard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyRGFzaEJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Home/UserLoginPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyTG9naW5QYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/AdminLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXEFkbWluTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/AllUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXEFsbFVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/ApproveKYC.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXEFwcHJvdmVLWUMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/BankDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXEJhbmtEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/CashBackIncome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXENhc2hCYWNrSW5jb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/DirectIncome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXERpcmVjdEluY29tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/LevelIncome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXExldmVsSW5jb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/ManageCity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXE1hbmFnZUNpdHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/ManageNews.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXE1hbmFnZU5ld3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/ManageWithdralStatus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXE1hbmFnZVdpdGhkcmFsU3RhdHVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/member_topup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXG1lbWJlcl90b3B1cC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/Password.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/QueryBox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXFF1ZXJ5Qm94LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/Registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXFJlZ2lzdHJhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/ViewTopupReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXFZpZXdUb3B1cFJlcG9ydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/ViewUserDownLine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXFZpZXdVc2VyRG93bkxpbmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/view_direct_referral.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXHZpZXdfZGlyZWN0X3JlZmVycmFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/view_fund_request_report.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXHZpZXdfZnVuZF9yZXF1ZXN0X3JlcG9ydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/view_fund_transfer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXHZpZXdfZnVuZF90cmFuc2Zlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/view_fund_transfer_report.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXHZpZXdfZnVuZF90cmFuc2Zlcl9yZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/view_withdrawal_report.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXHZpZXdfd2l0aGRyYXdhbF9yZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/WithdrawalReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXFdpdGhkcmF3YWxSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/WithdrawalStatusReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXFdpdGhkcmF3YWxTdGF0dXNSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Member/_TreeNode.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXF9UcmVlTm9kZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Shared/_HomeLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ib21lTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Shared/_UserLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/User/AllUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBbGxVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/User/approve_kyc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxhcHByb3ZlX2t5Yy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/User/bank_detail_list.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxiYW5rX2RldGFpbF9saXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/User/CashBackIncome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDYXNoQmFja0luY29tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/User/DirectIncome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEaXJlY3RJbmNvbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/User/edit_user.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxlZGl0X3VzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/User/LevelIncome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMZXZlbEluY29tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/User/Registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3RyYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/User/ViewTopupReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxWaWV3VG9wdXBSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/User/ViewUserDownLine.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxWaWV3VXNlckRvd25MaW5lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/User/view_direct_referral.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclx2aWV3X2RpcmVjdF9yZWZlcnJhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/User/_TreeNode.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxfVHJlZU5vZGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RITIK/Downloads/Paying_Hub_Updated05072025/Github/Paying_Hub/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-oypyyxxdyj

@@ -6,6 +6,7 @@ using Paying_Hub.Models;
 using System.Data;
 using System.Diagnostics.Metrics;
 using System.Net.NetworkInformation;
+using System.Text;
 
 namespace Paying_Hub.Repository
 {
@@ -59,15 +60,25 @@ namespace Paying_Hub.Repository
                 throw;
             }
         }
-		public async Task<MemberMaster> ValidateUserLogin(string loginId, string password)
+
+        public static string EncodePasswordToBase64(string plainPassword)
+        {
+            byte[] passwordBytes = Encoding.UTF8.GetBytes(plainPassword);
+            string base64Encoded = Convert.ToBase64String(passwordBytes);
+            return base64Encoded;
+        }
+
+        public async Task<MemberMaster> ValidateUserLogin(string loginId, string password)
 		{
             try
             {
+                string encryptedPassword = EncodePasswordToBase64(password);
+
                 using (var connection = Connection)
                 {
                     var parameters = new DynamicParameters();
                     parameters.Add("@LoginId", loginId);
-                    parameters.Add("@Password", password);
+                    parameters.Add("@Password", encryptedPassword);
 
                     var result = await connection.QueryFirstOrDefaultAsync<MemberMaster>(
                         "sp_User_Login", parameters, commandType: CommandType.StoredProcedure);

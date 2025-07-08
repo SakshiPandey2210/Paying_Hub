@@ -1,0 +1,186 @@
+﻿@{
+    ViewBag.Title = "FAQ";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+<!-- offcanvas area start -->
+<div class="offcanvas__area">
+    <div class="offcanvas__wrapper">
+        <div class="offcanvas__close">
+            <button class="offcanvas__close-btn offcanvas-close-btn">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                    <path d="M1 1L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+        <div class="offcanvas__content">
+            <div class="offcanvas__top mb-50 d-flex justify-content-between align-items-center">
+                <div class="offcanvas__logo logo">
+                    <a href="home-main.html">
+                        <img style="width:120px;" src="~/Home/logo/logo.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="tp-main-menu-mobile mb-35"></div>
+            <div class="offcanvas__btn">
+                <a asp-controller="Home" asp-action="Login" class="tp-btn w-100">Sign In</a>
+            </div>
+
+            <div class="offcanvas__social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="body-overlay"></div>
+
+<main>
+
+    <!-- faq-area-start -->
+    <section class="faq-area pt-15 pb-115 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="tp-faq-wrapper mb-80">
+                        <div class="tpsection-wrapper mb-25">
+                            <h2 class="tpsection-title-two mb-40">
+                                Frequently<br> Asked
+                                <span>
+                                    Questions
+                                    <svg width="306" height="31" viewBox="0 0 306 31" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.89242 18.9903C2.89242 18.9903 192.778 -5.15589 299.226 12.3064"
+                                              stroke="#FFCE5A" stroke-width="5" stroke-linecap="round"></path>
+                                        <path d="M3.2201 14.9796C3.2201 14.9796 196.633 -0.186388 302.688 21.9968"
+                                              stroke="#FFCE5A" stroke-width="5" stroke-linecap="round"></path>
+                                    </svg>
+                                </span>
+                            </h2>
+                            <p>Can’t find what you are looking for?</p>
+                            <b></b>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="tp-accordion tp-green-accordion">
+                        <div class="accordion mb-35" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        How does the staking process work?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                     data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        The staking process at PayRing Emerging Capital is simple and straightforward. Users deposit their funds into their staking accounts, and based on their chosen investment package, they start earning daily returns on their investment. Our experienced team strategically invests the funds in stocks and the NSE BSE to generate profitable returns for our stakeholders
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        What are the available investment packages?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                     data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        We offer a range of investment packages tailored to meet the diverse needs of our users. Each package comes with different levels of investment and corresponding returns. You can explore the available packages on our website and choose the one that aligns with your investment goals.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                        How are the daily returns calculated?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse show"
+                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        The daily returns are calculated based on the investment package chosen by the user. Our advanced algorithms and market analysis allow us to determine the most favorable returns for each package. The returns are credited to the user's staking account on a daily basis.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Is there a minimum investment requirement?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                     data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Yes, there is a minimum investment requirement for each investment package. The specific minimum amount is mentioned for each package, ensuring that users can start their investment journey with ease. You can find detailed information about the minimum investment requirements on our website.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        What is the risk level associated with investments?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                     data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        As with any investment, there are inherent risks involved. While our team of experts employs strategies to manage and minimize risks, it's important to note that the value of investments can fluctuate in response to market conditions. We encourage users to carefully assess their risk tolerance and make informed investment decisions.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        How can I track my investment and returns?
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                     data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        The PayRing Emerging Capital provides a user-friendly online portal where you can easily track your investment and monitor your daily returns. Once you create an account and deposit funds, you'll have access to comprehensive investment information and real-time updates on your returns.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                        Can I withdraw my funds at any time?
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                     data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Yes, we offer flexible withdrawal options. Users have the freedom to withdraw their funds at any time, subject to the terms and conditions of their chosen investment package. Withdrawal requests are processed promptly, ensuring a seamless experience for our users.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- faq-area-end -->
+
+
+</main>

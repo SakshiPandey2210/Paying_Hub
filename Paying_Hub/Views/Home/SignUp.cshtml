@@ -1,0 +1,270 @@
+﻿@model Paying_Hub.Models.MemberMaster;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payring - Registration</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="~/Home/favicon/favicon.png">
+
+    <!-- CSS here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/Home/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="~/Home/assets/css/animate.css">
+    <link rel="stylesheet" href="~/Home/assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="~/Home/assets/css/slick.css">
+    <link rel="stylesheet" href="~/Home/assets/css/nouislider.css">
+    <link rel="stylesheet" href="~/Home/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/Home/assets/css/font-awesome-pro.css">
+    <link rel="stylesheet" href="~/Home/assets/css/modernizr.css">
+    <link rel="stylesheet" href="~/Home/assets/css/spacing.css">
+    <link rel="stylesheet" href="~/Home/assets/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('assets/images/loginbg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            backdrop-filter: blur(1px);
+        }
+    </style>
+    <style>
+        .custom-alert-container {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
+            z-index: 1050;
+        }
+
+            .custom-alert-container .alert {
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                border-radius: 6px;
+                padding: 15px 20px;
+                font-size: 16px;
+            }
+
+        @@media (max-width: 768px) {
+            .custom-alert-container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+
+               
+                @if (TempData["Error"] != null)
+                {
+                    <div class="custom-alert-container">
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong>Error:</strong> @TempData["Error"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    </div>
+                }
+
+
+                <!-- Registration Section -->
+                <div class="register-section bg-light bg-gradient p-4 rounded">
+                    <div class="row mb-2">
+                        <div class="col-md-4">
+                            <a asp-controller="Home" asp-action="Home"><img src="~/Home/logo/logo.png" class="img-fluid w-75" alt="logo"></a>
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="color-mb">Create An Account</h3>
+                            <p class="">Already have an account back to <a asp-controller="Home" asp-action="Login" class="btn-link">login</a>
+                        </div>
+                    </div>
+                    <div class="authentication-right">
+                        <form id="registerForm" asp-action="SignUp" asp-controller="Home" method="post">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group mb-2">
+                                        <label asp-for="SponserId" class="form-label">Sponsor Id</label>
+                                        <input type="text" class="form-control" asp-for="SponserId" id="txtintroducer_id" onblur="get_intro_detail()" placeholder="Sponsor Id" />
+                                        <span asp-validation-for="SponserId" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="form-group mb-2">
+                                        <label asp-for="SponserName" class="form-label">Sponsor Name</label>
+                                        <input type="text" class="form-control" asp-for="SponserName" id="txtintroducer_name" readonly />
+                                        <span asp-validation-for="SponserName" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group mb-2">
+                                        <label asp-for="Name" class="form-label">Applicant Name</label>
+                                        <input type="text" class="form-control" asp-for="Name" placeholder="Enter Name" oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g,'')" />
+                                        <span asp-validation-for="Name" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-2">
+                                        <label asp-for="MobileNumber" class="form-label">Mobile No</label>
+                                        <input type="text" class="form-control" asp-for="MobileNumber" placeholder="Enter Mobile" maxlength="10" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                                        <span asp-validation-for="MobileNumber" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group mb-2">
+                                        <label asp-for="EmailId" class="form-label">Email</label>
+                                        <input type="email" class="form-control" asp-for="EmailId" placeholder="Enter Email" />
+                                        <span asp-validation-for="EmailId" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-2">
+                                        <label asp-for="State" class="form-label">State</label>
+                                        <select class="form-control" asp-for="State" id="state" onchange="getcity(this.value)">
+                                            <option value="">Select State</option>
+                                            @foreach (var s in ViewBag.States)
+                                            {
+                                                <option value="@s.Id">@s.State_name</option>
+                                            }
+                                        </select>
+                                        <span asp-validation-for="State" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group mb-2">
+                                        <label asp-for="City" class="form-label">City</label>
+                                        <select class="form-control" asp-for="City" id="city">
+                                            <option value="">Select Your City</option>
+                                        </select>
+                                        <span asp-validation-for="City" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-2">
+                                        <label asp-for="PinCode" class="form-label">Pin Code</label>
+                                        <input type="text" class="form-control" placeholder="Enter Pin Code" asp-for="PinCode" maxlength="6" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                                        <span asp-validation-for="PinCode" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group ">
+                                        <label asp-for="Address" class="form-label">Address</label>
+                                        <input type="text" class="form-control" id="txtaddress" placeholder="Enter Your Address" asp-for="Address" />
+                                        <span asp-validation-for="Address" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="blue-btn mt-3">Create Account</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('#txtintroducer_id').on('blur', function () {
+            var sponserId = $(this).val();
+            if (sponserId) {
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("GetSponserName", "Member")',
+                    data: { sponserId: sponserId },
+                    success: function (response) {
+                        if (response.sponserName && response.sponserName.trim() !== "") {
+                            $('#txtintroducer_name').val(response.sponserName);
+                        } else {
+                            $('#txtintroducer_name').val("");
+                            alert("Please enter a valid Sponsor ID.");
+                        }
+                    },
+                    error: function () {
+                        alert("Error fetching sponsor name.");
+                    }
+                });
+            }
+        });
+
+    </script>
+    <script>
+        function getcity(stateid) {
+            //   alert(stateid);
+            $.ajax({
+                url: "/Member/Getcities",
+                type: "post",
+                data: { txtstateid: stateid },
+                datatype: "json",
+                success: function (r) {
+                    var cityd = $("#city");
+                    cityd.empty();
+                    cityd.append($('<option>').val('').text('Select City'));
+                    if (r.length > 0) {
+                        $.each(r, function (i, ct) {
+                            cityd.append($('<option>').val(ct.id).text(ct.city_name));
+                        });
+                    } else {
+                        cityd.append($('<option>').val('').text('--No Cities Found--'));
+                    }
+
+                },
+                error: function () {
+                    alert("Error in Fetching Data");
+                }
+            });
+        }
+
+        // Optional: Auto-close alerts
+        setTimeout(function () {
+            $('.alert').fadeOut('slow');
+        }, 5000);
+
+    </script>
+
+    <script src="~/Home/assets/js/email-decode.min.js"></script>
+    <script src="~/Home/assets/js/jquery.js"></script>
+    <script src="~/Home/assets/js/waypoints.js"></script>
+    <script src="~/Home/assets/js/bootstrap-bundle.js"></script>
+    <script src="~/Home/assets/js/meanmenu.js"></script>
+    <script src="~/Home/assets/js/swiper-bundle.js"></script>
+    <script src="~/Home/assets/js/slick.js"></script>
+    <script src="~/Home/assets/js/nouislider.js"></script>
+    <script src="~/Home/assets/js/magnific-popup.js"></script>
+    <script src="~/Home/assets/js/parallax.js"></script>
+    <script src="~/Home/assets/js/nice-select.js"></script>
+    <script src="~/Home/assets/js/wow.js"></script>
+    <script src="~/Home/assets/js/isotope-pkgd.js"></script>
+    <script src="~/Home/assets/js/imagesloaded-pkgd.js"></script>
+    <script src="~/Home/assets/js/tilt.jquery.min.js"></script>
+    <script src="~/Home/assets/js/purecounter.js"></script>
+    <script src="~/Home/assets/js/ajax-form.js"></script>
+    <script src="~/Home/assets/js/parallax-scroll.js"></script>
+    <script src="~/Home/assets/js/TweenMax.min.js"></script>
+    <script src="~/Home/assets/js/wavify.js"></script>
+    <script src="~/Home/assets/js/animate-headline.js"></script>
+    <script src="~/Home/assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,30 +1,39 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Paying_Hub.Interface;
 using Paying_Hub.Models;
 using Paying_Hub.Repository;
+
 
 namespace Paying_Hub.Controllers
 {
     public class MemberController : Controller
     {
         private readonly IMember _Member;
+        private readonly AppDbContext _context;
 
-
-        public MemberController(IMember Member)
+        public MemberController(IMember Member, AppDbContext context)
         {
             _Member = Member;
+            _context = context;
         }
 
         [HttpGet]
         public async Task<IActionResult> Registration()
         {
+            var states = _context.States.ToList();
+            ViewBag.States = states;
             return View();
         }
 
         [HttpPost]
         public async Task<IActionResult> Registration(MemberMaster model)
         {
+            //if (!ModelState.IsValid)
+            //{
+            //    return View(model); // return back with errors
+            //}
             try
             {
 
@@ -45,6 +54,8 @@ namespace Paying_Hub.Controllers
 
                 if (result.StartsWith("SQL Error"))
                 {
+                    var states = _context.States.ToList();
+                    ViewBag.States = states;
                     TempData["Error"] = result;
                     return View(model);
                 }
@@ -76,7 +87,7 @@ namespace Paying_Hub.Controllers
 
                 string lastTwoDigits = (newMemberNumber % 100).ToString("D2");
 
-                referralCode = "Pay" + randomNumber + lastTwoDigits;
+                referralCode = "PAY" + randomNumber + lastTwoDigits;
 
                 isUnique = !_Member.DoesReferralCodeExist(referralCode);
 
@@ -568,6 +579,16 @@ namespace Paying_Hub.Controllers
             }
         }
 
-
+        [HttpPost]
+        public IActionResult Getcities(string txtstateid)
+        {
+            var states = _context.States.FirstOrDefault(s => s.Id == int.Parse(txtstateid));
+            if (states != null)
+            {
+                var cities = _context.Cities.Where(c => c.stateid == states.Id).Select(c => new { c.id, c.city_name, c.stateid }).ToList();
+                return Json(cities);
+            }
+            return Json(new List<object>());
+        }
     }
 }

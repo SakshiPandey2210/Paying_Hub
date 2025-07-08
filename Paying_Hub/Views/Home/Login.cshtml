@@ -1,0 +1,210 @@
+﻿@model Paying_Hub.Models.UserLogin;
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payring - Login</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="~/Home/favicon/favicon.png">
+
+    <!-- CSS here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/Home/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="~/Home/assets/css/animate.css">
+    <link rel="stylesheet" href="~/Home/assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="~/Home/assets/css/slick.css">
+    <link rel="stylesheet" href="~/Home/assets/css/nouislider.css">
+    <link rel="stylesheet" href="~/Home/assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/Home/assets/css/font-awesome-pro.css">
+    <link rel="stylesheet" href="~/Home/assets/css/modernizr.css">
+    <link rel="stylesheet" href="~/Home/assets/css/spacing.css">
+    <link rel="stylesheet" href="~/Home/assets/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('assets/images/loginbg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            backdrop-filter: blur(1px);
+
+        }
+    </style>
+    <style>
+        .custom-alert-container {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
+            z-index: 1050;
+        }
+
+            .custom-alert-container .alert {
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                border-radius: 6px;
+                padding: 15px 20px;
+                font-size: 16px;
+            }
+
+        @@media (max-width: 768px) {
+            .custom-alert-container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <!-- Login Section -->
+                <div class="login-section bg-light bg-gradient p-3 rounded">
+                    <div class="logo text-center mb-3">
+                        <a asp-controller="Home" asp-action="Home"><img src="~/Home/logo/logo.png" class="img-fluid w-50" alt="logo"></a>
+                    </div>
+
+                    @if (TempData["Success"] != null)
+                    {
+                        <div class="custom-alert-container">
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <strong>Success:</strong> @TempData["Success"]
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        </div>
+                    }
+
+                    <form id="loginForm" asp-controller="Home" asp-action="Login" method="post" novalidate>
+                        <div class="form-group mb-2">
+                            <label asp-for="LoginId" class="form-label">Login ID</label>
+                            <input asp-for="LoginId" class="form-control" id="email" placeholder="Enter Login ID" required type="text">
+                            <span asp-validation-for="LoginId" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Password" class="form-label" for="review">Password</label>
+                            <input asp-for="Password" class="form-control" id="review" placeholder="Enter your password" required type="password">
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        <div class="remember-forgot my-2">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="form-check">
+                                    <input asp-for="RememberMe" type="checkbox" class="form-check-input" id="rememberMe" />
+                                    <label class="form-check-label" for="rememberMe">Remember me</label>
+                                </div>
+                                <a href="#forgotPassword" data-bs-toggle="modal" role="button" class="btn">Forgot password?</a>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="blue-btn">Login</button>
+                    </form>
+                    @if (TempData["Message"] != null)
+                    {
+                        <div class="alert alert-danger mt-3 text-center">
+                            @TempData["Message"]
+                        </div>
+                    }
+                    @if (ViewBag.RememberMeError != null)
+                    {
+                        <span class="text-danger">@ViewBag.RememberMeError</span>
+                    }
+                    <div class="signuptext">
+                        <hr>
+                        <p class="text-center">
+                            New User?<a asp-controller="Home" asp-action="SignUp" class="btn-link ms-3">Create an Account</a>
+                        </p>
+                    </div>
+                    
+                </div>
+                <footer class="footer footer-alt fw-medium">
+                    <span class="text-color-blue">
+                        <script>document.write(new Date().getFullYear())</script> © 2025 PayRing All Rights Reserved.
+                    </span>
+                </footer>
+            </div>
+           
+        </div>
+        
+    </div>
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="forgotPassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Reset Your Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group mb-3">
+                        <label class="form-label" for="resetEmail">Email Address</label>
+                        <input type="email" class="form-control" id="resetEmail" placeholder="Enter your email" required>
+                    </div>
+                    <button class="blue-btn" id="resetPasswordBtn">Send Reset Link</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+
+   @*  <script>
+        document.getElementById("loginForm").addEventListener("submit", function (e) {
+            const checkbox = document.getElementById("rememberMe");
+            if (!checkbox.checked) {
+                e.preventDefault(); // stop form submission
+                alert("Please check the Remember Me box to proceed.");
+            }
+        });
+    </script> *@
+    // Optional: Auto-close alerts
+    setTimeout(function () {
+    $('.alert').fadeOut('slow');
+    }, 5000);
+
+    <script src="~/Home/assets/js/email-decode.min.js"></script>
+    <script src="~/Home/assets/js/jquery.js"></script>
+    <script src="~/Home/assets/js/waypoints.js"></script>
+    <script src="~/Home/assets/js/bootstrap-bundle.js"></script>
+    <script src="~/Home/assets/js/meanmenu.js"></script>
+    <script src="~/Home/assets/js/swiper-bundle.js"></script>
+    <script src="~/Home/assets/js/slick.js"></script>
+    <script src="~/Home/assets/js/nouislider.js"></script>
+    <script src="~/Home/assets/js/magnific-popup.js"></script>
+    <script src="~/Home/assets/js/parallax.js"></script>
+    <script src="~/Home/assets/js/nice-select.js"></script>
+    <script src="~/Home/assets/js/wow.js"></script>
+    <script src="~/Home/assets/js/isotope-pkgd.js"></script>
+    <script src="~/Home/assets/js/imagesloaded-pkgd.js"></script>
+    <script src="~/Home/assets/js/tilt.jquery.min.js"></script>
+    <script src="~/Home/assets/js/purecounter.js"></script>
+    <script src="~/Home/assets/js/ajax-form.js"></script>
+    <script src="~/Home/assets/js/parallax-scroll.js"></script>
+    <script src="~/Home/assets/js/TweenMax.min.js"></script>
+    <script src="~/Home/assets/js/wavify.js"></script>
+    <script src="~/Home/assets/js/animate-headline.js"></script>
+    <script src="~/Home/assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Paying_Hub.Interface;
 using Paying_Hub.Models;
 using Paying_Hub.Repository;
@@ -8,21 +9,25 @@ namespace Paying_Hub.Controllers
     public class UserController : Controller
     {
         private readonly IUser _User;
+        private readonly AppDbContext _context;
 
-
-        public UserController(IUser User)
+        public UserController(IUser User, AppDbContext context)
         {
             _User = User;
+            _context = context;
         }
 
         public IActionResult Registration()
         {
+            var states = _context.States.ToList();
+            ViewBag.States = states;
             return View();
         }
 
         [HttpPost]
         public async Task<IActionResult> Registration(MemberMaster model)
         {
+           
             try
             {
 
@@ -43,6 +48,8 @@ namespace Paying_Hub.Controllers
 
                 if (result.StartsWith("SQL Error"))
                 {
+                    var states = _context.States.ToList();
+                    ViewBag.States = states;
                     TempData["Error"] = result;
                     return View(model);
                 }
@@ -75,7 +82,7 @@ namespace Paying_Hub.Controllers
 
                 string lastTwoDigits = (newMemberNumber % 100).ToString("D2");
 
-                referralCode = "Pay" + randomNumber + lastTwoDigits;
+                referralCode = "PAY" + randomNumber + lastTwoDigits;
 
                 isUnique = !_User.DoesReferralCodeExist(referralCode);
 

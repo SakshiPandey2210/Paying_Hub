@@ -1,0 +1,634 @@
+﻿
+
+
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+<!-- offcanvas area start -->
+<div class="offcanvas__area">
+    <div class="offcanvas__wrapper">
+        <div class="offcanvas__close">
+            <button class="offcanvas__close-btn offcanvas-close-btn">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                    <path d="M1 1L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+        <div class="offcanvas__content">
+            <div class="offcanvas__top mb-50 d-flex justify-content-between align-items-center">
+                <div class="offcanvas__logo logo">
+                    <a href="home-main.html">
+                        <img style="width:120px;" src="~/Home/logo/logo.png" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="tp-main-menu-mobile mb-35"></div>
+            <div class="offcanvas__btn">
+                <a asp-controller="Home" asp-action="Login" class="tp-btn w-100">Sign In</a>
+            </div>
+
+            <div class="offcanvas__social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="body-overlay"></div>
+
+<main>
+
+    <!-- banner-area-start -->
+    <div class="banner-area banner-4-spaces pt-150 pb-195">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-7 col-xl-10 col-lg-7">
+                    <div class="banner-4">
+                        <div class="banner-4-content">
+                            <h4 class="banner-4-title cd-headline clip is-full-width">
+                                The Fastest way to <br>
+                                <span class="cd-words-wrapper">
+                                    <b class="is-visible">Achieve</b>
+                                    <b>Achieve</b>
+                                    <b>Achieve</b>
+                                </span>
+                                Success.
+                            </h4>
+                            <p>
+                                We're really proud of the work we've done together. Whether it's a<br>
+                                brand or a new online business, we jump in passionately with both feet.
+                            </p>
+                            <div class="banner-4-btn mb-30">
+                                <a asp-controller="Home" asp-action="SignUp" class="blue-btn">SignUp</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- banner-area-end -->
+    <!-- feature-area-start -->
+    <section class="feature-area pt-40 pb-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="tpchoose-thumb p-relative mb-50">
+                        <img class="tpchoose-border-anim" src="~/Home/assets/images/about.jpg" alt="">
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="feature-content-4 pl-70">
+                        <div class="section-wrapper mb-40">
+                            <span>About PayRing</span>
+                            <h5 class="section-title-4 section-title-4-2">About us</h5>
+                        </div>
+                        <ul class="feature-list-4">
+                            <li>
+                                <div class="feature-list-4-item p-relative d-flex">
+
+                                    <div class="feature-list-4-content">
+                                        <p>At The PayRing Emerging Capital, we believe in a direct and transparent approach to investment. Instead of relying on cryptocurrencies, we offer a unique opportunity for our users to deposit their funds as staking and receive a daily return on investment (ROI) based on their chosen investment package.</p>
+                                    </div>
+                                    <div class="feature-4-shape-1 d-none d-md-block">
+                                        <svg class="line-dash-path" width="38" height="122" viewBox="0 0 38 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.279297 1C41.9846 20.0005 55.1988 87.9525 2.74393 121.294" stroke="#A7ACB3" stroke-dasharray="4 4" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-list-4-item p-relative d-flex">
+                                    <div class="feature-list-4-content">
+                                        <h4 class="title">About The PayRing</h4>
+                                        <p>With many years of experience, PayRing Emerging Capital is committed to providing a trustworthy and honorable platform for profit generation. Our ultimate goal is to create an environment where you can achieve big and shape your present and future, bringing happiness into your life.</p>
+                                        <p>As a highly experienced company in the NSE Stocks market, we specialize in offering excellent financial services. Our team of experts is skilled in trading equity, MCX, Nifty F&O, and more, catering to various customer needs. We leverage our expertise and invest in stocks and the NSE BSE to generate promising returns for our stakeholders.</p>
+                                    </div>
+                                    <div class="feature-4-shape-2 d-none d-md-block">
+                                        <svg class="line-dash-path" width="42" height="122" viewBox="0 0 42 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M41.3076 1.22192C-1.33493 18.0137 -18.0874 85.181 32.5507 121.222" stroke="#A7ACB3" stroke-dasharray="4 4" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- feature-area-end -->
+    <!-- optimize-area-start -->
+    <section class="optimize-area optimize-wrapper pb-140">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="optimize-wrapperp pt-35">
+                        <div class="section-wrapper mb-40">
+                            <span>Mission/Vision</span>
+                            <h5 class="section-title-4 section-title-4-2">Our Mission </h5>
+                            <p>
+                                At PayRing Emerging Capital, our mission is to manage and trade the vast funds in the NSE, while ensuring the success of our investors' portfolios on a global scale. We are dedicated to providing sophisticated and unique solutions, offering financial freedom and hassle-free returns with minimal risk. Through our investment strategies in stocks and the NSE BSE, we aim to deliver consistent and profitable returns for our staking users.
+                            </p>
+                            <h5 class="section-title-4 section-title-4-2">Our Vision </h5>
+                            <p>
+                                We strive to be recognized as a leading company, empowering our clients to succeed in the ever-evolving financial markets worldwide. We aim to be valued for our commitment to client satisfaction, exceptional service performance, financial strength, and profitability. At Bluemoon Emerging Capital, we continuously work hard to enhance our reputation for accessibility, professionalism, in-depth analysis, and the quality of our long-term consultative relationships with clients.
+
+                                Join Bluemoon Emerging Capital today, deposit your funds as staking, and experience a reliable and profitable investment journey like never before. Start earning daily ROI on the basis of your investment package, as we invest in stocks and the NSE BSE to maximize your returns.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="optimize-thumb text-end p-relative pt-35">
+                        <div class="optimize-thumb-img">
+                            <img class="img-fluid rounded" src="~/Home/assets/images/mission.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- optimize-area-end -->
+    <!-- testimonial-area-start -->
+    <section class="testimonial-area pb-60 scene fix">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="testimonial-4-thumb p-relative pb-60">
+
+
+                        <div class="">
+                            <img class="img-fluid rounded" src="~/Home/assets/images/greeting.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="tp-testimonial-4 pb-60">
+                        <div class="testimonial-4-wrap mb-40 pl-70">
+                            <div class="section-wrapper mb-50">
+                                <span></span>
+                                <h5 class="section-title-4 section-title-4-2">A faster way to do just about anything</h5>
+                                <p>Clarinet accustomed. Would legs of framework officers. We've to morning like a contracting him, the the to said in need gradually wellfeigned.</p>
+                                <p>We're really proud of the work we've done together. Whether it's a brand or a new online business, we jump in passionately with both feet.</p>
+                            </div>
+                            <div class="testimonial-4-wrapper tptestimonial-4-active">
+                                <div class="tptestimonial-4-item">
+
+                                    <div class="tptestimonial-4-content d-flex">
+
+                                        <div class="tptestimonial-4-text">
+                                            <p>
+                                                <b>Licensed & Certified</b><br>
+                                                May moment. Ever a proposal, texts time, place end and heard assistant confidence instead designer
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tptestimonial-4-item">
+
+                                    <div class="tptestimonial-4-content d-flex">
+
+                                        <div class="tptestimonial-4-text">
+                                            <p>
+                                                <b>Saving & Investments</b>
+                                                May moment. Ever a proposal, texts time, place end and heard assistant confidence instead designer
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tptestimonial-4-item">
+
+                                    <div class="tptestimonial-4-content d-flex">
+
+                                        <div class="tptestimonial-4-text">
+                                            <p>
+                                                <b>100% Secure Investments</b>
+                                                May moment. Ever a proposal, texts time, place end and heard assistant confidence instead designer
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="testimonial-arrow-4 pl-110">
+                            <div class="tptestimonal-4-nav p-relative">
+                                <button class="prv-testi-case">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" fill="none"
+                                             viewBox="0 0 8 14">
+                                            <path fill-rule="evenodd"
+                                                  d="M7.707.293a1 1 0 0 1 0 1.414L2.414 7l5.293 5.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 0z"
+                                                  fill="currentColor"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <button class="next-testi-case">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" fill="none"
+                                             viewBox="0 0 8 14">
+                                            <path fill-rule="evenodd"
+                                                  d="M.293 13.707a1 1 0 0 1 0-1.414L5.586 7 .293 1.707A1 1 0 1 1 1.707.293l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414 0z"
+                                                  fill="currentColor"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonial-area-end -->
+    <!-- services-area-start -->
+    <section class="services-area pb-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-wrapper text-center mb-60">
+                        <span>Benefits</span>
+                        <h5 class="section-title-4">Experience The Benefits Of PayRing Emerging Capital</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="services-item-4 text-center mb-55">
+                        <div class="services-icon-4 mb-30">
+                            <img src="~/Home/assets/images/benefit1.png" alt="">
+                        </div>
+                        <div class="services-content-4">
+                            <h5 class="title mb-20">Crative Returns</h5>
+                            <p></p>
+                            <div class="services-btn-4 p-relative">
+                                <a href="#">
+                                    <span>Read More</span>
+                                    <i>
+                                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.2871 1L17 6.71285L11.2871 12.4257" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M1 6.71313H16.8397" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="services-item-4 text-center mb-55">
+                        <div class="services-icon-4 mb-30">
+                            <img src="~/Home/assets/images/benefit2.png" alt="">
+                        </div>
+                        <div class="services-content-4">
+                            <h5 class="title mb-20">Hassle-free Investment</h5>
+                            <p></p>
+                            <div class="services-btn-4 p-relative">
+                                <a href="#">
+                                    <span>Read More</span>
+                                    <i>
+                                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.2871 1L17 6.71285L11.2871 12.4257" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M1 6.71313H16.8397" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="services-item-4 text-center mb-55">
+                        <div class="services-icon-4 mb-30">
+                            <img src="~/Home/assets/images/benefit3.png" alt="">
+
+                        </div>
+                        <div class="services-content-4">
+                            <h5 class="title mb-20">Transparent and Secure</h5>
+                            <p></p>
+                            <div class="services-btn-4 p-relative">
+                                <a href="#">
+                                    <span>Read More</span>
+                                    <i>
+                                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.2871 1L17 6.71285L11.2871 12.4257" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M1 6.71313H16.8397" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="services-item-4 text-center mb-55">
+                        <div class="services-icon-4 mb-30">
+                            <img src="~/Home/assets/images/benefit4.png" alt="">
+                        </div>
+                        <div class="services-content-4">
+                            <h5 class="title mb-20">Expert Guidance</h5>
+                            <p></p>
+                            <div class="services-btn-4 p-relative">
+                                <a href="#">
+                                    <span>Read More</span>
+                                    <i>
+                                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.2871 1L17 6.71285L11.2871 12.4257" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M1 6.71313H16.8397" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="services-item-4 text-center mb-55">
+                        <div class="services-icon-4 mb-30">
+                            <img src="~/Home/assets/images/benefit5.png" alt="">
+                        </div>
+                        <div class="services-content-4">
+                            <h5 class="title mb-20">Flexibility and Customization</h5>
+                            <p></p>
+                            <div class="services-btn-4 p-relative">
+                                <a href="#">
+                                    <span>Read More</span>
+                                    <i>
+                                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.2871 1L17 6.71285L11.2871 12.4257" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M1 6.71313H16.8397" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="services-item-4 text-center mb-55">
+                        <div class="services-icon-4 mb-30">
+                            <img src="~/Home/assets/images/benefit6.png" alt="">
+                        </div>
+                        <div class="services-content-4">
+                            <h5 class="title mb-20">Long-term Investment Focus</h5>
+                            <p></p>
+                            <div class="services-btn-4 p-relative">
+                                <a href="#">
+                                    <span>Read More</span>
+                                    <i>
+                                        <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.2871 1L17 6.71285L11.2871 12.4257" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M1 6.71313H16.8397" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-- services-area-end -->
+    <!-- faq-area-start -->
+    <section class="faq-area pt-15 pb-115">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="tp-faq-wrapper mb-80">
+                        <div class="tpsection-wrapper mb-25">
+                            <h2 class="tpsection-title-two mb-40">
+                                Frequently<br> Asked
+                                <span>
+                                    Questions
+                                    <svg width="306" height="31" viewBox="0 0 306 31" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.89242 18.9903C2.89242 18.9903 192.778 -5.15589 299.226 12.3064"
+                                              stroke="#FFCE5A" stroke-width="5" stroke-linecap="round"></path>
+                                        <path d="M3.2201 14.9796C3.2201 14.9796 196.633 -0.186388 302.688 21.9968"
+                                              stroke="#FFCE5A" stroke-width="5" stroke-linecap="round"></path>
+                                    </svg>
+                                </span>
+                            </h2>
+                            <p>Can’t find what you are looking for?</p>
+                            <b></b>
+                        </div>
+                        <img class="img-fluid " src="~/Home/logo/logo.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="tp-accordion tp-green-accordion">
+                        <div class="accordion mb-35" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        How does the staking process work?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                     data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        The staking process at PayRing Emerging Capital is simple and straightforward. Users deposit their funds into their staking accounts, and based on their chosen investment package, they start earning daily returns on their investment. Our experienced team strategically invests the funds in stocks and the NSE BSE to generate profitable returns for our stakeholders
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        What are the available investment packages?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                     data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        We offer a range of investment packages tailored to meet the diverse needs of our users. Each package comes with different levels of investment and corresponding returns. You can explore the available packages on our website and choose the one that aligns with your investment goals.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                        How are the daily returns calculated?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse show"
+                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        The daily returns are calculated based on the investment package chosen by the user. Our advanced algorithms and market analysis allow us to determine the most favorable returns for each package. The returns are credited to the user's staking account on a daily basis.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Is there a minimum investment requirement?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                     data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Yes, there is a minimum investment requirement for each investment package. The specific minimum amount is mentioned for each package, ensuring that users can start their investment journey with ease. You can find detailed information about the minimum investment requirements on our website.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        What is the risk level associated with investments?
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                     data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        As with any investment, there are inherent risks involved. While our team of experts employs strategies to manage and minimize risks, it's important to note that the value of investments can fluctuate in response to market conditions. We encourage users to carefully assess their risk tolerance and make informed investment decisions.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        How can I track my investment and returns?
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                     data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        The PayRing Emerging Capital provides a user-friendly online portal where you can easily track your investment and monitor your daily returns. Once you create an account and deposit funds, you'll have access to comprehensive investment information and real-time updates on your returns.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSeven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                        Can I withdraw my funds at any time?
+                                    </button>
+                                </h2>
+                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                     data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Yes, we offer flexible withdrawal options. Users have the freedom to withdraw their funds at any time, subject to the terms and conditions of their chosen investment package. Withdrawal requests are processed promptly, ensuring a seamless experience for our users.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- faq-area-end -->
+
+
+    <section class="pageTitle1 pb-115">
+        <h2 class="text-center blue-text">Bigtech Strategy and Project Plan</h2><br>
+        <div class="container">
+            <div class="col-lg-12 align-self-center">
+                <div class="content">
+
+                    <div class="col-xl-12 col-lg-12 col-xs-12">
+
+                        <div class="tradingview-widget-container">
+                            <div id="tradingview_07535">
+                                <div id="tradingview_9daae-wrapper" style="position: relative;box-sizing: content-box;width: 98%;height: calc(500px - 32px);margin: 0 auto !important;padding: 0 !important;font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif;">
+                                    <div style="width: 98%;height: calc(500px - 32px);background: transparent;padding: 0 !important;">
+                                        <iframe id="tradingview_9daae" src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_9daae&amp;symbol=BSE%3ASENSEX&amp;interval=W&amp;symboledit=1&amp;saveimage=1&amp;toolbarbg=f1f3f6&amp;studies=%5B%5D&amp;theme=light&amp;style=1&amp;timezone=Etc%2FUTC&amp;studies_overrides=%7B%7D&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;locale=in&amp;utm_source=becbharat.com&amp;utm_medium=widget_new&amp;utm_campaign=chart&amp;utm_term=BSE%3ASENSEX#%7B%22page-uri%22%3A%22becbharat.com%2Fhome%23about%22%7D" style="width: 100%; height: 100%; margin: 0 !important; padding: 0 !important;" frameborder="0" allowtransparency="true" scrolling="no" allowfullscreen="">
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tradingview-widget-copyright" style="width: 100%;"><a href="#" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-12 col-lg-12 col-xs-12">
+
+                        <div class="tradingview-widget-container">
+                            <div id="tradingview_4903e">
+                                <div id="tradingview_9d105-wrapper" style="position: relative;box-sizing: content-box;width: 98%;height: calc(500px - 32px);margin: 0 auto !important;padding: 0 !important;font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif;">
+                                    <div style="width: 98%;height: calc(500px - 32px);background: transparent;padding: 0 !important;">
+                                        <iframe id="tradingview_9d105" src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_9d105&amp;symbol=MIL%3AEURO&amp;interval=W&amp;symboledit=1&amp;saveimage=1&amp;toolbarbg=f1f3f6&amp;studies=%5B%5D&amp;theme=light&amp;style=1&amp;timezone=Etc%2FUTC&amp;studies_overrides=%7B%7D&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;locale=in&amp;utm_source=becbharat.com&amp;utm_medium=widget_new&amp;utm_campaign=chart&amp;utm_term=MIL%3AEURO#%7B%22page-uri%22%3A%22becbharat.com%2Fhome%23about%22%7D" style="width: 100%; height: 100%; margin: 0 !important; padding: 0 !important;" frameborder="0" allowtransparency="true" scrolling="no" allowfullscreen="">
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tradingview-widget-copyright" style="width: 100%;"><a href="#" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-12 col-lg-12 col-xs-12">
+
+                        <div class="tradingview-widget-container">
+                            <div id="tradingview_46613">
+                                <div id="tradingview_d3bf8-wrapper" style="position: relative;box-sizing: content-box;width: 98%;height: calc(500px - 32px);margin: 0 auto !important;padding: 0 !important;font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif;">
+                                    <div style="width: 98%;height: calc(500px - 32px);background: transparent;padding: 0 !important;">
+                                        <iframe id="tradingview_d3bf8" src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_d3bf8&amp;symbol=FOREXCOM%3AXAUUSD&amp;interval=D&amp;symboledit=1&amp;saveimage=1&amp;toolbarbg=f1f3f6&amp;studies=%5B%5D&amp;theme=light&amp;style=1&amp;timezone=Etc%2FUTC&amp;studies_overrides=%7B%7D&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;locale=in&amp;utm_source=becbharat.com&amp;utm_medium=widget_new&amp;utm_campaign=chart&amp;utm_term=FOREXCOM%3AXAUUSD#%7B%22page-uri%22%3A%22becbharat.com%2Fhome%23about%22%7D" style="width: 100%; height: 100%; margin: 0 !important; padding: 0 !important;" frameborder="0" allowtransparency="true" scrolling="no" allowfullscreen="">
+                                        </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tradingview-widget-copyright" style="width: 100%;"><a href="#" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+</main>

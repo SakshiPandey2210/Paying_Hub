@@ -1,17 +1,43 @@
-﻿@model Paying_Hub.Models.MemberMaster;
+﻿
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@model Paying_Hub.Models.MemberMaster;
 @{
     ViewData["Title"] = "Registration";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 
-    var sucessmessage = TempData["Success"] as string;
-    TempData["Success"] = null;
-    var error = TempData["Error"] as string;
-    TempData["Error"] = null;
+    // var sucessmessage = TempData["Success"] as string;
+    // TempData["Success"] = null;
+    // var error = TempData["Error"] as string;
+    // TempData["Error"] = null;
 
 }
+<style>
+    .custom-alert-container {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        z-index: 1050;
+    }
+
+        .custom-alert-container .alert {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border-radius: 6px;
+            padding: 15px 20px;
+            font-size: 16px;
+        }
+
+    @@media (max-width: 768px) {
+        .custom-alert-container {
+            width: 90%;
+        }
+    }
+</style>
 
 
-@if (!string.IsNullOrEmpty(sucessmessage))
+@* @if (!string.IsNullOrEmpty(sucessmessage))
 {
     <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
         @sucessmessage
@@ -24,7 +50,27 @@
         @error
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
+} *@
+@if (TempData["Success"] != null)
+{
+    <div class="custom-alert-container">
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Success:</strong> @TempData["Success"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
 }
+
+@if (TempData["Error"] != null)
+{
+    <div class="custom-alert-container">
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Error:</strong> @TempData["Error"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    </div>
+}
+
     <div class="row merged20 mb-3">
         <div class="col-lg-12">
             <div class="d-widget">
@@ -33,128 +79,128 @@
                 </div>
 
             <form id="registerForm" asp-action="Registration" asp-controller="Member" method="post">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group mb-2">
-                                <label class="form-label">Sponsor Id</label>
-                            <input type="text" class="form-control" asp-for="SponserId" id="txtintroducer_id" onblur="get_intro_detail()" value="">
-                            </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group mb-2">
+                            <label asp-for="SponserId" class="form-label">Sponsor Id</label>
+                            <input type="text" class="form-control" asp-for="SponserId" id="txtintroducer_id" onblur="get_intro_detail()" placeholder="Sponsor Id" />
+                            <span asp-validation-for="SponserId" class="text-danger"></span>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group mb-2">
-                                <label class="form-label">Sponsor Name</label>
-                                <input type="text" class="form-control" asp-for="SponserName" id="txtintroducer_name" value="" readonly>
-                            </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group mb-2">
+                            <label asp-for="SponserName" class="form-label">Sponsor Name</label>
+                            <input type="text" class="form-control" asp-for="SponserName" id="txtintroducer_name" readonly />
+                            <span asp-validation-for="SponserName" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Applicant Name -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group mb-2">
+                            <label asp-for="Name" class="form-label">Applicant Name</label>
+                            <input type="text" class="form-control" asp-for="Name" placeholder="Enter Name" oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g,'')" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group mb-2">
-                                <label class="form-label">Applicant Name</label>
-                                <input type="text" class="form-control" id="txtassociate_name" asp-for="Name" placeholder="Enter Name">
-                            </div>
+                    <div class="col-md-6">
+                        <div class="form-group mb-2">
+                            <label asp-for="MobileNumber" class="form-label">Mobile No</label>
+                            <input type="text" class="form-control" asp-for="MobileNumber" placeholder="Enter Mobile" maxlength="10" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                            <span asp-validation-for="MobileNumber" class="text-danger"></span>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group mb-2">
-                                <label class="form-label">Mobile No</label>
-                            <input type="text" class="form-control" id="txtmobile" asp-for="MobileNumber" placeholder="Enter Mobile">
-                            </div>
+                    </div>
+                </div>
+
+                <!-- Email and State -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group mb-2">
+                            <label asp-for="EmailId" class="form-label">Email</label>
+                            <input type="email" class="form-control" asp-for="EmailId" placeholder="Enter Email" />
+                            <span asp-validation-for="EmailId" class="text-danger"></span>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group mb-2">
-                                <label class="form-label">Email</label>
-                            <input type="text" class="form-control" id="txtemail" asp-for="EmailId" placeholder="Enter Email">
-                            </div>
+                    <div class="col-md-6">
+                        <div class="form-group mb-2">
+                            <label asp-for="State" class="form-label">State</label>
+                            <select class="form-control" asp-for="State" id="state" onchange="getcity(this.value)">
+                                <option value="">Select State</option>
+                                @foreach (var s in ViewBag.States)
+                                {
+                                    <option value="@s.Id">@s.State_name</option>
+                                }                               
+                            </select>
+                            <span asp-validation-for="State" class="text-danger"></span>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group mb-2">
-                                <label class="form-label">State</label>
-                            <select class="form-control" id="ddstate" asp-for="State" onchange="get_city()">
-                                    <option value="1">Select State</option>
-                                    <option value="2">ANDAMAN AND NICOBAR ISLANDS</option>
-                                    <option value="3">ANDHRA PRADESH</option>
-                                    <option value="4">ARUNACHAL PRADESH</option>
-                                    <option value="5">ASSAM</option>
-                                    <option value="6">BIHAR</option>
-                                    <option value="7">CHANDIGARH</option>
-                                    <option value="8">CHHATTISGARH</option>
-                                    <option value="9">DADRA AND NAGAR HAVELI</option>
-                                    <option value="10">DAMAN AND DIU</option>
-                                    <option value="11">DELHI</option>
-                                    <option value="12">GOA</option>
-                                    <option value="13">GUJARAT</option>
-                                    <option value="14">HARYANA</option>
-                                    <option value="15">HIMACHAL PRADESH</option>
-                                    <option value="16">JAMMU AND KASHMIR</option>
-                                    <option value="17">JHARKHAND</option>
-                                    <option value="18">KARNATAKA</option>
-                                    <option value="19">KERALA</option>
-                                    <option value="20">LAKSHADWEEP</option>
-                                    <option value="21">MADHYA PRADESH</option>
-                                    <option value="22">MAHARASHTRA</option>
-                                    <option value="23">MANIPUR</option>
-                                    <option value="24">MEGHALAYA</option>
-                                    <option value="25">MIZORAM</option>
-                                    <option value="26">NAGALAND</option>
-                                    <option value="27">ORISSA</option>
-                                    <option value="28">PUDUCHERRY</option>
-                                    <option value="29">PUNJAB</option>
-                                    <option value="30">RAJASTHAN</option>
-                                    <option value="31">SIKKIM</option>
-                                    <option value="32">TAMIL NADU</option>
-                                    <option value="33">TRIPURA</option>
-                                    <option value="34">UTTAR PRADESH</option>
-                                    <option value="35">UTTARAKHAND</option>
-                                    <option value="36">WEST BENGAL</option>
-                                    <option value="296">TELANGANA</option>
-                                </select>
-                            </div>
+                    </div>
+                </div>
+
+                <!-- City and PinCode -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group mb-2">
+                            <label asp-for="City" class="form-label">City</label>
+                            <select class="form-control" asp-for="City" id="city">
+                                <option value="">Select Your City</option>
+                            </select>
+                            <span asp-validation-for="City" class="text-danger"></span>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group mb-2">
-                                <label class="form-label">City</label>
-                            <select class="form-control" id="ddcity" asp-for="City">
-                                    <option value="1">Select</option>
-                                <option value="1">sultanpur</option>
-                                <option value="2">Kanpur</option>
-                                <option value="3">AmbedkarNagar</option>
-                                <option value="4">Jaunpur</option>
-
-                                </select>
-                            </div>
+                    <div class="col-md-6">
+                        <div class="form-group mb-2">
+                            <label asp-for="PinCode" class="form-label">Pin Code</label>
+                            <input type="text" class="form-control" placeholder="Enter Pin Code" asp-for="PinCode" maxlength="6" oninput="this.value=this.value.replace(/[^0-9]/g,'');" />
+                            <span asp-validation-for="PinCode" class="text-danger"></span>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group mb-2">
-                                <label class="form-label">Nominee's Name</label>
-                            <input type="text" class="form-control" id="nominee_name" asp-for="NomineeName" placeholder="Enter Nominee's Name">
-                            </div>
+                    </div>
+                </div>
+                <!-- Address and Nominee -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group mb-2">
+                            <label asp-for="Address" class="form-label">Address</label>
+                            <input type="text" class="form-control" placeholder="Enter Your Address" asp-for="Address" />
+                            <span asp-validation-for="Address" class="text-danger"></span>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group mb-2">
-                                <label class="form-label">Nominee's Age</label>
-                            <input type="date" class="form-control" id="nominee_age" asp-for="NomineeAge">
-                            </div>
+                    <div class="col-md-6">
+                        <div class="form-group mb-2">
+                            <label asp-for="NomineeName" class="form-label">Nominee's Name</label>
+                            <input type="text" class="form-control" placeholder="Enter Nominee Name" asp-for="NomineeName" />
+                            <span asp-validation-for="NomineeName" class="text-danger"></span>
                         </div>
-                        <div class="col-md-6">
-                            <div class="form-group mb-2">
-                                <label class="form-label">Nominee's Relation</label>
-                            <input type="text" class="form-control" id="nominee_relation" asp-for="NomineeRelation" placeholder="Enter Relation">
-                            </div>
+                    </div>
+                </div>
+
+                <!-- Nominee Age and Relation -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group mb-2">
+                            <label asp-for="NomineeAge" class="form-label">Nominee's Age</label>
+                            <input type="date" class="form-control" asp-for="NomineeAge" />
+                            <span asp-validation-for="NomineeAge" class="text-danger"></span>
                         </div>
                     </div>
 
-                    <button type="submit" class="button primary mt-3">Create Account</button>
-                </form>
+                    <div class="col-md-6">
+                        <div class="form-group mb-2">
+                            <label asp-for="NomineeRelation" class="form-label">Nominee's Relation</label>
+                            <input type="text" class="form-control" placeholder="Enter Nominee Relation " asp-for="NomineeRelation" />
+                            <span asp-validation-for="NomineeRelation" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="button primary mt-3">Create Account</button>
+            </form>
+
 
             </div>
         </div>
@@ -182,5 +228,39 @@
             });
         }
     });
+
+</script>
+
+<script>
+    function getcity(stateid) {
+     //   alert(stateid);
+        $.ajax({
+            url: "/Member/Getcities",
+            type: "post",
+            data: { txtstateid: stateid },
+            datatype: "json",
+            success: function (r) {
+                var cityd = $("#city");
+                cityd.empty();
+                cityd.append($('<option>').val('').text('Select City'));
+                if (r.length > 0) {
+                    $.each(r, function (i, ct) {
+                        cityd.append($('<option>').val(ct.id).text(ct.city_name));
+                    });
+                } else {
+                    cityd.append($('<option>').val('').text('--No Cities Found--'));
+                }
+
+            },
+            error: function () {
+                alert("Error in Fetching Data");
+            }
+        });
+    }
+
+    // Optional: Auto-close alerts
+    setTimeout(function () {
+        $('.alert').fadeOut('slow');
+    }, 8000);
 
 </script>

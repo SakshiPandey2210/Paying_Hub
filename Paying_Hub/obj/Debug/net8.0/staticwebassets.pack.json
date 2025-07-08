@@ -1,0 +1,805 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Paying_Hub.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Paying_Hub.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\css\\animate.css",
+      "PackagePath": "staticwebassets\\Home\\assets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\Home\\assets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\css\\font-awesome-pro.css",
+      "PackagePath": "staticwebassets\\Home\\assets\\css\\font-awesome-pro.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\Home\\assets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\css\\main.css",
+      "PackagePath": "staticwebassets\\Home\\assets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\css\\modernizr.css",
+      "PackagePath": "staticwebassets\\Home\\assets\\css\\modernizr.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\css\\nouislider.css",
+      "PackagePath": "staticwebassets\\Home\\assets\\css\\nouislider.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\css\\slick.css",
+      "PackagePath": "staticwebassets\\Home\\assets\\css\\slick.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\css\\spacing.css",
+      "PackagePath": "staticwebassets\\Home\\assets\\css\\spacing.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\css\\swiper-bundle.css",
+      "PackagePath": "staticwebassets\\Home\\assets\\css\\swiper-bundle.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\Home\\assets\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\Home\\assets\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\Home\\assets\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\images\\about.jpg",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\about.jpg"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\images\\about.png",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\about.png"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\images\\benefit1.png",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\benefit1.png"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\images\\benefit2.png",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\benefit2.png"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\images\\benefit3.png",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\benefit3.png"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\images\\benefit4.png",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\benefit4.png"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\images\\benefit5.png",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\benefit5.png"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\images\\benefit6.png",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\benefit6.png"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\images\\greeting.jpg",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\greeting.jpg"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\images\\loginbg.jpg",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\loginbg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\images\\mission.jpg",
+      "PackagePath": "staticwebassets\\Home\\assets\\images\\mission.jpg"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\js\\TweenMax.min.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\TweenMax.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\js\\ajax-form.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\ajax-form.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\js\\animate-headline.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\animate-headline.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\js\\bootstrap-bundle.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\bootstrap-bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\js\\email-decode.min.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\email-decode.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\js\\imagesloaded-pkgd.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\imagesloaded-pkgd.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\js\\isotope-pkgd.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\isotope-pkgd.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\js\\jquery.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\js\\magnific-popup.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\magnific-popup.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\js\\meanmenu.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\meanmenu.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\js\\nice-select.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\nice-select.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\js\\nouislider.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\nouislider.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\js\\parallax-scroll.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\parallax-scroll.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\js\\parallax.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\parallax.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\js\\purecounter.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\purecounter.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\js\\slick.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\slick.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\js\\swiper-bundle.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\swiper-bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\js\\tilt.jquery.min.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\tilt.jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\js\\wavify.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\wavify.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\js\\waypoints.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\waypoints.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\assets\\js\\wow.js",
+      "PackagePath": "staticwebassets\\Home\\assets\\js\\wow.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\favicon\\favicon.png",
+      "PackagePath": "staticwebassets\\Home\\favicon\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\logo\\logo.png",
+      "PackagePath": "staticwebassets\\Home\\logo\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\Home\\logo\\logol.png",
+      "PackagePath": "staticwebassets\\Home\\logo\\logol.png"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\admin_assets\\css\\chosen-sprite.png",
+      "PackagePath": "staticwebassets\\admin_assets\\css\\chosen-sprite.png"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\admin_assets\\css\\chosen-sprite@2x.png",
+      "PackagePath": "staticwebassets\\admin_assets\\css\\chosen-sprite@2x.png"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\admin_assets\\css\\color.css",
+      "PackagePath": "staticwebassets\\admin_assets\\css\\color.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\admin_assets\\css\\main.min.css",
+      "PackagePath": "staticwebassets\\admin_assets\\css\\main.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\admin_assets\\css\\owl.video.play.html",
+      "PackagePath": "staticwebassets\\admin_assets\\css\\owl.video.play.html"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\admin_assets\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\admin_assets\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\admin_assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\admin_assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\admin_assets\\fonts\\icofont.woff",
+      "PackagePath": "staticwebassets\\admin_assets\\fonts\\icofont.woff"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\admin_assets\\fonts\\icofont.woff2",
+      "PackagePath": "staticwebassets\\admin_assets\\fonts\\icofont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\admin_assets\\images\\Icon.png",
+      "PackagePath": "staticwebassets\\admin_assets\\images\\Icon.png"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\admin_assets\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\admin_assets\\images\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\admin_assets\\images\\icon0.png",
+      "PackagePath": "staticwebassets\\admin_assets\\images\\icon0.png"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\admin_assets\\images\\icon1.png",
+      "PackagePath": "staticwebassets\\admin_assets\\images\\icon1.png"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\admin_assets\\images\\logo.png",
+      "PackagePath": "staticwebassets\\admin_assets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\admin_assets\\js\\chart.html",
+      "PackagePath": "staticwebassets\\admin_assets\\js\\chart.html"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\admin_assets\\js\\dash_1.html",
+      "PackagePath": "staticwebassets\\admin_assets\\js\\dash_1.html"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\admin_assets\\js\\dash_2.html",
+      "PackagePath": "staticwebassets\\admin_assets\\js\\dash_2.html"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\admin_assets\\js\\main.min.js",
+      "PackagePath": "staticwebassets\\admin_assets\\js\\main.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\admin_assets\\js\\script.js",
+      "PackagePath": "staticwebassets\\admin_assets\\js\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\admin_assets\\js\\sparkline.html",
+      "PackagePath": "staticwebassets\\admin_assets\\js\\sparkline.html"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\admin_assets\\js\\vivus.min.js",
+      "PackagePath": "staticwebassets\\admin_assets\\js\\vivus.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\css\\app.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\app.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\css\\icons.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\icons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\fonts\\bootstrap-iconse52a.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\bootstrap-iconse52a.woff"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\fonts\\bootstrap-iconse52a.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\bootstrap-iconse52a.woff2"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\fonts\\materialdesignicons-webfont9445.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\materialdesignicons-webfont9445.eot"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\fonts\\materialdesignicons-webfont9445.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\materialdesignicons-webfont9445.ttf"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\fonts\\materialdesignicons-webfont9445.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\materialdesignicons-webfont9445.woff"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\fonts\\materialdesignicons-webfont9445.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\materialdesignicons-webfont9445.woff2"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\fonts\\materialdesignicons-webfontd41d.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\materialdesignicons-webfontd41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\fonts\\remixicon972e.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\remixicon972e.eot"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\fonts\\remixicon972e.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\remixicon972e.svg"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\fonts\\remixicon972e.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\remixicon972e.ttf"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\fonts\\remixicon972e.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\remixicon972e.woff"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\fonts\\remixicon972e.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\remixicon972e.woff2"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\images\\auth-bg-dark.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\auth-bg-dark.jpg"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\images\\auth-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\auth-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\images\\auth-img.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\auth-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\images\\bg-profile.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg-profile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\images\\companyLogo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\companyLogo.png"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\assets\\images\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\images\\layouts\\loginimg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\layouts\\loginimg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\images\\layouts\\signupimg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\layouts\\signupimg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\images\\svg\\404.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\svg\\404.svg"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\images\\svg\\500.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\svg\\500.svg"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\images\\svg\\shield.gif",
+      "PackagePath": "staticwebassets\\assets\\images\\svg\\shield.gif"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\images\\svg\\under_maintenance.png",
+      "PackagePath": "staticwebassets\\assets\\images\\svg\\under_maintenance.png"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\images\\users\\avatar-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\users\\avatar-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\js\\app.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\app.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\js\\config.js",
+      "PackagePath": "staticwebassets\\assets\\js\\config.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\js\\dashboard.js",
+      "PackagePath": "staticwebassets\\assets\\js\\dashboard.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\js\\vendor.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\datatables.net-bs5\\css\\dataTables.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\datatables.net-bs5\\css\\dataTables.bootstrap5.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\datatables.net-bs5\\js\\dataTables.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\datatables.net-bs5\\js\\dataTables.bootstrap5.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\datatables.net-buttons-bs5\\css\\buttons.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\datatables.net-buttons-bs5\\css\\buttons.bootstrap5.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\datatables.net-buttons-bs5\\js\\buttons.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\datatables.net-buttons-bs5\\js\\buttons.bootstrap5.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\datatables.net-buttons\\js\\buttons.flash.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\datatables.net-buttons\\js\\buttons.flash.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\datatables.net-buttons\\js\\buttons.html5.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\datatables.net-buttons\\js\\buttons.html5.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\datatables.net-buttons\\js\\buttons.print.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\datatables.net-buttons\\js\\buttons.print.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\datatables.net-buttons\\js\\dataTables.buttons.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\datatables.net-buttons\\js\\dataTables.buttons.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\datatables.net-fixedcolumns-bs5\\css\\fixedColumns.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\datatables.net-fixedcolumns-bs5\\css\\fixedColumns.bootstrap5.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\datatables.net-fixedcolumns-bs5\\js\\fixedColumns.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\datatables.net-fixedcolumns-bs5\\js\\fixedColumns.bootstrap5.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\datatables.net-fixedheader-bs5\\css\\fixedHeader.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\datatables.net-fixedheader-bs5\\css\\fixedHeader.bootstrap5.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\datatables.net-fixedheader\\js\\dataTables.fixedHeader.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\datatables.net-fixedheader\\js\\dataTables.fixedHeader.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\datatables.net-keytable\\js\\dataTables.keyTable.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\datatables.net-keytable\\js\\dataTables.keyTable.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\datatables.net-responsive-bs5\\css\\responsive.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\datatables.net-responsive-bs5\\css\\responsive.bootstrap5.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\datatables.net-responsive-bs5\\js\\responsive.bootstrap5.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\datatables.net-responsive-bs5\\js\\responsive.bootstrap5.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\datatables.net-responsive\\js\\dataTables.responsive.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\datatables.net-responsive\\js\\dataTables.responsive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\datatables.net-select-bs5\\css\\select.bootstrap5.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\datatables.net-select-bs5\\css\\select.bootstrap5.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\datatables.net-select\\js\\dataTables.select.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\datatables.net-select\\js\\dataTables.select.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\datatables.net\\js\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\datatables.net\\js\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\dropzone\\min\\dropzone.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\dropzone\\min\\dropzone.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\flatpickr\\flatpickr.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\flatpickr\\flatpickr.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\flatpickr\\flatpickr.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\flatpickr\\flatpickr.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\ion-rangeslider\\js\\ion.rangeSlider.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\ion-rangeslider\\js\\ion.rangeSlider.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\jquery-mask-plugin\\jquery.mask.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\jquery-mask-plugin\\jquery.mask.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\jquery-sparkline\\jquery.sparkline.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\jquery-sparkline\\jquery.sparkline.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\jquery-tabledit\\jquery.tabledit.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\jquery-tabledit\\jquery.tabledit.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\jquery-toast-plugin\\jquery.toast.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\jquery-toast-plugin\\jquery.toast.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\jquery-toast-plugin\\jquery.toast.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\jquery-toast-plugin\\jquery.toast.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\quill\\quill.bubble.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\quill\\quill.bubble.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\quill\\quill.core.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\quill\\quill.core.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\quill\\quill.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\quill\\quill.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\quill\\quill.snow.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\quill\\quill.snow.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\select2\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\assets\\vendor\\select2\\css\\select2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\assets\\vendor\\select2\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\assets\\vendor\\select2\\js\\select2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\NITRO\\Downloads\\Paying_Hub (2)\\Github\\Paying_Hub\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Paying_Hub.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Paying_Hub.props",
+      "PackagePath": "build\\Paying_Hub.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Paying_Hub.props",
+      "PackagePath": "buildMultiTargeting\\Paying_Hub.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Paying_Hub.props",
+      "PackagePath": "buildTransitive\\Paying_Hub.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

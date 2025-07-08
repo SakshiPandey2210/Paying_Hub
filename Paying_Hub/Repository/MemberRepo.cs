@@ -106,6 +106,8 @@ namespace Paying_Hub.Repository
                     parameters.Add("@EmailId", member.EmailId);
                     parameters.Add("@State", member.State);
                     parameters.Add("@City", member.City);
+                    parameters.Add("@PinCode", member.PinCode);
+                    parameters.Add("@Address", member.Address);
                     parameters.Add("@Role", "member");
                     parameters.Add("@NomineeName", string.IsNullOrEmpty(member.NomineeName) ? null : member.NomineeName);
                     parameters.Add("@NomineeAge", member.NomineeAge.HasValue ? member.NomineeAge : null);
